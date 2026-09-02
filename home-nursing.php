@@ -6,7 +6,18 @@
  
 <!-- ================= SECTION 1: HERO BANNER ================= -->
 <section class="relative overflow-hidden border-b border-amber-100/60 pt-8 pb-12 lg:pt-14 lg:pb-16">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Background Image - Full Section Background -->
+    <div class="absolute inset-0 z-0">
+        <img 
+            src="img/home-nursing.png"
+            alt="background"
+            class="w-full h-full object-cover object-center"
+        />
+        <!-- Subtle overlay for better readability -->
+        <div class="absolute inset-0 bg-gradient-to-r from-[#FAF7F2]/40 from-30% via-transparent to-transparent"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
 
             <!-- Left Column: Content -->
@@ -17,7 +28,7 @@
                 <h1 class="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight font-serif leading-tight">
                     Home Nursing Services in India
                 </h1>
-                <p class="text-slate-600 text-xs sm:text-base leading-relaxed max-w-xl">
+                <p class="text-slate-600 text-xs font-semibold sm:text-base leading-relaxed max-w-xl">
                     Looking for professional medical care, elderly nursing, recovery support, or short-term procedures like IV infusions, wound dressing, or catheterization? Get high-quality, certified nursing care right in the comfort of your home by highly qualified and experienced nurses, bringing expertise and care directly to your doorstep.
                 </p>
 
@@ -30,13 +41,13 @@
 
                 <!-- Trust Badges & Breadcrumb -->
                 <div class="pt-3 flex flex-wrap items-center gap-3">
-                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-slate-200 text-slate-700 text-xs font-semibold shadow-xs">
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/90 backdrop-blur-sm border border-slate-200 text-slate-700 text-xs font-semibold shadow-xs">
                         <span class="text-amber-400 font-bold">★ 4.8</span> On Google
                     </span>
-                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-slate-200 text-slate-700 text-xs font-semibold shadow-xs">
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/90 backdrop-blur-sm border border-slate-200 text-slate-700 text-xs font-semibold shadow-xs">
                         <span class="text-teal-600 font-bold">🛡️</span> Background-verified professionals
                     </span>
-                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-slate-200 text-slate-700 text-xs font-semibold shadow-xs">
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/90 backdrop-blur-sm border border-slate-200 text-slate-700 text-xs font-semibold shadow-xs">
                         <span class="text-green-600 font-bold">✓</span> 10,000+ Happy Families
                     </span>
                 </div>
@@ -51,17 +62,16 @@
             </div>
 
             <!-- Right Column: Banner Image -->
-            <div class="lg:col-span-5 relative flex justify-center lg:justify-end">
+            <!-- <div class="lg:col-span-5 relative flex justify-center lg:justify-end">
                 <div class="relative w-full max-w-md aspect-4/3 rounded-3xl overflow-hidden bg-gradient-to-tr from-amber-100/40 via-white to-teal-50 shadow-inner flex items-center justify-center border border-amber-200/50">
                     <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=800&auto=format&fit=crop"
                          alt="Professional Home Nursing Care"
                          class="w-full h-full object-cover object-center filter contrast-105" />
-                    <!-- floating badge -->
                     <div class="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm rounded-xl px-4 py-2 shadow-lg border border-teal-100">
                         <p class="text-xs font-bold text-teal-700"><i class="fa-solid fa-clock mr-1"></i> 24/7 Availability</p>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
         </div>
     </div>

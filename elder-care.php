@@ -11,7 +11,18 @@
 
 <!-- ================= SECTION 1: HERO BANNER ================= -->
 <section class="relative overflow-hidden border-b border-amber-100/60 pt-8 pb-12 lg:pt-14 lg:pb-16">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Background Image - Full Section Background -->
+    <div class="absolute inset-0 z-0">
+        <img 
+            src="img/eldercareimg.png"
+            alt="background"
+            class="w-full h-full object-cover object-center"
+        />
+        <!-- Subtle overlay for better readability -->
+        <div class="absolute inset-0 bg-gradient-to-r from-[#FAF7F2]/50 from-30% via-transparent to-transparent"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
 
             <div class="lg:col-span-7 space-y-5 text-left">
@@ -21,7 +32,7 @@
                 <h1 class="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight font-serif leading-tight">
                     Trusted Elderly Care Services at Home
                 </h1>
-                <p class="text-slate-600 text-xs sm:text-base leading-relaxed max-w-xl">
+                <p class="text-slate-600 text-xs sm:text-base font-semibold leading-relaxed max-w-xl">
                     Worried about the medical needs of your parents back home? Avail the Care Plan package from Portea to ease the worries. To book a Care Plan, begin here.
                 </p>
 
@@ -33,13 +44,13 @@
                 </div>
 
                 <div class="pt-3 flex flex-wrap items-center gap-3">
-                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-slate-200 text-slate-700 text-xs font-semibold shadow-xs">
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/90 backdrop-blur-sm border border-slate-200 text-slate-700 text-xs font-semibold shadow-xs">
                         <span class="text-amber-400 font-bold">★ 4.8</span> On Google
                     </span>
-                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-slate-200 text-slate-700 text-xs font-semibold shadow-xs">
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/90 backdrop-blur-sm border border-slate-200 text-slate-700 text-xs font-semibold shadow-xs">
                         <span class="text-teal-600 font-bold">🛡️</span> Background-verified professionals
                     </span>
-                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-slate-200 text-slate-700 text-xs font-semibold shadow-xs">
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/90 backdrop-blur-sm border border-slate-200 text-slate-700 text-xs font-semibold shadow-xs">
                         <span class="text-green-600 font-bold">✓</span> 10,000+ Families Served
                     </span>
                 </div>
@@ -53,7 +64,7 @@
                 </nav>
             </div>
 
-            <div class="lg:col-span-5 relative flex justify-center lg:justify-end">
+            <!-- <div class="lg:col-span-5 relative flex justify-center lg:justify-end">
                 <div class="relative w-full max-w-md aspect-4/3 rounded-3xl overflow-hidden bg-gradient-to-tr from-amber-100/40 via-white to-teal-50 shadow-inner flex items-center justify-center border border-amber-200/50">
                     <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?q=80&w=800&auto=format&fit=crop"
                          alt="Professional Elderly Caregiver assisting Senior Patient"
@@ -62,7 +73,7 @@
                         <p class="text-xs font-bold text-teal-700"><i class="fa-solid fa-clock mr-1"></i> 24/7 Care Available</p>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
         </div>
     </div>

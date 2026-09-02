@@ -9,7 +9,18 @@
 
 <!-- ================= SECTION 1: WOUND CARE HERO ================= -->
 <section class="relative overflow-hidden border-b border-amber-100/60 pt-8 pb-12 lg:pt-14 lg:pb-16">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Background Image - Full Section Background -->
+    <div class="absolute inset-0 z-0">
+        <img 
+            src=""
+            alt="background"
+            class="w-full h-full object-cover object-center"
+        />
+        <!-- Subtle overlay for better readability -->
+        <div class="absolute inset-0 bg-gradient-to-r from-[#FAF7F2]/40 from-20% via-transparent to-transparent"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
 
             <!-- Left Column: Content -->
@@ -33,13 +44,13 @@
 
                 <!-- Trust Badges -->
                 <div class="pt-3 flex flex-wrap items-center gap-3">
-                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-slate-200 text-slate-700 text-xs font-semibold shadow-xs">
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/90 backdrop-blur-sm border border-slate-200 text-slate-700 text-xs font-semibold shadow-xs">
                         <span class="text-amber-400 font-bold">★ 4.8</span> On Google
                     </span>
-                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-slate-200 text-slate-700 text-xs font-semibold shadow-xs">
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/90 backdrop-blur-sm border border-slate-200 text-slate-700 text-xs font-semibold shadow-xs">
                         <span class="text-teal-600 font-bold">🛡️</span> Trained & experienced staff
                     </span>
-                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-slate-200 text-slate-700 text-xs font-semibold shadow-xs">
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/90 backdrop-blur-sm border border-slate-200 text-slate-700 text-xs font-semibold shadow-xs">
                         <span class="text-green-600 font-bold">✓</span> Modern dressing materials
                     </span>
                 </div>

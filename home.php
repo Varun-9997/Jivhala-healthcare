@@ -7,8 +7,19 @@
 
 <!-- sectioin 1 -->
   <!-- HERO SECTION -->
-  <section class="relative min-h-screen flex items-center overflow-hidden py-12 lg:py-20 px-4 sm:px-6 lg:px-12 xl:px-20 bg-[#FAF7F2]">
-    <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
+  <section class="relative min-h-screen flex items-center overflow-hidden py-12 md:py-18 md:-mt-14 px-4 sm:px-6 lg:px-12 xl:px-20 bg-[#FAF7F2]">
+    <!-- Background Image Container -->
+    <div class="absolute inset-0 z-0">
+        <img 
+            src="img/homehero.png"
+            alt="background"
+            class="w-full h-full object-cover object-center"
+        />
+        <!-- Overlay for better text readability -->
+        <div class="absolute inset-0 bg-gradient-to-r from-[#FAF7F2]/30 from-30% via-transparent to-transparent"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-10 md:gap-8 items-center relative z-10">
       
       <!-- LEFT CONTENT COLUMN -->
       <div class="lg:col-span-7 space-y-6 z-10">
@@ -33,8 +44,8 @@
         </h1>
 
         <!-- Subheading Paragraph -->
-        <p class="opacity-0 animate-fade-up [animation-delay:400ms] text-slate-600 text-sm sm:text-base lg:text-lg max-w-xl leading-relaxed">
-          Doctors, nurses, physiotherapists and trained attendants &ndash; compassionate, expert care delivered to your doorstep.
+        <p class="opacity-0 animate-fade-up [animation-delay:400ms] text-slate-700 font-semibold text-md sm:text-base lg:text-lg max-w-md leading-relaxed">
+          Doctors, nurses, physiotherapists and trained attendants – compassionate, expert care delivered to your doorstep.
         </p>
 
         <!-- Search / Action Bar Box -->
@@ -49,14 +60,14 @@
               </svg>
             </div>
             
-          <a href="book-now.php"
-   class="inline-flex items-center justify-center bg-[#A6292F] hover:bg-[#d44819] text-white px-6 py-3 rounded-full text-sm font-bold transition-all duration-200 shadow-md hover:shadow-lg hover:scale-[1.02] active:scale-95 whitespace-nowrap">
-    Book Now
-    </a>
+                      <a href="book-now.php"
+              class="inline-flex items-center justify-center bg-[#A6292F] hover:bg-[#d44819] text-white px-6 py-3 rounded-full text-sm font-bold transition-all duration-200 shadow-md hover:shadow-lg hover:scale-[1.02] active:scale-95 whitespace-nowrap">
+                Book Now
+                </a>
           </div>
 
           <!-- Direct Phone Contact -->
-          <a href="tel:18001212323" class="flex items-center justify-center sm:justify-start gap-2.5 text-slate-800 font-bold hover:text-[#008080] transition-colors py-2 px-2 group">
+          <a href="tel:18001212323" class="flex items-center bg-[#0F766E] justify-center sm:justify-start gap-2.5 text-slate-100 font-bold  transition-colors py-2 px-2 group rounded-full border border-[#008080] hover:border-2xl">
             <div class="w-8 h-8 rounded-full bg-teal-50 flex items-center justify-center text-[#008080] group-hover:bg-[#008080] group-hover:text-white transition-colors">
               <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
                 <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
@@ -73,31 +84,31 @@
       <div class="lg:col-span-5 relative mt-8 lg:mt-0 opacity-0 animate-fade-up [animation-delay:350ms]">
         
         <!-- Image Container -->
-        <div class="relative w-full h-[380px] sm:h-[480px] lg:h-[520px] rounded-3xl overflow-hidden shadow-2xl shadow-slate-300/40 border-4 border-white">
-          <img 
-            src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=1200&q=80" 
-            alt="Healthcare worker attending patient at home" 
-            class="w-full h-full object-cover object-center"
-          />
-        </div>
+          <!-- <div class="relative w-full h-[380px] sm:h-[480px] lg:h-[520px] rounded-3xl overflow-hidden shadow-2xl shadow-slate-300/40 border-4 border-white">
+            <img 
+              src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='600' viewBox='0 0 600 600'%3E%3Crect width='600' height='600' fill='%23b7d7e8'/%3E%3Ccircle cx='300' cy='280' r='120' fill='%23f0f7fa' opacity='0.8'/%3E%3Ccircle cx='200' cy='180' r='40' fill='%23d9e6ed'/%3E%3Ccircle cx='400' cy='180' r='40' fill='%23d9e6ed'/%3E%3Crect x='240' y='400' width='120' height='60' rx='30' fill='%23ffffff' opacity='0.8'/%3E%3Crect x='270' y='420' width='60' height='12' rx='6' fill='%23a6292f'/%3E%3C/svg%3E" 
+              alt="Healthcare worker attending patient at home" 
+              class="w-full h-full object-cover object-center"
+            />
+          </div> -->
 
         <!-- Floating Card 1: Hospital Partners -->
-        <div class="absolute -left-3 sm:-left-8 top-[8%] z-20 bg-white/95 backdrop-blur-md px-5 py-3.5 rounded-2xl shadow-xl shadow-slate-300/50 border border-slate-100 animate-float">
+        <!-- <div class="absolute -left-3 sm:-left-8 top-[8%] z-20 bg-white/95 backdrop-blur-md px-5 py-3.5 rounded-2xl shadow-xl shadow-slate-300/50 border border-slate-100 animate-float">
           <div class="text-xl sm:text-2xl font-black text-slate-900 leading-tight">100+</div>
           <div class="text-[10px] sm:text-xs font-bold text-slate-500 tracking-wider uppercase">Hospital Partners</div>
-        </div>
+        </div> -->
 
         <!-- Floating Card 2: Patients Served -->
-        <div class="absolute -left-6 sm:-left-12 top-[42%] z-20 bg-white/95 backdrop-blur-md px-5 py-3.5 rounded-2xl shadow-xl shadow-slate-300/50 border border-slate-100 animate-float [animation-delay:1.5s]">
+        <!-- <div class="absolute -left-6 sm:-left-12 top-[42%] z-20 bg-white/95 backdrop-blur-md px-5 py-3.5 rounded-2xl shadow-xl shadow-slate-300/50 border border-slate-100 animate-float [animation-delay:1.5s]">
           <div class="text-xl sm:text-2xl font-black text-slate-900 leading-tight">20 Lakh+</div>
           <div class="text-[10px] sm:text-xs font-bold text-slate-500 tracking-wider uppercase">Patients Served</div>
-        </div>
+        </div> -->
 
         <!-- Floating Card 3: Cities Across India -->
-        <div class="absolute left-0 sm:-left-4 bottom-[8%] z-20 bg-white/95 backdrop-blur-md px-5 py-3.5 rounded-2xl shadow-xl shadow-slate-300/50 border border-slate-100 animate-float [animation-delay:0.8s]">
+        <!-- <div class="absolute left-0 sm:-left-4 bottom-[8%] z-20 bg-white/95 backdrop-blur-md px-5 py-3.5 rounded-2xl shadow-xl shadow-slate-300/50 border border-slate-100 animate-float [animation-delay:0.8s]">
           <div class="text-xl sm:text-2xl font-black text-slate-900 leading-tight">135</div>
           <div class="text-[10px] sm:text-xs font-bold text-slate-500 tracking-wider uppercase">Cities Across India</div>
-        </div>
+        </div> -->
 
       </div>
 
@@ -334,7 +345,7 @@
 
  <!-- sectioin 4 -->
 
-  <section class="py-16 sm:py-20 px-4 sm:px-6 lg:px-12 max-w-7xl mx-auto">
+  <!-- <section class="py-16 sm:py-20 px-4 sm:px-6 lg:px-12 max-w-7xl mx-auto">
     <div class="text-center max-w-2xl mx-auto mb-10 sm:mb-14">
       <span class="text-[11px] font-bold tracking-widest text-[#008080] uppercase block mb-2">Limited-Time Savings</span>
       <h2 class="font-serif-heading text-2xl sm:text-4xl font-bold text-[#1a2d37]">New Offers</h2>
@@ -424,7 +435,7 @@
       </div>
 
     </div>
-  </section>
+  </section> -->
 
 
 
