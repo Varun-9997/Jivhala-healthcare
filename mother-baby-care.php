@@ -12,7 +12,7 @@
     <!-- Background Image - Full Section Background -->
     <div class="absolute inset-0 z-0">
         <img 
-            src=""
+            src="img/motherbabycare.png"
             alt="background"
             class="w-full h-full object-cover object-center"
         />
@@ -31,7 +31,7 @@
                 <h1 class="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight font-serif leading-tight">
                     Mother & Baby Care Services at Home
                 </h1>
-                <p class="text-slate-600 text-xs sm:text-base leading-relaxed max-w-xl">
+                <p class="text-slate-600 text-xs sm:text-base font-semibold leading-relaxed max-w-xl">
                     Care for mother and baby, with motherly affection! Reliable and experienced care services from pregnancy support to newborn care and complete maternal care.
                 </p>
 
@@ -65,7 +65,7 @@
             </div>
 
             <!-- Right Column: Banner Image -->
-            <div class="lg:col-span-5 relative flex justify-center lg:justify-end">
+            <!-- <div class="lg:col-span-5 relative flex justify-center lg:justify-end">
                 <div class="relative w-full max-w-md aspect-4/3 rounded-3xl overflow-hidden bg-gradient-to-tr from-rose-100/40 via-white to-pink-50 shadow-inner flex items-center justify-center border border-rose-200/50">
                     <img src="https://images.unsplash.com/photo-1519689680058-324335c77eba?q=80&w=800&auto=format&fit=crop"
                          alt="Mother & Baby Care at Home"
@@ -74,7 +74,7 @@
                         <p class="text-xs font-bold text-rose-600"><i class="fa-solid fa-heart mr-1 text-rose-400"></i> Loving Care</p>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
         </div>
     </div>

@@ -12,7 +12,7 @@
     <!-- Background Image - Full Section Background -->
     <div class="absolute inset-0 z-0">
         <img 
-            src=""
+            src="img/woundimg.png"
             alt="background"
             class="w-full h-full object-cover object-center"
         />
@@ -31,7 +31,7 @@
                 <h1 class="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight font-serif leading-tight">
                     Wound Care Services at Home
                 </h1>
-                <p class="text-slate-600 text-xs sm:text-base leading-relaxed max-w-xl">
+                <p class="text-slate-600 text-xs sm:text-base font-semibold leading-relaxed max-w-xl">
                     Proper wound care is essential for faster healing! Safe, clean, and proper dressing service at home by an experienced and trained care team.
                 </p>
 
@@ -65,7 +65,7 @@
             </div>
 
             <!-- Right Column: Banner Image -->
-            <div class="lg:col-span-5 relative flex justify-center lg:justify-end">
+            <!-- <div class="lg:col-span-5 relative flex justify-center lg:justify-end">
                 <div class="relative w-full max-w-md aspect-4/3 rounded-3xl overflow-hidden bg-gradient-to-tr from-amber-100/40 via-white to-teal-50 shadow-inner flex items-center justify-center border border-amber-200/50">
                     <img src="https://images.unsplash.com/photo-1584362917165-526a968579e8?q=80&w=800&auto=format&fit=crop"
                          alt="Professional Wound Care at Home"
@@ -74,7 +74,7 @@
                         <p class="text-xs font-bold text-teal-700"><i class="fa-solid fa-bandage mr-1"></i> Painless Dressing</p>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
         </div>
     </div>

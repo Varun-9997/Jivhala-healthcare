@@ -30,7 +30,7 @@
                 <h1 class="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight font-serif leading-tight">
                     Patient Care Services at Home
                 </h1>
-                <p class="text-slate-600 text-xs sm:text-base leading-relaxed max-w-xl">
+                <p class="text-slate-600 text-xs sm:text-base font-semibold leading-relaxed max-w-xl">
                     Complete care for patients, in the comfort of your home! Experienced care team for senior citizens, bedridden patients, post-surgery patients, or individuals with chronic illnesses.
                 </p>
 
