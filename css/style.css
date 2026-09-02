@@ -1,0 +1,953 @@
+                                /* ======================================
+                                                HOME
+                                ====================================== */
+
+
+
+
+
+    /* section 1  */
+
+    /* Font styles & lightweight custom animations */
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .font-serif-heading {
+      font-family: 'Playfair Display', serif;
+    }
+
+    /* Keyframe Animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(24px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes floatSlow {
+      0%, 100% {
+        transform: translateY(0px);
+      }
+      50% {
+        transform: translateY(-8px);
+      }
+    }
+
+    .animate-fade-up {
+      animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+
+    .animate-float {
+      animation: floatSlow 4s ease-in-out infinite;
+    }
+
+
+/* section 2,3,4  */
+
+  .font-serif-heading { font-family: 'Playfair Display', serif; }
+  .font-sans-body { font-family: 'Plus Jakarta Sans', sans-serif; }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in {
+    animation: fadeInUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+
+/* section 5,6,7  */
+
+    .font-serif-heading { font-family: 'Playfair Display', serif; }
+  .font-sans-body { font-family: 'Plus Jakarta Sans', sans-serif; }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-welcome {
+    animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+
+/* section 8,9,10  */
+
+  .font-serif-heading { font-family: 'Playfair Display', serif; }
+  .font-sans-body { font-family: 'Plus Jakarta Sans', sans-serif; }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-welcome {
+    animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+
+/* section 11,12,13  */
+
+
+  
+  .font-serif-heading { font-family: 'Playfair Display', serif; }
+  .font-sans-body { font-family: 'Plus Jakarta Sans', sans-serif; }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-welcome {
+    animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+
+
+
+
+
+
+                                /* ======================================
+                                                ABOUT US
+                                ====================================== */
+
+
+
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(18px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .animate-welcome {
+    animation: fadeInUp 0.65s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+  summary::-webkit-details-marker,
+  summary::marker {
+    display: none;
+    content: "";
+  }
+  
+
+
+
+
+                                /* ======================================
+                                                BLOG
+                                ====================================== */
+
+
+
+    @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .animate-welcome {
+    animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+  summary::-webkit-details-marker,
+  summary::marker {
+    display: none;
+    content: "";
+  }
+
+
+
+
+
+
+
+
+                                /* ======================================
+                                                COUNSELLING
+                                ====================================== */
+
+
+
+
+
+
+    @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .animate-welcome {
+    animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+  summary::-webkit-details-marker,
+  summary::marker {
+    display: none;
+    content: "";
+  }
+
+
+
+
+
+                                /* ======================================
+                                            COVID CARE
+                                ====================================== */
+
+
+
+
+
+    @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(14px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .animate-welcome {
+    animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+  summary::-webkit-details-marker,
+  summary::marker {
+    display: none;
+    content: "";
+  }
+
+
+
+
+
+
+                                /* ======================================
+                                            CRITICAL CARE
+                                ====================================== */
+
+
+
+
+
+    @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .animate-welcome {
+    animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+  summary::-webkit-details-marker,
+  summary::marker {
+    display: none;
+    content: "";
+  }
+
+
+
+
+
+
+                                /* ======================================
+                                             DIABETES CARE
+                                ====================================== */
+
+
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .animate-fade-in {
+    animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+  summary::-webkit-details-marker,
+  summary::marker {
+    display: none;
+    content: "";
+  }
+  
+
+
+
+
+
+
+                                /* ======================================
+                                             DOCTOR CONSULTANT
+                                ====================================== */
+
+
+
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .animate-fade-in {
+    animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+  summary::-webkit-details-marker,
+  summary::marker {
+    display: none;
+    content: "";
+  }
+  
+
+
+
+
+                                /* ======================================
+                                            ELDER CARE
+                                ====================================== */
+
+
+
+
+
+    @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .animate-welcome {
+    animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+  summary::-webkit-details-marker,
+  summary::marker {
+    display: none;
+    content: "";
+  }
+
+
+
+
+
+                                /* ======================================
+                                               FOOTER
+                                ====================================== */
+
+
+
+
+
+
+
+
+
+                                /* ======================================
+                                                HEADER
+                                ====================================== */
+
+   /* smooth dropdown (desktop) */
+    .dropdown-group {
+      position: relative;
+    }
+    .dropdown-menu {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(6px);
+      transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+      pointer-events: none;
+    }
+    .dropdown-group:hover .dropdown-menu,
+    .dropdown-group:focus-within .dropdown-menu {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0px);
+      pointer-events: auto;
+    }
+    /* mobile details chevron */
+    .mobile-service-details summary {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .mobile-service-details summary::-webkit-details-marker {
+      display: none;
+    }
+    .mobile-service-details[open] .chevron-icon {
+      transform: rotate(180deg);
+    }
+    .chevron-icon {
+      transition: transform 0.25s ease;
+    }
+    /* small indian flag */
+    .flag-india {
+      display: inline-flex;
+      flex-direction: column;
+      width: 20px;
+      height: 14px;
+      border: 1px solid #d1d5db;
+      border-radius: 2px;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+    .flag-india .saffron { height: 33.33%; background: #FF9933; }
+    .flag-india .white { height: 33.33%; background: white; display: flex; align-items: center; justify-content: center; }
+    .flag-india .white .chakra { width: 5px; height: 5px; border-radius: 50%; border: 1px solid #1e3a8a; }
+    .flag-india .green { height: 33.33%; background: #128807; }
+
+    /* scroll lock class */
+    body.no-scroll {
+      overflow: hidden;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+
+    /* ensure mobile menu has scroll if content overflows */
+    #mobile-menu {
+      max-height: calc(100vh - 80px); /* header height approx */
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+                                /* ======================================
+                                                LAB TESTS
+                                ====================================== */
+
+
+
+
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(18px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .animate-welcome {
+    animation: fadeInUp 0.65s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+  summary::-webkit-details-marker,
+  summary::marker {
+    display: none;
+    content: "";
+  }
+
+
+
+
+
+                                /* ======================================
+                                            MEDICAL EQUIPMENTS
+                                ====================================== */
+
+
+
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .animate-welcome {
+    animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+  summary::-webkit-details-marker,
+  summary::marker {
+    display: none;
+    content: "";
+  }
+
+
+
+
+
+
+                                /* ======================================
+                                            MOTHER BABY CARE
+                                ====================================== */
+
+
+
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .animate-welcome {
+    animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+  summary::-webkit-details-marker,
+  summary::marker {
+    display: none;
+    content: "";
+  }
+
+  
+
+
+
+
+
+                                /* ======================================
+                                                NURSING
+                                ====================================== */
+
+
+
+
+ @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .animate-welcome {
+    animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+  summary::-webkit-details-marker,
+  summary::marker {
+    display: none;
+    content: "";
+  }
+
+
+
+
+
+                                /* ======================================
+                                            NUTRITION DIET CARE
+                                ====================================== */
+
+
+
+ @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .animate-welcome {
+    animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+  summary::-webkit-details-marker,
+  summary::marker {
+    display: none;
+    content: "";
+  }
+
+
+
+
+
+
+                                /* ======================================
+                                            PHYSIOTHERAPY 
+                                ====================================== */
+
+
+
+/* <!-- Custom Animation Keyframes (Embedded for Instant Tailwind Compatibility) --> */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @keyframes pulseSlow {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.03); }
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+  .animate-fade-in {
+    animation: fadeIn 1s ease-out forwards;
+  }
+  .animate-pulse-slow {
+    animation: pulseSlow 4s infinite ease-in-out;
+  }
+
+  /* Delay utilities for staggered animations */
+  .delay-100 { animation-delay: 100ms; }
+  .delay-200 { animation-delay: 200ms; }
+  .delay-300 { animation-delay: 300ms; }
+  .delay-400 { animation-delay: 400ms; }
+
+
+
+    /* <!-- Custom inline styles for animations --> */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .animate-welcome {
+    animation: fadeInUp 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+  /* Remove default disclosure triangle indicator */
+  summary::-webkit-details-marker,
+  summary::marker {
+    display: none;
+    content: "";
+  }
+
+
+
+
+
+                                /* ======================================
+                                             TRAINED ATTENDANCE 
+                                ====================================== */
+
+
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .animate-welcome {
+    animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+  summary::-webkit-details-marker,
+  summary::marker {
+    display: none;
+    content: "";
+  }
+
+
+
+
+
+                                /* ======================================
+                                               VACCINATION
+                                ====================================== */
+
+
+
+
+    @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .animate-welcome {
+    animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+  summary::-webkit-details-marker,
+  summary::marker {
+    display: none;
+    content: "";
+  }
+
+
+
+
+                                /* ======================================
+                                             BOOK NOW  
+                                ====================================== */
+
+
+  body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .font-playfair {
+      font-family: 'Playfair Display', serif;
+    }
+    /* smooth step indicator */
+    .step-line {
+      transition: all 0.3s ease;
+    }
+    .step-dot {
+      transition: all 0.3s ease;
+    }
+    .step-dot.active {
+      background-color: #00898a;
+      color: white;
+      border-color: #00898a;
+    }
+    .step-dot.completed {
+      background-color: #00898a;
+      color: white;
+      border-color: #00898a;
+    }
+    .step-label.active {
+      color: #00898a;
+      font-weight: 700;
+    }
+    .step-label.completed {
+      color: #00898a;
+    }
+    /* form step visibility */
+    .form-step {
+      display: none;
+      animation: fadeIn 0.3s ease;
+    }
+    .form-step.active {
+      display: block;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    /* custom input focus */
+    input:focus, select:focus {
+      outline: none;
+      border-color: #00898a;
+      box-shadow: 0 0 0 3px rgba(0, 137, 138, 0.15);
+    }
+    /* mobile menu scroll lock (from previous) */
+    body.no-scroll {
+      overflow: hidden;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+    #mobile-menu {
+      max-height: calc(100vh - 80px);
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    /* flag style */
+    .flag-india {
+      display: inline-flex;
+      flex-direction: column;
+      width: 20px;
+      height: 14px;
+      border: 1px solid #d1d5db;
+      border-radius: 2px;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+    .flag-india .saffron { height: 33.33%; background: #FF9933; }
+    .flag-india .white { height: 33.33%; background: white; display: flex; align-items: center; justify-content: center; }
+    .flag-india .white .chakra { width: 5px; height: 5px; border-radius: 50%; border: 1px solid #1e3a8a; }
+    .flag-india .green { height: 33.33%; background: #128807; }
+    /* dropdown-group for desktop */
+    .dropdown-group {
+      position: relative;
+    }
+    .dropdown-menu {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(6px);
+      transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+      pointer-events: none;
+    }
+    .dropdown-group:hover .dropdown-menu,
+    .dropdown-group:focus-within .dropdown-menu {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0px);
+      pointer-events: auto;
+    }
+    .mobile-service-details summary {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .mobile-service-details summary::-webkit-details-marker {
+      display: none;
+    }
+    .mobile-service-details[open] .chevron-icon {
+      transform: rotate(180deg);
+    }
+    .chevron-icon {
+      transition: transform 0.25s ease;
+    }
+
+
+
+
+
+
+                                /* ======================================
+                                               
+                                ====================================== */
+
+
+
+
+
+
+
+
+
+                                /* ======================================
+                                               
+                                ====================================== */
+
+
+
+
+
+
+
+
+
+                                /* ======================================
+                                               
+                                ====================================== */
+
+
+
+
+
+
+
+
+
+                                /* ======================================
+                                                
+                                ====================================== */
+
+
+
+
+
+
+
+
+
+                                /* ======================================
+                                               
+                                ====================================== */
+
+
+
+
+
+
+
+
+
+                                /* ======================================
+                                               
+                                ====================================== */
+
+
+
+
+
+
+
+
+
+                                /* ======================================
+                                               
+                                ====================================== */
+
+
+
+
