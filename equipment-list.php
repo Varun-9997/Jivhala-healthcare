@@ -1,37 +1,6 @@
 <?php
 
-include 'header.php';
-
-/*
-|--------------------------------------------------------------------------
-| Database Connection
-|--------------------------------------------------------------------------
-| Change these values according to your hosting/local database.
-|--------------------------------------------------------------------------
-*/
-
-$host = 'localhost';
-$dbname = 'jivhala_healthcare';
-$username = 'root';
-$password = '';
-
-try {
-
-    $pdo = new PDO(
-        "mysql:host=$host;dbname=$dbname;charset=utf8mb4",
-        $username,
-        $password,
-        [
-            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
-        ]
-    );
-
-} catch (PDOException $e) {
-
-    die("Database connection failed: " . $e->getMessage());
-
-}
+include 'conn.php';
 
 
 /*
@@ -128,6 +97,8 @@ $equipmentStmt = $pdo->prepare("
 $equipmentStmt->execute([$category['id']]);
 
 $equipmentList = $equipmentStmt->fetchAll();
+
+include 'header.php';
 
 ?>
 

@@ -15,7 +15,6 @@ if ($equipmentId <= 0) {
 
     header("Location: medical-equipment.php");
     exit;
-
 }
 
 
@@ -70,7 +69,6 @@ if (!$product) {
 
     header("Location: medical-equipment.php");
     exit;
-
 }
 
 
@@ -102,7 +100,6 @@ if (!empty($product['technical_specifications'])) {
     $specifications = array_filter(
         array_map('trim', $specifications)
     );
-
 }
 
 
@@ -130,7 +127,6 @@ if ($product['purchase_price'] !== null) {
         (float) $product['purchase_price'],
         2
     );
-
 }
 
 if ($product['rental_price'] !== null) {
@@ -139,7 +135,6 @@ if ($product['rental_price'] !== null) {
         (float) $product['rental_price'],
         2
     );
-
 }
 
 
@@ -160,8 +155,7 @@ include 'header.php';
 
             <a
                 href="medical-equipment.php"
-                class="hover:text-teal-600"
-            >
+                class="hover:text-teal-600">
                 Home
             </a>
 
@@ -169,8 +163,7 @@ include 'header.php';
 
             <a
                 href="medical-equipment.php"
-                class="hover:text-teal-600"
-            >
+                class="hover:text-teal-600">
                 Medical Equipment
             </a>
 
@@ -178,8 +171,7 @@ include 'header.php';
 
             <a
                 href="equipment-list.php?category=<?= urlencode($product['category_slug']) ?>"
-                class="hover:text-teal-600"
-            >
+                class="hover:text-teal-600">
                 <?= htmlspecialchars($product['category_name']) ?>
             </a>
 
@@ -227,8 +219,7 @@ include 'header.php';
                                 src="<?= htmlspecialchars($product['image']) ?>"
                                 alt="<?= htmlspecialchars($product['name']) ?>"
                                 class="max-h-full max-w-full object-contain"
-                                onerror="this.style.display='none'; document.getElementById('imageFallback').classList.remove('hidden');"
-                            >
+                                onerror="this.style.display='none'; document.getElementById('imageFallback').classList.remove('hidden');">
 
                         <?php endif; ?>
 
@@ -237,8 +228,7 @@ include 'header.php';
 
                         <div
                             id="imageFallback"
-                            class="<?= !empty($product['image']) ? 'hidden' : '' ?> text-center text-slate-400"
-                        >
+                            class="<?= !empty($product['image']) ? 'hidden' : '' ?> text-center text-slate-400">
 
                             <div class="text-7xl mb-3">
                                 🩺
@@ -366,8 +356,7 @@ include 'header.php';
 
                     <form
                         id="bookingForm"
-                        class="p-5 space-y-4"
-                    >
+                        class="p-5 space-y-4">
 
 
                         <!-- NAME -->
@@ -376,8 +365,7 @@ include 'header.php';
 
                             <label
                                 for="name"
-                                class="block text-xs font-semibold text-slate-700 mb-1.5"
-                            >
+                                class="block text-xs font-semibold text-slate-700 mb-1.5">
                                 Name
                             </label>
 
@@ -387,8 +375,7 @@ include 'header.php';
                                 type="text"
                                 required
                                 placeholder="Enter your name"
-                                class="w-full rounded-lg border border-slate-200 px-3 py-2.5 text-sm outline-none focus:border-teal-500 focus:ring-2 focus:ring-teal-100"
-                            >
+                                class="w-full rounded-lg border border-slate-200 px-3 py-2.5 text-sm outline-none focus:border-teal-500 focus:ring-2 focus:ring-teal-100">
 
                         </div>
 
@@ -400,8 +387,7 @@ include 'header.php';
 
                             <label
                                 for="mobile"
-                                class="block text-xs font-semibold text-slate-700 mb-1.5"
-                            >
+                                class="block text-xs font-semibold text-slate-700 mb-1.5">
                                 Mobile Number
                             </label>
 
@@ -413,8 +399,7 @@ include 'header.php';
                                 maxlength="10"
                                 required
                                 placeholder="Enter 10-digit mobile number"
-                                class="w-full rounded-lg border border-slate-200 px-3 py-2.5 text-sm outline-none focus:border-teal-500 focus:ring-2 focus:ring-teal-100"
-                            >
+                                class="w-full rounded-lg border border-slate-200 px-3 py-2.5 text-sm outline-none focus:border-teal-500 focus:ring-2 focus:ring-teal-100">
 
                         </div>
 
@@ -426,8 +411,7 @@ include 'header.php';
 
                             <label
                                 for="city"
-                                class="block text-xs font-semibold text-slate-700 mb-1.5"
-                            >
+                                class="block text-xs font-semibold text-slate-700 mb-1.5">
                                 City
                             </label>
 
@@ -435,21 +419,19 @@ include 'header.php';
                                 id="city"
                                 name="city"
                                 required
-                                class="w-full rounded-lg border border-slate-200 px-3 py-2.5 text-sm bg-white outline-none focus:border-teal-500 focus:ring-2 focus:ring-teal-100"
-                            >
+                                class="w-full rounded-lg border border-slate-200 px-3 py-2.5 text-sm bg-white outline-none focus:border-teal-500 focus:ring-2 focus:ring-teal-100">
 
                                 <option value="">
                                     Select City
                                 </option>
 
-                                <option>Nashik</option>
-                                <option>Mumbai</option>
-                                <option>Delhi</option>
-                                <option>Bangalore</option>
-                                <option>Kolkata</option>
-                                <option>Hyderabad</option>
-                                <option>Chennai</option>
-                                <option>Other</option>
+                                <option value="Pune">
+                                    Pune
+                                </option>
+
+                                <option value="Chandrapur">
+                                    Chandrapur
+                                </option>
 
                             </select>
 
@@ -480,8 +462,7 @@ include 'header.php';
                                         name="booking_type"
                                         value="rental"
                                         class="peer sr-only"
-                                        checked
-                                    >
+                                        checked>
 
                                     <span class="flex items-center justify-center gap-2 min-h-11 rounded-lg border border-slate-200 text-sm font-semibold text-slate-600 peer-checked:border-teal-600 peer-checked:bg-teal-50 peer-checked:text-teal-700 transition">
 
@@ -501,8 +482,7 @@ include 'header.php';
                                         type="radio"
                                         name="booking_type"
                                         value="purchase"
-                                        class="peer sr-only"
-                                    >
+                                        class="peer sr-only">
 
                                     <span class="flex items-center justify-center gap-2 min-h-11 rounded-lg border border-slate-200 text-sm font-semibold text-slate-600 peer-checked:border-teal-600 peer-checked:bg-teal-50 peer-checked:text-teal-700 transition">
 
@@ -550,8 +530,7 @@ include 'header.php';
 
                                 <span
                                     id="selectedAmount"
-                                    class="font-extrabold text-teal-700"
-                                >
+                                    class="font-extrabold text-teal-700">
 
                                     <?php if ($rentalPrice !== null): ?>
 
@@ -582,8 +561,7 @@ include 'header.php';
                                 type="checkbox"
                                 id="consent"
                                 required
-                                class="mt-0.5 h-4 w-4 rounded border-slate-300 text-teal-600 focus:ring-teal-500"
-                            >
+                                class="mt-0.5 h-4 w-4 rounded border-slate-300 text-teal-600 focus:ring-teal-500">
 
                             <span class="text-[11px] leading-relaxed text-slate-500">
 
@@ -601,8 +579,7 @@ include 'header.php';
 
                         <button
                             type="submit"
-                            class="w-full inline-flex items-center justify-center gap-2 min-h-11 px-5 py-3 bg-[#A6292F] hover:bg-[#8f2227] text-white rounded-xl text-sm font-bold transition-colors"
-                        >
+                            class="w-full inline-flex items-center justify-center gap-2 min-h-11 px-5 py-3 bg-[#A6292F] hover:bg-[#8f2227] text-white rounded-xl text-sm font-bold transition-colors">
 
                             Book Now
 
@@ -616,8 +593,7 @@ include 'header.php';
 
                         <p
                             id="bookingMessage"
-                            class="hidden text-xs text-teal-700 bg-teal-50 border border-teal-100 rounded-lg p-3"
-                        >
+                            class="hidden text-xs text-teal-700 bg-teal-50 border border-teal-100 rounded-lg p-3">
 
                             This is currently a UI-only booking form. Payment integration will be connected after the booking flow is finalized.
 
@@ -627,66 +603,6 @@ include 'header.php';
                     </form>
 
                 </div>
-
-
-
-                <!-- ========================================= -->
-                <!-- SERVICES -->
-                <!-- ========================================= -->
-
-                <div class="bg-white rounded-2xl border border-slate-200 shadow-sm mt-5 p-5">
-
-
-                    <div class="border-b-2 border-teal-600 pb-3 mb-3">
-
-                        <h3 class="font-bold text-slate-900">
-                            Portea Services
-                        </h3>
-
-                    </div>
-
-
-                    <div class="divide-y divide-slate-100 text-xs font-medium">
-
-                        <a href="#" class="block py-2.5 text-slate-600 hover:text-teal-600">
-                            Elder Care
-                        </a>
-
-                        <a href="#" class="block py-2.5 text-slate-600 hover:text-teal-600">
-                            Trained Attendant
-                        </a>
-
-                        <a href="#" class="block py-2.5 text-slate-600 hover:text-teal-600">
-                            Physiotherapy
-                        </a>
-
-                        <a href="#" class="block py-2.5 text-slate-600 hover:text-teal-600">
-                            Critical Care
-                        </a>
-
-                        <a
-                            href="medical-equipment.php"
-                            class="block py-2.5 text-teal-700 font-bold"
-                        >
-                            Medical Equipment
-                        </a>
-
-                        <a href="#" class="block py-2.5 text-slate-600 hover:text-teal-600">
-                            Nursing
-                        </a>
-
-                        <a href="#" class="block py-2.5 text-slate-600 hover:text-teal-600">
-                            Doctor Consultation
-                        </a>
-
-                        <a href="#" class="block py-2.5 text-slate-600 hover:text-teal-600">
-                            Mother & Baby Care
-                        </a>
-
-                    </div>
-
-                </div>
-
 
             </aside>
 
@@ -698,10 +614,10 @@ include 'header.php';
         <!-- DESCRIPTION -->
         <!-- ========================================= -->
 
-        <section class="grid grid-cols-1 lg:grid-cols-8 gap-7 mt-10">
+        <section class="grid grid-cols-1 lg:grid-cols-12 gap-7 mt-7">
 
 
-            <div class="lg:col-span-6 bg-white rounded-2xl border border-slate-200 shadow-sm p-6 sm:p-8">
+            <div class="lg:col-span-8 bg-white rounded-2xl border border-slate-200 shadow-sm p-6 sm:p-8">
 
 
                 <!-- DESCRIPTION -->
@@ -945,50 +861,120 @@ include 'header.php';
             <!-- RELATED -->
             <!-- ========================================= -->
 
-            <aside class="lg:col-span-2">
+            <aside class="lg:col-span-4">
+
+                <!-- ========================================= -->
+                <!-- PORTEA SERVICES -->
+                <!-- ========================================= -->
+
+                <div class="bg-white rounded-2xl border border-slate-200 shadow-sm p-5">
+
+                    <h3
+                        class="font-bold
+            text-slate-900
+            text-base
+            border-b-2
+            border-teal-600
+            pb-3">
+                        Portea Services
+                    </h3>
 
 
-                <div class="bg-white rounded-2xl border border-slate-200 shadow-sm p-5 lg:sticky lg:top-6">
+                    <div class="divide-y divide-slate-100 text-sm font-medium">
+
+                        <a
+                            href="#"
+                            class="block py-2.5 text-slate-600 hover:text-teal-600">
+                            Elder Care
+                        </a>
+
+                        <a
+                            href="#"
+                            class="block py-2.5 text-slate-600 hover:text-teal-600">
+                            Trained Attendant
+                        </a>
+
+                        <a
+                            href="#"
+                            class="block py-2.5 text-slate-600 hover:text-teal-600">
+                            Physiotherapy
+                        </a>
+
+                        <a
+                            href="#"
+                            class="block py-2.5 text-slate-600 hover:text-teal-600">
+                            Critical Care
+                        </a>
+
+                        <a
+                            href="medical-equipment.php"
+                            class="block py-2.5 text-teal-700 font-bold">
+                            Medical Equipment
+                        </a>
+
+                        <a
+                            href="#"
+                            class="block py-2.5 text-slate-600 hover:text-teal-600">
+                            Nursing
+                        </a>
+
+                        <a
+                            href="#"
+                            class="block py-2.5 text-slate-600 hover:text-teal-600">
+                            Doctor Consultation
+                        </a>
+
+                        <a
+                            href="#"
+                            class="block py-2.5 text-slate-600 hover:text-teal-600">
+                            Mother & Baby Care
+                        </a>
+
+                    </div>
+
+                </div>
 
 
-                    <h3 class="font-bold text-slate-900 text-base border-b-2 border-teal-600 pb-3">
+                <!-- ========================================= -->
+                <!-- ALSO READ -->
+                <!-- ========================================= -->
 
+                <div class="bg-white rounded-2xl border border-slate-200 shadow-sm p-5 mt-5">
+
+                    <h3
+                        class="font-bold
+            text-slate-900
+            text-base
+            border-b-2
+            border-teal-600
+            pb-3">
                         Also Read About
-
                     </h3>
 
 
                     <a
                         href="equipment-list.php?category=<?= urlencode($product['category_slug']) ?>"
-                        class="block py-3 text-xs text-teal-700 hover:underline border-b border-slate-100"
-                    >
-
+                        class="block py-3 text-xs text-teal-700 hover:underline border-b border-slate-100">
                         More <?= htmlspecialchars($product['category_name']) ?>
-
                     </a>
 
 
                     <a
                         href="medical-equipment.php"
-                        class="block py-3 text-xs text-teal-700 hover:underline border-b border-slate-100"
-                    >
-
+                        class="block py-3 text-xs text-teal-700 hover:underline border-b border-slate-100">
                         All Medical Equipment
-
                     </a>
 
 
                     <a
                         href="#"
-                        class="block py-3 text-xs text-teal-700 hover:underline"
-                    >
-
+                        class="block py-3 text-xs text-teal-700 hover:underline">
                         Equipment Rental Agreement
-
                     </a>
 
-
                 </div>
+
+
 
             </aside>
 
@@ -1111,115 +1097,113 @@ include 'header.php';
 <!-- ========================================= -->
 
 <script>
-
-document.addEventListener('DOMContentLoaded', function () {
-
-
-    const form = document.getElementById('bookingForm');
-
-    const amount = document.getElementById('selectedAmount');
-
-    const message = document.getElementById('bookingMessage');
+    document.addEventListener('DOMContentLoaded', function() {
 
 
-    if (!form || !amount) {
-        return;
-    }
+        const form = document.getElementById('bookingForm');
+
+        const amount = document.getElementById('selectedAmount');
+
+        const message = document.getElementById('bookingMessage');
 
 
-    /*
-    |--------------------------------------------------------------------------
-    | Prices From Database
-    |--------------------------------------------------------------------------
-    */
-
-    const rentalPrice = <?= json_encode($rentalPrice !== null ? '₹' . $rentalPrice : 'Contact Us') ?>;
-
-    const purchasePrice = <?= json_encode($purchasePrice !== null ? '₹' . $purchasePrice : 'Contact Us') ?>;
-
-
-    /*
-    |--------------------------------------------------------------------------
-    | Change Amount When Booking Type Changes
-    |--------------------------------------------------------------------------
-    */
-
-    document
-        .querySelectorAll('input[name="booking_type"]')
-        .forEach(function (radio) {
-
-            radio.addEventListener('change', function () {
-
-                if (this.value === 'purchase') {
-
-                    amount.textContent = purchasePrice;
-
-                } else {
-
-                    amount.textContent = rentalPrice;
-
-                }
-
-            });
-
-        });
-
-
-    /*
-    |--------------------------------------------------------------------------
-    | Booking Form
-    |--------------------------------------------------------------------------
-    */
-
-    form.addEventListener('submit', function (event) {
-
-        event.preventDefault();
-
-
-        const mobileInput = document.getElementById('mobile');
-
-        const mobile = mobileInput.value.trim();
-
-
-        /*
-        |--------------------------------------------------------------------------
-        | Mobile Validation
-        |--------------------------------------------------------------------------
-        */
-
-        if (!/^[0-9]{10}$/.test(mobile)) {
-
-            alert('Please enter a valid 10-digit mobile number.');
-
-            mobileInput.focus();
-
+        if (!form || !amount) {
             return;
-
         }
 
 
         /*
         |--------------------------------------------------------------------------
-        | Current UI-only Message
+        | Prices From Database
         |--------------------------------------------------------------------------
         */
 
-        message.classList.remove('hidden');
+        const rentalPrice = <?= json_encode($rentalPrice !== null ? '₹' . $rentalPrice : 'Contact Us') ?>;
 
-        message.textContent =
-            'This is currently a UI-only booking form. Payment integration will be connected after the booking flow is finalized.';
+        const purchasePrice = <?= json_encode($purchasePrice !== null ? '₹' . $purchasePrice : 'Contact Us') ?>;
 
 
-        message.scrollIntoView({
-            behavior: 'smooth',
-            block: 'nearest'
+        /*
+        |--------------------------------------------------------------------------
+        | Change Amount When Booking Type Changes
+        |--------------------------------------------------------------------------
+        */
+
+        document
+            .querySelectorAll('input[name="booking_type"]')
+            .forEach(function(radio) {
+
+                radio.addEventListener('change', function() {
+
+                    if (this.value === 'purchase') {
+
+                        amount.textContent = purchasePrice;
+
+                    } else {
+
+                        amount.textContent = rentalPrice;
+
+                    }
+
+                });
+
+            });
+
+
+        /*
+        |--------------------------------------------------------------------------
+        | Booking Form
+        |--------------------------------------------------------------------------
+        */
+
+        form.addEventListener('submit', function(event) {
+
+            event.preventDefault();
+
+
+            const mobileInput = document.getElementById('mobile');
+
+            const mobile = mobileInput.value.trim();
+
+
+            /*
+            |--------------------------------------------------------------------------
+            | Mobile Validation
+            |--------------------------------------------------------------------------
+            */
+
+            if (!/^[0-9]{10}$/.test(mobile)) {
+
+                alert('Please enter a valid 10-digit mobile number.');
+
+                mobileInput.focus();
+
+                return;
+
+            }
+
+
+            /*
+            |--------------------------------------------------------------------------
+            | Current UI-only Message
+            |--------------------------------------------------------------------------
+            */
+
+            message.classList.remove('hidden');
+
+            message.textContent =
+                'This is currently a UI-only booking form. Payment integration will be connected after the booking flow is finalized.';
+
+
+            message.scrollIntoView({
+                behavior: 'smooth',
+                block: 'nearest'
+            });
+
         });
 
+
     });
-
-
-});
-
 </script>
 
 
