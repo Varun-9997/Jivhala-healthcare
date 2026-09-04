@@ -358,6 +358,11 @@ include 'header.php';
                         id="bookingForm"
                         class="p-5 space-y-4">
 
+                        <input
+                            type="hidden"
+                            name="equipment_id"
+                            value="<?= (int) $product['id'] ?>">
+
 
                         <!-- NAME -->
 
@@ -593,10 +598,7 @@ include 'header.php';
 
                         <p
                             id="bookingMessage"
-                            class="hidden text-xs text-teal-700 bg-teal-50 border border-teal-100 rounded-lg p-3">
-
-                            This is currently a UI-only booking form. Payment integration will be connected after the booking flow is finalized.
-
+                            class="hidden text-xs rounded-lg p-3">
                         </p>
 
 
@@ -1092,6 +1094,8 @@ include 'header.php';
 
 
 
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
 <!-- ========================================= -->
 <!-- BOOKING JAVASCRIPT -->
 <!-- ========================================= -->
@@ -1099,15 +1103,11 @@ include 'header.php';
 <script>
     document.addEventListener('DOMContentLoaded', function() {
 
-
         const form = document.getElementById('bookingForm');
-
         const amount = document.getElementById('selectedAmount');
-
         const message = document.getElementById('bookingMessage');
 
-
-        if (!form || !amount) {
+        if (!form || !amount || !message) {
             return;
         }
 
@@ -1118,14 +1118,33 @@ include 'header.php';
         |--------------------------------------------------------------------------
         */
 
-        const rentalPrice = <?= json_encode($rentalPrice !== null ? '₹' . $rentalPrice : 'Contact Us') ?>;
+        const rentalPrice = <?= json_encode(
+                                $rentalPrice !== null
+                                    ? '₹' . $rentalPrice
+                                    : 'Contact Us'
+                            ) ?>;
 
-        const purchasePrice = <?= json_encode($purchasePrice !== null ? '₹' . $purchasePrice : 'Contact Us') ?>;
+        const purchasePrice = <?= json_encode(
+                                    $purchasePrice !== null
+                                        ? '₹' . $purchasePrice
+                                        : 'Contact Us'
+                                ) ?>;
 
 
         /*
         |--------------------------------------------------------------------------
-        | Change Amount When Booking Type Changes
+        | Submit Button
+        |--------------------------------------------------------------------------
+        */
+
+        const submitButton = form.querySelector(
+            'button[type="submit"]'
+        );
+
+
+        /*
+        |--------------------------------------------------------------------------
+        | Change Amount
         |--------------------------------------------------------------------------
         */
 
@@ -1152,7 +1171,7 @@ include 'header.php';
 
         /*
         |--------------------------------------------------------------------------
-        | Booking Form
+        | Form Submit
         |--------------------------------------------------------------------------
         */
 
@@ -1161,38 +1180,304 @@ include 'header.php';
             event.preventDefault();
 
 
-            const mobileInput = document.getElementById('mobile');
-
-            const mobile = mobileInput.value.trim();
-
-
             /*
             |--------------------------------------------------------------------------
             | Mobile Validation
             |--------------------------------------------------------------------------
             */
 
+            const mobileInput = document.getElementById('mobile');
+
+            const mobile = mobileInput.value.trim();
+
             if (!/^[0-9]{10}$/.test(mobile)) {
 
-                alert('Please enter a valid 10-digit mobile number.');
+                showMessage(
+                    'Please enter a valid 10-digit mobile number.',
+                    'error'
+                );
 
                 mobileInput.focus();
 
                 return;
-
             }
 
 
             /*
             |--------------------------------------------------------------------------
-            | Current UI-only Message
+            | Browser Validation
             |--------------------------------------------------------------------------
             */
 
-            message.classList.remove('hidden');
+            if (!form.checkValidity()) {
 
-            message.textContent =
-                'This is currently a UI-only booking form. Payment integration will be connected after the booking flow is finalized.';
+                form.reportValidity();
+
+                return;
+            }
+
+
+            /*
+            |--------------------------------------------------------------------------
+            | Disable Button
+            |--------------------------------------------------------------------------
+            */
+
+            submitButton.disabled = true;
+
+            submitButton.innerHTML = `
+            <span class="inline-flex items-center gap-2">
+                <span class="h-4 w-4 border-2 border-white/40 border-t-white rounded-full animate-spin"></span>
+                Processing...
+            </span>
+        `;
+
+
+            /*
+            |--------------------------------------------------------------------------
+            | Hide Previous Message
+            |--------------------------------------------------------------------------
+            */
+
+            message.classList.add('hidden');
+
+
+            /*
+            |--------------------------------------------------------------------------
+            | Form Data
+            |--------------------------------------------------------------------------
+            */
+
+            const formData = new FormData(form);
+
+
+            /*
+            |--------------------------------------------------------------------------
+            | Send Booking To PHP
+            |--------------------------------------------------------------------------
+            */
+
+            fetch('process_booking.php', {
+
+                    method: 'POST',
+
+                    body: formData
+
+                })
+
+                .then(function(response) {
+
+                    return response.text().then(function(text) {
+
+                        console.log('Server response:', text);
+
+                        let data;
+
+                        try {
+
+                            data = JSON.parse(text);
+
+                        } catch (error) {
+
+                            throw new Error(
+                                'Invalid server response: ' + text
+                            );
+
+                        }
+
+                        return data;
+
+                    });
+
+                })
+
+                .then(function(data) {
+
+                    /*
+                    |--------------------------------------------------------------------------
+                    | Successful Booking
+                    |--------------------------------------------------------------------------
+                    */
+
+                    if (data.success) {
+
+                        const options = {
+                            key: data.razorpay_key_id,
+                            amount: data.razorpay_amount,
+                            currency: 'INR',
+                            name: 'Jivhala Healthcare',
+                            description: data.equipment_name,
+                            order_id: data.razorpay_order_id,
+
+                            prefill: {
+                                name: data.customer_name,
+                                contact: data.mobile,
+                                email: data.email || ''
+                            },
+
+                            theme: {
+                                color: '#2563EB'
+                            },
+
+                            handler: function(response) {
+
+                                console.log('Razorpay payment response:', response);
+
+                                const paymentData = new FormData();
+
+                                paymentData.append(
+                                    'razorpay_payment_id',
+                                    response.razorpay_payment_id
+                                );
+
+                                paymentData.append(
+                                    'razorpay_order_id',
+                                    response.razorpay_order_id
+                                );
+
+                                paymentData.append(
+                                    'razorpay_signature',
+                                    response.razorpay_signature
+                                );
+
+                                fetch('verify_payment.php', {
+                                        method: 'POST',
+                                        body: paymentData
+                                    })
+                                    .then(response => response.json())
+                                    .then(data => {
+
+                                        console.log('Payment verification response:', data);
+
+                                        if (data.success) {
+
+                                            alert(
+                                                'Payment successful!\n\n' +
+                                                'Booking Number: ' + data.booking_number
+                                            );
+
+                                            /*
+                                             * For now, reload the page so we can verify
+                                             * the database status.
+                                             */
+                                            window.location.reload();
+
+                                        } else {
+
+                                            alert(
+                                                'Payment verification failed.\n\n' +
+                                                (data.message || 'Please contact us.')
+                                            );
+                                        }
+
+                                    })
+                                    .catch(error => {
+
+                                        console.error(
+                                            'Payment verification error:',
+                                            error
+                                        );
+
+                                        alert(
+                                            'Payment was completed, but we could not verify it right now. ' +
+                                            'Please contact us with your payment details.'
+                                        );
+                                    });
+                            },
+
+                            modal: {
+                                ondismiss: function() {
+                                    console.log('Razorpay Checkout closed.');
+                                    enableButton();
+                                }
+                            }
+                        };
+
+                        const razorpay = new Razorpay(options);
+
+                        razorpay.open();
+                    } else {
+
+                        /*
+                        |--------------------------------------------------------------------------
+                        | PHP Validation / Database Error
+                        |--------------------------------------------------------------------------
+                        */
+
+                        showMessage(
+                            data.message || 'Unable to submit booking.',
+                            'error'
+                        );
+
+                        enableButton();
+
+                    }
+
+                })
+
+                .catch(function(error) {
+
+                    console.error(
+                        'Booking Error:',
+                        error
+                    );
+
+                    showMessage(
+                        error.message ||
+                        'Unable to submit your booking right now. Please try again.',
+                        'error'
+                    );
+
+                    enableButton();
+
+                });
+
+        });
+
+
+        /*
+        |--------------------------------------------------------------------------
+        | Show Message
+        |--------------------------------------------------------------------------
+        */
+
+        function showMessage(text, type) {
+
+            message.classList.remove(
+                'hidden',
+                'text-teal-700',
+                'bg-teal-50',
+                'border-teal-100',
+                'text-red-700',
+                'bg-red-50',
+                'border-red-100',
+                'border'
+            );
+
+
+            message.classList.add('border');
+
+
+            if (type === 'success') {
+
+                message.classList.add(
+                    'text-teal-700',
+                    'bg-teal-50',
+                    'border-teal-100'
+                );
+
+            } else {
+
+                message.classList.add(
+                    'text-red-700',
+                    'bg-red-50',
+                    'border-red-100'
+                );
+
+            }
+
+
+            message.innerHTML = text;
 
 
             message.scrollIntoView({
@@ -1200,8 +1485,42 @@ include 'header.php';
                 block: 'nearest'
             });
 
-        });
+        }
 
+
+        /*
+        |--------------------------------------------------------------------------
+        | Enable Button
+        |--------------------------------------------------------------------------
+        */
+
+        function enableButton() {
+
+            submitButton.disabled = false;
+
+            submitButton.innerHTML = `
+            Book Now
+            <span>→</span>
+        `;
+
+        }
+
+
+        /*
+        |--------------------------------------------------------------------------
+        | Escape HTML
+        |--------------------------------------------------------------------------
+        */
+
+        function escapeHtml(value) {
+
+            const div = document.createElement('div');
+
+            div.textContent = value ?? '';
+
+            return div.innerHTML;
+
+        }
 
     });
 </script>
