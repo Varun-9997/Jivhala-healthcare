@@ -106,7 +106,7 @@ $adminRole = $_SESSION['admin_role'] ?? 'admin';
 
             <div class="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-full overflow-hidden border border-slate-200 shrink-0 hidden sm:flex items-center justify-center bg-white shadow-sm">
                 <img
-                    src="../img/JHCLOGO-modified.jpg"
+                    src="../img/JHCLOGO-modified.png"
                     alt="Jivhala Healthcare"
                     class="w-full h-full object-cover">
             </div>

@@ -31,17 +31,17 @@
 
     <!-- Logo Image -->
     <img
-        src="img/JHCLOGO.jpeg"
-        alt="Portea Logo"
-        class="w-24 h-20  md:w-20 md:h-20 object-contain flex-shrink-0"
+        src="img/JHCLOGO-modified.png"
+        alt="Jivhala Healthcare Logo"
+        class="w-auto h-16 md:h-16 object-contain flex-shrink-0"
     >
 
     <!-- Logo Text -->
     <div class="flex flex-col leading-none">
-        <h1 class="text-xl  md:text-2xl font-black tracking-wide text-white">
+        <h1 class="text-xl md:text-2xl font-black tracking-wide text-white">
             JIVHALA
         </h1>
-        <span class="text-[10px]  md:text-xs font-semibold uppercase tracking-[0.2em] text-slate-100 mt-1">
+        <span class="text-[10px] md:text-xs font-semibold uppercase tracking-[0.2em] text-slate-100 mt-1">
            HEATHCARE SERVICES
         </span>
     </div>

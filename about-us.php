@@ -1,553 +1,334 @@
+<?php 
+  $pageTitle = "About Us - Jivhala Healthcare Services Private Limited";
+  include 'header.php'; 
+?>
+
+<!-- ================= SECTION 1: HERO BANNER ================= -->
+<section class="relative overflow-hidden bg-cover bg-center py-16 sm:py-24 border-b border-slate-200" 
+         style="background-image: linear-gradient(to right, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.65)), url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=1600&auto=format&fit=crop');">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-4">
+    <span class="inline-block text-xs font-bold uppercase tracking-widest text-teal-300 bg-teal-950/60 border border-teal-500/30 px-3 py-1 rounded-full">
+      A Journey Built on Struggle, Trust &amp; Compassion
+    </span>
+    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight font-serif leading-tight">
+      Professional Care with a <span class="text-teal-400">Human Touch</span>
+    </h1>
+    <p class="text-slate-200 text-sm sm:text-base leading-relaxed max-w-2xl font-normal">
+      Healthcare is not just about delivering a service. It is about care, dignity, genuine empathy, and the sacred trust families place in our hands.
+    </p>
+
+    <!-- Breadcrumb -->
+    <nav class="text-xs text-slate-300 pt-3 flex items-center gap-2" aria-label="Breadcrumb">
+      <a href="/" class="hover:text-teal-300 transition-colors">Home</a>
+      <span class="text-slate-500">/</span>
+      <span class="text-white font-medium">About Us</span>
+    </nav>
+  </div>
+</section>
 
 
-    <title>About us </title>
-
-
-
-
-<?php include 'header.php'; ?>
-  <!-- ================= SECTION 1: HERO BANNER ================= -->
-  <section class="relative overflow-hidden bg-cover bg-center py-12 sm:py-20 border-b border-amber-100/60" 
-           style="background-image: linear-gradient(to right, rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.45)), url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=1600&auto=format&fit=crop');">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-4">
-      <p class="text-[11px] sm:text-xs font-bold uppercase tracking-widest text-teal-300">
-        INDIA'S HOME HEALTHCARE PIONEERS - SINCE 2013
-      </p>
-      <h1 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight font-serif">
-        About Portea
-      </h1>
-      <p class="text-slate-200 text-xs sm:text-base leading-relaxed max-w-xl font-medium">
-        Quality medical care, brought to the comfort of your home.
-      </p>
-
-      <!-- Breadcrumb Navigation -->
-      <nav class="text-[11px] text-slate-300 pt-2 flex items-center gap-1.5 flex-wrap">
-        <a href="#" class="hover:text-teal-300 transition-colors">Home</a>
-        <span>&gt;</span>
-        <span class="text-white font-semibold">About Us</span>
-      </nav>
-    </div>
-  </section>
-
-
-  <!-- ================= SECTION 2: KEY STATS & METRICS ================= -->
-  <section class="py-8 sm:py-10 bg-white/80 border-b border-amber-100/60 shadow-xs">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 divide-x-0 md:divide-x divide-slate-200/60 text-center">
-        
-        <!-- Stat 1 -->
-        <div class="space-y-1 p-2">
-          <h3 class="text-2xl sm:text-4xl font-extrabold text-teal-700 font-serif">100+</h3>
-          <p class="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-slate-500">
-            HOSPITAL PARTNERS
-          </p>
-        </div>
-
-        <!-- Stat 2 -->
-        <div class="space-y-1 p-2">
-          <h3 class="text-2xl sm:text-4xl font-extrabold text-teal-700 font-serif">20 Lakh+</h3>
-          <p class="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-slate-500">
-            PATIENTS SERVED
-          </p>
-        </div>
-
-        <!-- Stat 3 -->
-        <div class="space-y-1 p-2">
-          <h3 class="text-2xl sm:text-4xl font-extrabold text-teal-700 font-serif">135</h3>
-          <p class="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-slate-500">
-            CITIES ACROSS INDIA
-          </p>
-        </div>
-
-        <!-- Stat 4 -->
-        <div class="space-y-1 p-2">
-          <h3 class="text-2xl sm:text-4xl font-extrabold text-teal-700 font-serif">2013</h3>
-          <p class="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-slate-500">
-            PIONEERING HOME CARE SINCE
-          </p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ================= SECTION 3: WHO WE ARE (INTRO) ================= -->
-  <section class="py-12 sm:py-16">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-        
-        <!-- Content Side -->
-        <div class="lg:col-span-7 space-y-4 text-left">
-          <p class="text-[11px] sm:text-xs font-bold uppercase tracking-widest text-slate-500">
-            WHO WE ARE
-          </p>
-          <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 font-serif leading-tight">
-            Portea - <span class="text-[#A6292F]">Heal in the Comfort</span> of Your Home
-          </h2>
-          <p class="text-slate-600 text-xs sm:text-base leading-relaxed">
-            Portea Medical delivers quality care with compassion. We bring quality medical care into our patients' homes and aim to make primary healthcare not only more accessible, but also more affordable and accountable to our patients' needs.
-          </p>
-        </div>
-
-        <!-- Visual Side -->
-        <div class="lg:col-span-5 flex justify-center lg:justify-end">
-          <div class="relative w-full max-w-md aspect-4/3 sm:aspect-square rounded-3xl overflow-hidden shadow-lg border border-slate-200">
-            <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?q=80&w=800&auto=format&fit=crop" 
-                 alt="Healthcare specialist assisting elderly patient at home" 
-                 class="w-full h-full object-cover filter contrast-105" />
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ================= SECTION 4: VISION & MISSION CARDS ================= -->
-  <section class="pb-12 sm:pb-16">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
-        
-        <!-- Card 1: Vision -->
-        <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200/80 shadow-xs space-y-4 hover:shadow-md transition-shadow">
-          <div class="w-10 h-10 rounded-full bg-teal-50 text-teal-600 border border-teal-200 flex items-center justify-center text-lg font-bold">
-            👁️
-          </div>
-          <h3 class="text-lg sm:text-xl font-bold text-slate-900 font-serif">
-            Our Vision
-          </h3>
-          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-            Portea Medical aims to deliver quality 'out-of-hospital' medical care, which is affordable and easily accessible to patients, thus improving the quality of life of patients and families.
-          </p>
-        </div>
-
-        <!-- Card 2: Mission -->
-        <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200/80 shadow-xs space-y-4 hover:shadow-md transition-shadow">
-          <div class="w-10 h-10 rounded-full bg-teal-50 text-teal-600 border border-teal-200 flex items-center justify-center text-lg font-bold">
-            🧭
-          </div>
-          <h3 class="text-lg sm:text-xl font-bold text-slate-900 font-serif">
-            Our Mission
-          </h3>
-          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-            To provide the best care to every patient through a strong focus on service excellence and simplified processes guided by evidence-based medical care and technology across Preventive Care, Pre/Post Natal Care, Post-operative Care, Critical Care, Chronic Disease Management, Palliative Care &amp; Elder Care.
-          </p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ================= SECTION 5: MANAGEMENT TEAM ================= -->
-  <section class="py-12 sm:py-16 bg-white border-t border-b border-slate-200/60">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+<!-- ================= SECTION 2: THE FOUNDER'S STORY ================= -->
+<section class="py-14 sm:py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
       
-      <div class="text-center space-y-1">
-        <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 font-serif">
-          Meet Our Team
+      <div class="lg:col-span-7 space-y-5">
+        <p class="text-xs font-bold uppercase tracking-widest text-teal-700">Where Our Journey Began</p>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 leading-tight font-serif">
+          Born from Personal Hardship &amp; Family Responsibility
         </h2>
-        <p class="text-xs sm:text-sm font-bold uppercase tracking-wider text-teal-700 pt-1">
-          Management Team
+        
+        <div class="space-y-4 text-slate-600 text-sm sm:text-base leading-relaxed">
+          <p>
+            Our family had been involved in business from the beginning. However, after our father suffered a severe accident, our family business endured major losses and managing family needs became an immense uphill battle.
+          </p>
+          <p>
+            As the eldest child, financial responsibility fell directly onto my shoulders. After completing the 12th standard, I relocated to Pune for higher education while searching relentlessly for work. Managing household expenses on a single beginner's income was exceptionally hard.
+          </p>
+          <p>
+            Simultaneously, my father required continuous physical care and daily assistance, yet dependable, compassionate support was virtually impossible to find. That critical phase sparked a life-changing realization:
+          </p>
+          <blockquote class="p-4 rounded-xl bg-teal-50 border-l-4 border-teal-600 text-teal-950 font-medium italic">
+            “If my family is facing this challenge, there must be countless other families going through the exact same struggle.”
+          </blockquote>
+          <p>
+            That single realization was the seed that grew into our life's mission.
+          </p>
+        </div>
+      </div>
+
+      <div class="lg:col-span-5">
+        <div class="relative rounded-3xl overflow-hidden shadow-xl border border-slate-200">
+          <img src="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?q=80&w=800&auto=format&fit=crop" 
+               alt="Caregiver holding patient hand" 
+               class="w-full h-full object-cover" />
+          <div class="absolute bottom-0 inset-x-0 p-6 bg-gradient-to-t from-slate-950/90 to-transparent text-white">
+            <p class="text-xs font-bold uppercase tracking-wider text-teal-300">Our Guiding Principle</p>
+            <p class="text-sm font-semibold mt-1">“Providing a service may be easy, but earning and maintaining someone's trust is a sacred responsibility.”</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= SECTION 3: EVOLUTION TIMELINE ================= -->
+<section class="py-14 sm:py-20 bg-slate-50 border-t border-b border-slate-200">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+    
+    <div class="text-center max-w-2xl mx-auto space-y-2">
+      <p class="text-xs font-bold uppercase tracking-widest text-teal-700">Milestones of Trust</p>
+      <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 font-serif">Our Growth Through the Years</h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <!-- Stage 1 -->
+      <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-xs relative space-y-4">
+        <span class="inline-block text-xs font-extrabold text-teal-700 bg-teal-50 border border-teal-200 px-3 py-1 rounded-full">
+          2010
+        </span>
+        <h3 class="text-xl font-bold text-slate-900">Helping Hands Facilities</h3>
+        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+          Started with modest resources in Pune, delivering manpower and personal support services through sheer determination, hard work, and patient-first dedication.
         </p>
       </div>
 
-      <!-- Team Grid -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-
-        <!-- Member 1 -->
-        <div class="bg-[#faf7f2] rounded-2xl p-4 border border-slate-200 shadow-xs space-y-3 flex flex-col justify-between">
-          <div class="space-y-3">
-            <div class="aspect-4/3 sm:aspect-square rounded-xl overflow-hidden bg-slate-100">
-              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=600&auto=format&fit=crop" 
-                   alt="Meena Ganesh" class="w-full h-full object-cover object-top" />
-            </div>
-            <div>
-              <h3 class="text-base font-bold text-slate-900">Meena Ganesh</h3>
-              <p class="text-[11px] font-bold text-teal-700 uppercase tracking-wide">CO-FOUNDER AND CHAIRPERSON</p>
-            </div>
-          </div>
-          
-          <!-- Accordion Click Open -->
-          <details class="group border-t border-slate-200/80 pt-2">
-            <summary class="flex items-center justify-between cursor-pointer select-none text-[11px] font-bold text-teal-700 hover:text-teal-900 transition-colors">
-              <span>Know More</span>
-              <span class="text-sm font-bold transition-transform duration-300 group-open:rotate-45">+</span>
-            </summary>
-            <p class="pt-2 text-xs text-slate-600 leading-relaxed">
-              Meena Ganesh is a veteran healthcare entrepreneur with over 3 decades of experience scaling consumer service platforms and pioneer initiatives across India.
-            </p>
-          </details>
-        </div>
-
-        <!-- Member 2 -->
-        <div class="bg-[#faf7f2] rounded-2xl p-4 border border-slate-200 shadow-xs space-y-3 flex flex-col justify-between">
-          <div class="space-y-3">
-            <div class="aspect-4/3 sm:aspect-square rounded-xl overflow-hidden bg-slate-100">
-              <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=600&auto=format&fit=crop" 
-                   alt="Ganesh Krishnan" class="w-full h-full object-cover object-top" />
-            </div>
-            <div>
-              <h3 class="text-base font-bold text-slate-900">Ganesh Krishnan</h3>
-              <p class="text-[11px] font-bold text-teal-700 uppercase tracking-wide">CO-FOUNDER &amp; DIRECTOR</p>
-            </div>
-          </div>
-          
-          <details class="group border-t border-slate-200/80 pt-2">
-            <summary class="flex items-center justify-between cursor-pointer select-none text-[11px] font-bold text-teal-700 hover:text-teal-900 transition-colors">
-              <span>Know More</span>
-              <span class="text-sm font-bold transition-transform duration-300 group-open:rotate-45">+</span>
-            </summary>
-            <p class="pt-2 text-xs text-slate-600 leading-relaxed">
-              Serial entrepreneur and angel investor driving strategic governance, corporate expansion, and operational excellence for out-of-hospital medical services.
-            </p>
-          </details>
-        </div>
-
-        <!-- Member 3 -->
-        <div class="bg-[#faf7f2] rounded-2xl p-4 border border-slate-200 shadow-xs space-y-3 flex flex-col justify-between">
-          <div class="space-y-3">
-            <div class="aspect-4/3 sm:aspect-square rounded-xl overflow-hidden bg-slate-100">
-              <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=600&auto=format&fit=crop" 
-                   alt="Vaibhav Tewari" class="w-full h-full object-cover object-top" />
-            </div>
-            <div>
-              <h3 class="text-base font-bold text-slate-900">Vaibhav Tewari</h3>
-              <p class="text-[11px] font-bold text-teal-700 uppercase tracking-wide">CO-FOUNDER &amp; CEO</p>
-            </div>
-          </div>
-          
-          <details class="group border-t border-slate-200/80 pt-2">
-            <summary class="flex items-center justify-between cursor-pointer select-none text-[11px] font-bold text-teal-700 hover:text-teal-900 transition-colors">
-              <span>Know More</span>
-              <span class="text-sm font-bold transition-transform duration-300 group-open:rotate-45">+</span>
-            </summary>
-            <p class="pt-2 text-xs text-slate-600 leading-relaxed">
-              Spearheading Portea's overall operational vision, technology integration, clinical delivery standards, and nationwide healthcare partnerships.
-            </p>
-          </details>
-        </div>
-
-        <!-- Member 4 -->
-        <div class="bg-[#faf7f2] rounded-2xl p-4 border border-slate-200 shadow-xs space-y-3 flex flex-col justify-between">
-          <div class="space-y-3">
-            <div class="aspect-4/3 sm:aspect-square rounded-xl overflow-hidden bg-slate-100">
-              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=600&auto=format&fit=crop" 
-                   alt="G. Ramasubramani" class="w-full h-full object-cover object-top" />
-            </div>
-            <div>
-              <h3 class="text-base font-bold text-slate-900">G. Ramasubramani</h3>
-              <p class="text-[11px] font-bold text-teal-700 uppercase tracking-wide">CTO &amp; COO</p>
-            </div>
-          </div>
-          
-          <details class="group border-t border-slate-200/80 pt-2">
-            <summary class="flex items-center justify-between cursor-pointer select-none text-[11px] font-bold text-teal-700 hover:text-teal-900 transition-colors">
-              <span>Know More</span>
-              <span class="text-sm font-bold transition-transform duration-300 group-open:rotate-45">+</span>
-            </summary>
-            <p class="pt-2 text-xs text-slate-600 leading-relaxed">
-              Managing technological architecture, digital logistics platforms, and supply chain operations for nationwide patient dispatch.
-            </p>
-          </details>
-        </div>
-
-        <!-- Member 5 -->
-        <div class="bg-[#faf7f2] rounded-2xl p-4 border border-slate-200 shadow-xs space-y-3 flex flex-col justify-between">
-          <div class="space-y-3">
-            <div class="aspect-4/3 sm:aspect-square rounded-xl overflow-hidden bg-slate-100">
-              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=600&auto=format&fit=crop" 
-                   alt="Surendra Kumar Gupta" class="w-full h-full object-cover object-top" />
-            </div>
-            <div>
-              <h3 class="text-base font-bold text-slate-900">Surendra Kumar Gupta</h3>
-              <p class="text-[11px] font-bold text-teal-700 uppercase tracking-wide">CFO</p>
-            </div>
-          </div>
-          
-          <details class="group border-t border-slate-200/80 pt-2">
-            <summary class="flex items-center justify-between cursor-pointer select-none text-[11px] font-bold text-teal-700 hover:text-teal-900 transition-colors">
-              <span>Know More</span>
-              <span class="text-sm font-bold transition-transform duration-300 group-open:rotate-45">+</span>
-            </summary>
-            <p class="pt-2 text-xs text-slate-600 leading-relaxed">
-              Directing financial strategy, capital allocation, audit compliance, and long-term fiscal planning across all operating vertical lines.
-            </p>
-          </details>
-        </div>
-
-        <!-- Member 6 -->
-        <div class="bg-[#faf7f2] rounded-2xl p-4 border border-slate-200 shadow-xs space-y-3 flex flex-col justify-between">
-          <div class="space-y-3">
-            <div class="aspect-4/3 sm:aspect-square rounded-xl overflow-hidden bg-slate-100">
-              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=600&auto=format&fit=crop" 
-                   alt="Kashif K" class="w-full h-full object-cover object-top" />
-            </div>
-            <div>
-              <h3 class="text-base font-bold text-slate-900">Kashif K</h3>
-              <p class="text-[11px] font-bold text-teal-700 uppercase tracking-wide">CHIEF GROWTH OFFICER</p>
-            </div>
-          </div>
-          
-          <details class="group border-t border-slate-200/80 pt-2">
-            <summary class="flex items-center justify-between cursor-pointer select-none text-[11px] font-bold text-teal-700 hover:text-teal-900 transition-colors">
-              <span>Know More</span>
-              <span class="text-sm font-bold transition-transform duration-300 group-open:rotate-45">+</span>
-            </summary>
-            <p class="pt-2 text-xs text-slate-600 leading-relaxed">
-              Leading market penetration strategies, strategic brand alliances, patient experience metrics, and commercial growth initiatives.
-            </p>
-          </details>
-        </div>
-
+      <!-- Stage 2 -->
+      <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-xs relative space-y-4">
+        <span class="inline-block text-xs font-extrabold text-teal-700 bg-teal-50 border border-teal-200 px-3 py-1 rounded-full">
+          2010 – 2024
+        </span>
+        <h3 class="text-xl font-bold text-slate-900">Multi-City Expansion</h3>
+        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+          Expanded beyond Pune to Mumbai, Nagpur, Chandrapur, Hyderabad, Bhopal, Bilaspur, Balaghat, and Gondia, deepening our hands-on expertise in elderly and post-op care.
+        </p>
       </div>
+
+      <!-- Stage 3 -->
+      <div class="bg-white rounded-2xl p-6 sm:p-8 border border-teal-300 shadow-sm relative space-y-4">
+        <span class="inline-block text-xs font-extrabold text-white bg-teal-700 px-3 py-1 rounded-full">
+          22 February 2024
+        </span>
+        <h3 class="text-xl font-bold text-slate-900">Jivhala Healthcare Pvt Ltd</h3>
+        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+          Formally incorporated to transition over a decade of grassroots service into an organized, corporate healthcare institution serving local families and global NRIs[cite: 1].
+        </p>
+      </div>
+
     </div>
-  </section>
 
-
-  <!-- ================= SECTION 6: ADVISORY PANEL ================= -->
-  <section class="py-12 sm:py-16">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
-      
-      <div class="border-b border-slate-200 pb-3">
-        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 font-serif">
-          Advisory Panel
-        </h2>
-      </div>
-
-      <!-- Advisory Panel Grid -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-
-        <!-- Doctor Card 1 -->
-        <div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-xs flex flex-col justify-between space-y-3 hover:border-teal-400 transition-colors">
-          <div class="space-y-3">
-            <div class="aspect-4/3 rounded-xl overflow-hidden bg-teal-50/50">
-              <img src="https://images.unsplash.com/photo-1594824813566-78a9c39bc7a6?q=80&w=400&auto=format&fit=crop" 
-                   alt="Dr. Renu Raina Sehgal" class="w-full h-full object-cover object-top" />
-            </div>
-            <div>
-              <h3 class="text-sm font-bold text-slate-900">Dr. Renu Raina Sehgal</h3>
-              <p class="text-[10px] font-bold text-teal-700 uppercase tracking-tight">
-                MBBS, DNB, MNAMS, FMAS, CIMP (OBSTETRICS &amp; GYNAECOLOGY, &amp; GYNAE ONCOLOGY)
-              </p>
-            </div>
-          </div>
-          <details class="group border-t border-slate-100 pt-2">
-            <summary class="flex items-center justify-between cursor-pointer text-[11px] font-bold text-teal-700 hover:underline">
-              <span>Know More</span>
-              <span class="transition-transform duration-300 group-open:rotate-45">+</span>
-            </summary>
-            <p class="pt-2 text-[11px] text-slate-600 leading-normal">
-              Senior consultant specializing in high-risk obstetrics, complex gynaecological procedures, and preventive women's wellness protocols.
-            </p>
-          </details>
-        </div>
-
-        <!-- Doctor Card 2 -->
-        <div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-xs flex flex-col justify-between space-y-3 hover:border-teal-400 transition-colors">
-          <div class="space-y-3">
-            <div class="aspect-4/3 rounded-xl overflow-hidden bg-teal-50/50">
-              <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=400&auto=format&fit=crop" 
-                   alt="Dr. Niti Raizada" class="w-full h-full object-cover object-top" />
-            </div>
-            <div>
-              <h3 class="text-sm font-bold text-slate-900">Dr. Niti Raizada</h3>
-              <p class="text-[10px] font-bold text-teal-700 uppercase tracking-tight">
-                MBBS, MD, DNB, DM, ECMO, MRCP, SMPH (MEDICAL &amp; HAEMATO - ONCOLOGY)
-              </p>
-            </div>
-          </div>
-          <details class="group border-t border-slate-100 pt-2">
-            <summary class="flex items-center justify-between cursor-pointer text-[11px] font-bold text-teal-700 hover:underline">
-              <span>Know More</span>
-              <span class="transition-transform duration-300 group-open:rotate-45">+</span>
-            </summary>
-            <p class="pt-2 text-[11px] text-slate-600 leading-normal">
-              Leading medical oncologist offering guidance on home chemotherapy monitoring and specialized palliative care pathways.
-            </p>
-          </details>
-        </div>
-
-        <!-- Doctor Card 3 -->
-        <div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-xs flex flex-col justify-between space-y-3 hover:border-teal-400 transition-colors">
-          <div class="space-y-3">
-            <div class="aspect-4/3 rounded-xl overflow-hidden bg-teal-50/50">
-              <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=400&auto=format&fit=crop" 
-                   alt="Dr. Abhradip Das" class="w-full h-full object-cover object-top" />
-            </div>
-            <div>
-              <h3 class="text-sm font-bold text-slate-900">Dr. Abhradip Das</h3>
-              <p class="text-[10px] font-bold text-teal-700 uppercase tracking-tight">
-                MBBS, MD, C.C. COPD, P.G.C. DIABETOLOGY (PULMONOLOGY &amp; CRITICAL CARE)
-              </p>
-            </div>
-          </div>
-          <details class="group border-t border-slate-100 pt-2">
-            <summary class="flex items-center justify-between cursor-pointer text-[11px] font-bold text-teal-700 hover:underline">
-              <span>Know More</span>
-              <span class="transition-transform duration-300 group-open:rotate-45">+</span>
-            </summary>
-            <p class="pt-2 text-[11px] text-slate-600 leading-normal">
-              Critical care and pulmonology expert overseeing respiratory home-support programs, BiPAP/CPAP setups, and COPD care.
-            </p>
-          </details>
-        </div>
-
-        <!-- Doctor Card 4 -->
-        <div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-xs flex flex-col justify-between space-y-3 hover:border-teal-400 transition-colors">
-          <div class="space-y-3">
-            <div class="aspect-4/3 rounded-xl overflow-hidden bg-teal-50/50">
-              <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=400&auto=format&fit=crop" 
-                   alt="Dr. Rajul Aggarwal" class="w-full h-full object-cover object-top" />
-            </div>
-            <div>
-              <h3 class="text-sm font-bold text-slate-900">Dr. Rajul Aggarwal</h3>
-              <p class="text-[10px] font-bold text-teal-700 uppercase tracking-tight">
-                MBBS, MD, DM (NEUROLOGY &amp; NEURO CRITICAL CARE)
-              </p>
-            </div>
-          </div>
-          <details class="group border-t border-slate-100 pt-2">
-            <summary class="flex items-center justify-between cursor-pointer text-[11px] font-bold text-teal-700 hover:underline">
-              <span>Know More</span>
-              <span class="transition-transform duration-300 group-open:rotate-45">+</span>
-            </summary>
-            <p class="pt-2 text-[11px] text-slate-600 leading-normal">
-              Neurology advisor focusing on home rehabilitation for stroke recovery, Parkinson's care, and chronic neurological management.
-            </p>
-          </details>
-        </div>
-
-        <!-- Doctor Card 5 -->
-        <div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-xs flex flex-col justify-between space-y-3 hover:border-teal-400 transition-colors">
-          <div class="space-y-3">
-            <div class="aspect-4/3 rounded-xl overflow-hidden bg-teal-50/50">
-              <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?q=80&w=400&auto=format&fit=crop" 
-                   alt="Dr. Haseeb Hassan" class="w-full h-full object-cover object-top" />
-            </div>
-            <div>
-              <h3 class="text-sm font-bold text-slate-900">Dr. Haseeb Hassan</h3>
-              <p class="text-[10px] font-bold text-teal-700 uppercase tracking-tight">
-                MBBS, MD, DM (NEUROLOGY)
-              </p>
-            </div>
-          </div>
-          <details class="group border-t border-slate-100 pt-2">
-            <summary class="flex items-center justify-between cursor-pointer text-[11px] font-bold text-teal-700 hover:underline">
-              <span>Know More</span>
-              <span class="transition-transform duration-300 group-open:rotate-45">+</span>
-            </summary>
-            <p class="pt-2 text-[11px] text-slate-600 leading-normal">
-              Specialist in adult neurology, peripheral neuropathy, and post-hospital neurological nursing care strategies.
-            </p>
-          </details>
-        </div>
-
-        <!-- Doctor Card 6 -->
-        <div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-xs flex flex-col justify-between space-y-3 hover:border-teal-400 transition-colors">
-          <div class="space-y-3">
-            <div class="aspect-4/3 rounded-xl overflow-hidden bg-teal-50/50">
-              <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?q=80&w=400&auto=format&fit=crop" 
-                   alt="Dr. Saurabh Maji" class="w-full h-full object-cover object-top" />
-            </div>
-            <div>
-              <h3 class="text-sm font-bold text-slate-900">Dr. Saurabh Maji</h3>
-              <p class="text-[10px] font-bold text-teal-700 uppercase tracking-tight">
-                MBBS, DTCD, MD, DM (PULMONOLOGY)
-              </p>
-            </div>
-          </div>
-          <details class="group border-t border-slate-100 pt-2">
-            <summary class="flex items-center justify-between cursor-pointer text-[11px] font-bold text-teal-700 hover:underline">
-              <span>Know More</span>
-              <span class="transition-transform duration-300 group-open:rotate-45">+</span>
-            </summary>
-            <p class="pt-2 text-[11px] text-slate-600 leading-normal">
-              Expert pulmonologist specializing in asthma management, post-infectious lung recovery, and oxygen therapy at home.
-            </p>
-          </details>
-        </div>
-
-        <!-- Doctor Card 7 -->
-        <div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-xs flex flex-col justify-between space-y-3 hover:border-teal-400 transition-colors">
-          <div class="space-y-3">
-            <div class="aspect-4/3 rounded-xl overflow-hidden bg-teal-50/50">
-              <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=400&auto=format&fit=crop" 
-                   alt="Dr. Ambanna Gowda. D" class="w-full h-full object-cover object-top" />
-            </div>
-            <div>
-              <h3 class="text-sm font-bold text-slate-900">Dr. Ambanna Gowda. D</h3>
-              <p class="text-[10px] font-bold text-teal-700 uppercase tracking-tight">
-                M.B.B.S., M.D. PGDIP, FELLOWSHIP IN DIABETES (INTERNAL MEDICINE &amp; DIABETES)
-              </p>
-            </div>
-          </div>
-          <details class="group border-t border-slate-100 pt-2">
-            <summary class="flex items-center justify-between cursor-pointer text-[11px] font-bold text-teal-700 hover:underline">
-              <span>Know More</span>
-              <span class="transition-transform duration-300 group-open:rotate-45">+</span>
-            </summary>
-            <p class="pt-2 text-[11px] text-slate-600 leading-normal">
-              Consultant internal medicine specialist focusing on continuous glucose monitoring and geriatric lifestyle interventions.
-            </p>
-          </details>
-        </div>
-
-        <!-- Doctor Card 8 -->
-        <div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-xs flex flex-col justify-between space-y-3 hover:border-teal-400 transition-colors">
-          <div class="space-y-3">
-            <div class="aspect-4/3 rounded-xl overflow-hidden bg-teal-50/50">
-              <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?q=80&w=400&auto=format&fit=crop" 
-                   alt="Dr. Sagar C" class="w-full h-full object-cover object-top" />
-            </div>
-            <div>
-              <h3 class="text-sm font-bold text-slate-900">Dr. Sagar C</h3>
-              <p class="text-[10px] font-bold text-teal-700 uppercase tracking-tight">
-                MBBS, DNB (PULMONOLOGY &amp; SLEEP MEDICINE)
-              </p>
-            </div>
-          </div>
-          <details class="group border-t border-slate-100 pt-2">
-            <summary class="flex items-center justify-between cursor-pointer text-[11px] font-bold text-teal-700 hover:underline">
-              <span>Know More</span>
-              <span class="transition-transform duration-300 group-open:rotate-45">+</span>
-            </summary>
-            <p class="pt-2 text-[11px] text-slate-600 leading-normal">
-              Sleep medicine and pulmonary physician advising on sleep apnea studies and home diagnostic protocols.
-            </p>
-          </details>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ================= SECTION 7: CALL TO ACTION FOOTER BANNER ================= -->
-  <section class="bg-[#0b2d28] text-white py-12 sm:py-16 relative overflow-hidden">
-    <!-- Subtle Pattern Overlay -->
-    <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#34d399_1px,transparent_1px)] [background-size:16px_16px]"></div>
-
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 space-y-6">
-      <h2 class="text-2xl sm:text-4xl font-extrabold font-serif tracking-tight text-white">
-        Ready to bring care home?
-      </h2>
-      <p class="text-xs sm:text-sm text-slate-300 max-w-xl mx-auto leading-relaxed">
-        Talk to a care advisor or explore our services – we'll take it from there.
+    <!-- What Jivhala Means Callout -->
+    <div class="bg-teal-900 text-white rounded-2xl p-8 sm:p-10 shadow-lg text-center max-w-4xl mx-auto space-y-3">
+      <h3 class="text-xl sm:text-2xl font-bold font-serif text-teal-200">How “Jivhala” Was Named</h3>
+      <p class="text-sm sm:text-base leading-relaxed text-slate-200">
+        “Jivhala was not simply a name we created. It grew naturally from the genuine affection, warmth, and trust of the clients we served day in and day out.”
       </p>
-
-      <!-- Action Buttons -->
-      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
-        <a href="tel:18001212323" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#A6292F] hover:bg-[#d04a17] text-white font-bold text-xs sm:text-sm uppercase tracking-wider rounded-full shadow-md transition-all transform active:scale-95">
-          <span>📞 1800 121 2323</span>
-        </a>
-        <a href="#services" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 bg-transparent hover:bg-white/10 text-white border border-white/40 font-bold text-xs sm:text-sm tracking-wider rounded-full transition-all">
-          <span>Explore our services →</span>
-        </a>
+      <div class="pt-2 flex flex-wrap justify-center gap-2 sm:gap-3 text-xs font-semibold text-teal-300 uppercase tracking-wider">
+        <span>Care</span> • <span>Affection</span> • <span>Trust</span> • <span>Belonging</span> • <span>Responsibility</span> • <span>Humanity</span>
       </div>
     </div>
-  </section>
 
+  </div>
+</section>
+
+
+<!-- ================= SECTION 4: SERVICES OVERVIEW ================= -->
+<section class="py-14 sm:py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+    <div class="text-center max-w-2xl mx-auto space-y-2">
+      <p class="text-xs font-bold uppercase tracking-widest text-teal-700">What We Do</p>
+      <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 font-serif">Comprehensive Healthcare Services</h2>
+      <p class="text-slate-500 text-xs sm:text-sm">Personalized care plans tailored to individual patient and family requirements.</p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      
+      <div class="p-6 rounded-2xl border border-slate-200 bg-slate-50/50 hover:bg-white hover:border-teal-500 transition shadow-xs space-y-2">
+        <h3 class="font-bold text-slate-900 text-base">Patient Care Services</h3>
+        <p class="text-xs text-slate-600 leading-relaxed">Dedicated male and female attendants for bedridden patients and post-operative monitoring[cite: 1].</p>
+      </div>
+
+      <div class="p-6 rounded-2xl border border-slate-200 bg-slate-50/50 hover:bg-white hover:border-teal-500 transition shadow-xs space-y-2">
+        <h3 class="font-bold text-slate-900 text-base">Nursing Care (GNM / ANM)</h3>
+        <p class="text-xs text-slate-600 leading-relaxed">Administering injections, IV infusions, wound dressing, vitals tracking, and ICU step-down nursing[cite: 1].</p>
+      </div>
+
+      <div class="p-6 rounded-2xl border border-slate-200 bg-slate-50/50 hover:bg-white hover:border-teal-500 transition shadow-xs space-y-2">
+        <h3 class="font-bold text-slate-900 text-base">Elder Care &amp; Companionship</h3>
+        <p class="text-xs text-slate-600 leading-relaxed">Dignified daily living support, medication reminders, hygiene assistance, and mobility exercises[cite: 1].</p>
+      </div>
+
+      <div class="p-6 rounded-2xl border border-slate-200 bg-slate-50/50 hover:bg-white hover:border-teal-500 transition shadow-xs space-y-2">
+        <h3 class="font-bold text-slate-900 text-base">Baby Care &amp; Babysitting</h3>
+        <p class="text-xs text-slate-600 leading-relaxed">Experienced baby attendants and traditional Japa maid support for post-natal mother and newborn care[cite: 1].</p>
+      </div>
+
+      <div class="p-6 rounded-2xl border border-slate-200 bg-slate-50/50 hover:bg-white hover:border-teal-500 transition shadow-xs space-y-2">
+        <h3 class="font-bold text-slate-900 text-base">Physiotherapy &amp; Doctors</h3>
+        <p class="text-xs text-slate-600 leading-relaxed">Physiotherapists and doctor visits scheduled right at your home for hassle-free consultations[cite: 1].</p>
+      </div>
+
+      <div class="p-6 rounded-2xl border border-slate-200 bg-slate-50/50 hover:bg-white hover:border-teal-500 transition shadow-xs space-y-2">
+        <h3 class="font-bold text-slate-900 text-base">Equipment Rental &amp; Sales</h3>
+        <p class="text-xs text-slate-600 leading-relaxed">Hospital beds, oxygen concentrators, BiPAP/CPAP units, wheelchairs, and suction machines[cite: 1].</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= SECTION 5: CORE VALUES ================= -->
+<section class="py-14 sm:py-20 bg-slate-50 border-t border-slate-200">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+    <div class="text-center max-w-2xl mx-auto space-y-2">
+      <p class="text-xs font-bold uppercase tracking-widest text-teal-700">Our Culture</p>
+      <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 font-serif">What We Stand For</h2>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+      
+      <div class="bg-white p-5 rounded-2xl border border-slate-200 space-y-2 text-center">
+        <h3 class="font-bold text-slate-900 text-sm">Compassion</h3>
+        <p class="text-xs text-slate-600 leading-normal">Every individual deserves care guided by empathy, respect, and deep human dignity.</p>
+      </div>
+
+      <div class="bg-white p-5 rounded-2xl border border-slate-200 space-y-2 text-center">
+        <h3 class="font-bold text-slate-900 text-sm">Trust</h3>
+        <p class="text-xs text-slate-600 leading-normal">The trust families grant us is treated as our highest, non-negotiable responsibility.</p>
+      </div>
+
+      <div class="bg-white p-5 rounded-2xl border border-slate-200 space-y-2 text-center">
+        <h3 class="font-bold text-slate-900 text-sm">Responsibility</h3>
+        <p class="text-xs text-slate-600 leading-normal">We manage every patient, family, and staffing requirement with complete seriousness.</p>
+      </div>
+
+      <div class="bg-white p-5 rounded-2xl border border-slate-200 space-y-2 text-center">
+        <h3 class="font-bold text-slate-900 text-sm">Professionalism</h3>
+        <p class="text-xs text-slate-600 leading-normal">Rigorous staff verification, coordination, structured documentation, and clear metrics.</p>
+      </div>
+
+      <div class="bg-white p-5 rounded-2xl border border-slate-200 space-y-2 text-center">
+        <h3 class="font-bold text-slate-900 text-sm">Humanity</h3>
+        <p class="text-xs text-slate-600 leading-normal">Behind every patient is a person, a loving family, and a deeply personal story.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= SECTION 6: FUTURE CONTINUUM OF CARE ================= -->
+<section class="py-14 sm:py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+    <div class="text-center max-w-3xl mx-auto space-y-3">
+      <p class="text-xs font-bold uppercase tracking-widest text-teal-700">Looking Forward</p>
+      <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 font-serif">Building the Complete Continuum of Care</h2>
+      <p class="text-slate-600 text-sm leading-relaxed">
+        Our vision extends beyond in-home care. We are working toward setting up specialized Rehabilitation Centres, Senior Care Facilities, and Assisted Living Communities so no patient is left without support after hospital discharge[cite: 1].
+      </p>
+    </div>
+
+    <!-- Flow Diagram -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+      <div class="p-5 rounded-2xl bg-[#faf7f2] border border-slate-200">
+        <span class="text-xs font-bold text-slate-400 uppercase">Step 01</span>
+        <h3 class="font-bold text-slate-900 mt-1">Hospital</h3>
+      </div>
+      <div class="p-5 rounded-2xl bg-teal-50 border border-teal-200">
+        <span class="text-xs font-bold text-teal-700 uppercase">Step 02</span>
+        <h3 class="font-bold text-teal-950 mt-1">Home Healthcare</h3>
+      </div>
+      <div class="p-5 rounded-2xl bg-[#faf7f2] border border-slate-200">
+        <span class="text-xs font-bold text-slate-400 uppercase">Step 03</span>
+        <h3 class="font-bold text-slate-900 mt-1">Rehabilitation</h3>
+      </div>
+      <div class="p-5 rounded-2xl bg-[#faf7f2] border border-slate-200">
+        <span class="text-xs font-bold text-slate-400 uppercase">Step 04</span>
+        <h3 class="font-bold text-slate-900 mt-1">Assisted Living</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= SECTION 7: DIRECTORS & GOVERNANCE ================= -->
+<section class="py-14 sm:py-20 bg-slate-50 border-t border-slate-200">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+    <div class="text-center space-y-1">
+      <p class="text-xs font-bold uppercase tracking-widest text-teal-700">Governance</p>
+      <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 font-serif">Board of Directors</h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+      
+      <!-- Director 1 -->
+      <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-xs flex flex-col sm:flex-row items-center gap-6 text-center sm:text-left">
+        <div class="w-28 h-28 rounded-full overflow-hidden border-2 border-teal-600 shrink-0 bg-slate-100">
+          <img src="img/dhananjay-sonwane.jpg" 
+               alt="Dhananjay Charandas Sonwane" 
+               class="w-full h-full object-cover"
+               onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400&auto=format&fit=crop'">
+        </div>
+        <div class="space-y-2">
+          <h3 class="text-lg font-bold text-slate-900">Dhananjay Charandas Sonwane</h3>
+          <p class="text-xs font-bold text-teal-700 uppercase">Director</p>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Over 16 years of practical healthcare operations experience, spearheading patient care coordination, institutional staffing, and service standards[cite: 1].
+          </p>
+        </div>
+      </div>
+
+      <!-- Director 2 -->
+      <div class="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-xs flex flex-col sm:flex-row items-center gap-6 text-center sm:text-left">
+        <div class="w-28 h-28 rounded-full overflow-hidden border-2 border-teal-600 shrink-0 bg-slate-100">
+          <img src="img/anita-sonwane.jpg" 
+               alt="Anita Dhananjay Sonwane" 
+               class="w-full h-full object-cover"
+               onerror="this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=400&auto=format&fit=crop'">
+        </div>
+        <div class="space-y-2">
+          <h3 class="text-lg font-bold text-slate-900">Anita Dhananjay Sonwane</h3>
+          <p class="text-xs font-bold text-teal-700 uppercase">Director</p>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Guiding executive administration, internal operations, staff welfare, and ensuring every patient family experiences authentic warmth and accountability.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= SECTION 8: CTA & CONTACT BANNER ================= -->
+<section class="bg-[#0b2d28] text-white py-14 sm:py-20 relative overflow-hidden">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 space-y-6">
+    <h2 class="text-2xl sm:text-4xl font-extrabold tracking-tight font-serif">
+      Because Sometimes, Healthcare Needs More Than Medicine. <br class="hidden sm:inline" />
+      <span class="text-teal-300">It Needs Jivhala.</span>
+    </h2>
+    <p class="text-xs sm:text-sm text-slate-300 max-w-xl mx-auto leading-relaxed">
+      Whether you are in India or an NRI looking after parents back home, our coordinators are here to assist with verified, supervised care.
+    </p>
+
+    <!-- Action Buttons -->
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
+      <a href="tel:+919860390012" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-teal-600 hover:bg-teal-700 text-white font-bold text-xs sm:text-sm uppercase tracking-wider rounded-xl shadow-md transition">
+        <span>Call: +91 9860390012</span>[cite: 1]
+      </a>
+      <a href="mailto:jivhalahealthcare@gmail.com" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-white/10 hover:bg-white/20 text-white border border-white/20 font-bold text-xs sm:text-sm tracking-wider rounded-xl transition">
+        <span>Email Us</span>[cite: 1]
+      </a>
+    </div>
+
+    <p class="text-xs text-slate-400 pt-3">
+      Flat no. S-3, Shobha Tower, near Podar International School, Datala, Chandrapur - 442406[cite: 1]
+    </p>
+  </div>
+</section>
 
 <?php include 'footer.php'; ?>
