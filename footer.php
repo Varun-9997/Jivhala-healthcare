@@ -64,13 +64,13 @@
         <div class="space-y-1 text-xs sm:text-sm">
           <p class="text-white font-bold">For Bookings and Service queries:</p>
           <p class="text-slate-300">Ph: <a href="tel:18001212323" class="hover:text-teal-400 transition-colors">1800 121 2323</a></p>
-          <p class="text-slate-300">Email: <a href="mailto:bookings@portea.com" class="hover:text-teal-400 transition-colors">bookings@portea.com</a></p>
+          <p class="text-slate-300">Email: <a href="mailto:jivhalahealthcare@gmail.com" class="hover:text-teal-400 transition-colors">jivhalahealthcare@gmail.com</a></p>
         </div>
 
         <!-- Customer Support Info -->
         <div class="space-y-1 text-xs sm:text-sm pt-1">
           <p class="text-white font-bold">For Customer Support &amp; Feedback:</p>
-          <p class="text-slate-300">Ph: <a href="tel:18001212323" class="hover:text-teal-400 transition-colors">1800 121 2323</a></p>
+          <p class="text-slate-300">Ph: <a href="tel:+919860390012" class="hover:text-teal-400 transition-colors">+91 9860390012</a></p>
           <p class="text-slate-300">Email: <a href="mailto:customersupport@portea.com" class="hover:text-teal-400 transition-colors">customersupport@portea.com</a></p>
         </div>
 
