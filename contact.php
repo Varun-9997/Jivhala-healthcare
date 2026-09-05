@@ -49,16 +49,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Floating Badge -->
-                <div class="absolute top-5 right-5 bg-white/95 backdrop-blur-sm rounded-2xl px-4 py-2 shadow-xl border border-teal-100 flex items-center gap-3">
-                    <div class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></div>
-                    <p class="text-xs font-bold text-slate-700"><i class="fa-brands fa-whatsapp text-emerald-500 mr-1.5"></i> Quick Response</p>
-                </div>
-                <!-- Rating Badge -->
-                <div class="absolute bottom-24 left-8 bg-white/95 backdrop-blur-sm rounded-2xl px-4 py-2 shadow-xl border border-amber-100 flex items-center gap-2">
-                    <span class="text-amber-400 text-sm">★★★★★</span>
-                    <span class="text-xs font-bold text-slate-700">4.8 <span class="text-slate-400 font-normal">(500+ reviews)</span></span>
-                </div>
+                
             </div>
 
             <!-- Right Column: Contact Form -->

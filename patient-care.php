@@ -1,7 +1,7 @@
 
   
 
-    <title>Patient Care Services </title>
+    <title>Patient Care Services | Jivhala Healthcare</title>
 
 
 <?php include 'header.php' ?>
@@ -25,13 +25,13 @@
             <!-- Left Column: Content -->
             <div class="lg:col-span-7 space-y-5 text-left">
                 <p class="text-[11px] sm:text-xs font-bold uppercase tracking-widest text-teal-700">
-                    HOME CARE YOU CAN TRUST • COMPLETE CARE
+                    PATIENT CARE • HOME HEALTHCARE SUPPORT
                 </p>
                 <h1 class="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight font-serif leading-tight">
                     Patient Care Services at Home
                 </h1>
                 <p class="text-slate-600 text-xs sm:text-base font-semibold leading-relaxed max-w-xl">
-                    Complete care for patients, in the comfort of your home! Experienced care team for senior citizens, bedridden patients, post-surgery patients, or individuals with chronic illnesses.
+                    Jivhala Healthcare provides reliable and compassionate patient care at home, with trained male and female caregivers supporting patients, senior citizens and families.
                 </p>
 
                 <div class="pt-2">
@@ -44,13 +44,13 @@
                 <!-- Trust Badges -->
                 <div class="pt-3 flex flex-wrap items-center gap-3">
                     <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/90 backdrop-blur-sm border border-slate-200 text-slate-700 text-xs font-semibold shadow-xs">
-                        <span class="text-amber-400 font-bold">★ 4.8</span> On Google
+                        <span class="text-teal-600 font-bold">✓</span> Compassionate Care
                     </span>
                     <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/90 backdrop-blur-sm border border-slate-200 text-slate-700 text-xs font-semibold shadow-xs">
-                        <span class="text-teal-600 font-bold">🛡️</span> Background-verified caregivers
+                        <span class="text-teal-600 font-bold">✓</span> Trained Caregivers
                     </span>
                     <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/90 backdrop-blur-sm border border-slate-200 text-slate-700 text-xs font-semibold shadow-xs">
-                        <span class="text-green-600 font-bold">✓</span> 24/7 Support Available
+                        <span class="text-teal-600 font-bold">✓</span> Home Healthcare Support
                     </span>
                 </div>
 
@@ -88,8 +88,8 @@
                 <div class="w-12 h-12 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center text-2xl border border-teal-100">
                     🛡️
                 </div>
-                <h3 class="text-xs sm:text-sm font-bold text-slate-900">SAFE & RELIABLE</h3>
-                <p class="text-[10px] sm:text-xs text-slate-600">Trusted care with proven safety protocols</p>
+                <h3 class="text-xs sm:text-sm font-bold text-slate-900">RELIABLE HOME CARE</h3>
+                <p class="text-[10px] sm:text-xs text-slate-600">Professional support for patients and families</p>
             </div>
 
             <!-- Feature 2 -->
@@ -98,7 +98,7 @@
                     💙
                 </div>
                 <h3 class="text-xs sm:text-sm font-bold text-slate-900">COMPASSIONATE CARE</h3>
-                <p class="text-[10px] sm:text-xs text-slate-600">Empathetic support with dignity</p>
+                <p class="text-[10px] sm:text-xs text-slate-600">Care focused on comfort and dignity</p>
             </div>
 
             <!-- Feature 3 -->
@@ -106,8 +106,8 @@
                 <div class="w-12 h-12 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center text-2xl border border-teal-100">
                     👩‍⚕️
                 </div>
-                <h3 class="text-xs sm:text-sm font-bold text-slate-900">TRAINED & VERIFIED</h3>
-                <p class="text-[10px] sm:text-xs text-slate-600">Background-checked professionals</p>
+                <h3 class="text-xs sm:text-sm font-bold text-slate-900">TRAINED CAREGIVERS</h3>
+                <p class="text-[10px] sm:text-xs text-slate-600">Trained male and female caregivers</p>
             </div>
 
             <!-- Feature 4 -->
@@ -115,8 +115,8 @@
                 <div class="w-12 h-12 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center text-2xl border border-teal-100">
                     ⏰
                 </div>
-                <h3 class="text-xs sm:text-sm font-bold text-slate-900">FLEXIBLE HOURS</h3>
-                <p class="text-[10px] sm:text-xs text-slate-600">Care when you need it most</p>
+                <h3 class="text-xs sm:text-sm font-bold text-slate-900">PATIENT-CENTRIC SUPPORT</h3>
+                <p class="text-[10px] sm:text-xs text-slate-600">Support based on patient and family needs</p>
             </div>
 
             <!-- Feature 5 -->
@@ -124,8 +124,8 @@
                 <div class="w-12 h-12 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center text-2xl border border-teal-100">
                     💰
                 </div>
-                <h3 class="text-xs sm:text-sm font-bold text-slate-900">AFFORDABLE SERVICE</h3>
-                <p class="text-[10px] sm:text-xs text-slate-600">Quality care within budget</p>
+                <h3 class="text-xs sm:text-sm font-bold text-slate-900">INTEGRATED SUPPORT</h3>
+                <p class="text-[10px] sm:text-xs text-slate-600">Patient care with nursing and medical support</p>
             </div>
 
         </div>
@@ -145,24 +145,20 @@
                 </h2>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
                     <ul class="space-y-2 text-sm text-slate-700">
-                        <li class="flex items-start gap-2"><span class="text-teal-600 font-bold">✓</span> Bedridden patient care</li>
-                        <li class="flex items-start gap-2"><span class="text-teal-600 font-bold">✓</span> Bathing, sponge bath & grooming</li>
-                        <li class="flex items-start gap-2"><span class="text-teal-600 font-bold">✓</span> Diaper change & bed cleaning</li>
-                        <li class="flex items-start gap-2"><span class="text-teal-600 font-bold">✓</span> Timely meals & medication</li>
-                        <li class="flex items-start gap-2"><span class="text-teal-600 font-bold">✓</span> Doctor's advice-based care</li>
-                        <li class="flex items-start gap-2"><span class="text-teal-600 font-bold">✓</span> Elderly daily care</li>
-                        <li class="flex items-start gap-2"><span class="text-teal-600 font-bold">✓</span> Post-hospital care</li>
-                        <li class="flex items-start gap-2"><span class="text-teal-600 font-bold">✓</span> Exercise & basic physio</li>
+                        <li class="flex items-start gap-2"><span class="text-teal-600 font-bold">✓</span> Patient Care Services – Male/Female Caretakers</li>
+                        <li class="flex items-start gap-2"><span class="text-teal-600 font-bold">✓</span> Elder Care Services</li>
+                        <li class="flex items-start gap-2"><span class="text-teal-600 font-bold">✓</span> Bedridden Care Support</li>
+                        <li class="flex items-start gap-2"><span class="text-teal-600 font-bold">✓</span> Post-Hospitalization Care</li>
+                        <li class="flex items-start gap-2"><span class="text-teal-600 font-bold">✓</span> Palliative Care Support</li>
+                        <li class="flex items-start gap-2"><span class="text-teal-600 font-bold">✓</span> Nursing Services – Trained Nurses & GNM/ANM</li>
                     </ul>
                     <ul class="space-y-2 text-sm text-slate-700">
-                        <li class="flex items-start gap-2"><span class="text-teal-600 font-bold">✓</span> Companionship & emotional support</li>
-                        <li class="flex items-start gap-2"><span class="text-teal-600 font-bold">✓</span> BP, Sugar, Fever check (Basic)</li>
-                        <li class="flex items-start gap-2"><span class="text-teal-600 font-bold">✓</span> Vital Monitoring</li>
-                        <li class="flex items-start gap-2"><span class="text-teal-600 font-bold">✓</span> Catheter & urine bag care</li>
-                        <li class="flex items-start gap-2"><span class="text-teal-600 font-bold">✓</span> Ryles Tube care</li>
-                        <li class="flex items-start gap-2"><span class="text-teal-600 font-bold">✓</span> Hospital visit accompaniment</li>
-                        <li class="flex items-start gap-2"><span class="text-teal-600 font-bold">✓</span> Emergency assistance</li>
-                        <li class="flex items-start gap-2"><span class="text-teal-600 font-bold">✓</span> Regular updates to family</li>
+                        <li class="flex items-start gap-2"><span class="text-teal-600 font-bold">✓</span> Doctor Visit & Medical Support</li>
+                        <li class="flex items-start gap-2"><span class="text-teal-600 font-bold">✓</span> Physiotherapy Services</li>
+                        <li class="flex items-start gap-2"><span class="text-teal-600 font-bold">✓</span> Baby Care & Japa Maid Services</li>
+                        <li class="flex items-start gap-2"><span class="text-teal-600 font-bold">✓</span> Healthcare Support for Families</li>
+                        <li class="flex items-start gap-2"><span class="text-teal-600 font-bold">✓</span> Home Healthcare Assistance</li>
+                        <li class="flex items-start gap-2"><span class="text-teal-600 font-bold">✓</span> Compassionate Patient Support</li>
                     </ul>
                 </div>
             </div>
@@ -177,10 +173,10 @@
                     <div class="grid grid-cols-2 gap-3">
                         <div class="p-3 bg-teal-50 rounded-xl border border-teal-100 text-center text-sm font-semibold text-slate-700">Senior Citizens</div>
                         <div class="p-3 bg-teal-50 rounded-xl border border-teal-100 text-center text-sm font-semibold text-slate-700">Bedridden Patients</div>
-                        <div class="p-3 bg-teal-50 rounded-xl border border-teal-100 text-center text-sm font-semibold text-slate-700">Post-Surgery Patients</div>
-                        <div class="p-3 bg-teal-50 rounded-xl border border-teal-100 text-center text-sm font-semibold text-slate-700">Chronic Illness Patients</div>
-                        <div class="p-3 bg-teal-50 rounded-xl border border-teal-100 text-center text-sm font-semibold text-slate-700">Physio & Rehab Needs</div>
-                        <div class="p-3 bg-teal-50 rounded-xl border border-teal-100 text-center text-sm font-semibold text-slate-700">Sick & Weak Patients</div>
+                        <div class="p-3 bg-teal-50 rounded-xl border border-teal-100 text-center text-sm font-semibold text-slate-700">Post-Hospitalization Care</div>
+                        <div class="p-3 bg-teal-50 rounded-xl border border-teal-100 text-center text-sm font-semibold text-slate-700">Patients Requiring Home Care</div>
+                        <div class="p-3 bg-teal-50 rounded-xl border border-teal-100 text-center text-sm font-semibold text-slate-700">Palliative Care Support</div>
+                        <div class="p-3 bg-teal-50 rounded-xl border border-teal-100 text-center text-sm font-semibold text-slate-700">Families Requiring Care Support</div>
                     </div>
                 </div>
 
@@ -191,11 +187,11 @@
                         Our Features
                     </h2>
                     <ul class="space-y-2 text-sm text-slate-700">
-                        <li class="flex items-start gap-2"><span class="text-teal-600 font-bold">✓</span> Experienced, trained & verified caregivers</li>
-                        <li class="flex items-start gap-2"><span class="text-teal-600 font-bold">✓</span> Clean, safe & punctual service</li>
-                        <li class="flex items-start gap-2"><span class="text-teal-600 font-bold">✓</span> Customized care per patient needs</li>
-                        <li class="flex items-start gap-2"><span class="text-teal-600 font-bold">✓</span> Regular supervision & follow-ups</li>
-                        <li class="flex items-start gap-2"><span class="text-teal-600 font-bold">✓</span> 24 x 7 Support available</li>
+                        <li class="flex items-start gap-2"><span class="text-teal-600 font-bold">✓</span> Trained male and female caregivers</li>
+                        <li class="flex items-start gap-2"><span class="text-teal-600 font-bold">✓</span> Reliable and compassionate home healthcare support</li>
+                        <li class="flex items-start gap-2"><span class="text-teal-600 font-bold">✓</span> Care support based on patient and family requirements</li>
+                        <li class="flex items-start gap-2"><span class="text-teal-600 font-bold">✓</span> Organized service coordination and support</li>
+                        <li class="flex items-start gap-2"><span class="text-teal-600 font-bold">✓</span> Professional home healthcare support</li>
                     </ul>
                 </div>
             </div>
@@ -209,8 +205,8 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-10">
             <span class="bg-teal-600 text-white text-xs px-4 py-1 rounded-full uppercase font-bold tracking-wider">Benefits</span>
-            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-3 font-serif">Why Choose Home Patient Care?</h2>
-            <p class="text-slate-600 mt-2 max-w-2xl mx-auto">Experience the difference of compassionate, professional care in the comfort of your own home.</p>
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-3 font-serif">Why Choose Jivhala Patient Care?</h2>
+            <p class="text-slate-600 mt-2 max-w-2xl mx-auto">Compassionate and reliable patient care designed to support patients, senior citizens and families at home.</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -221,28 +217,28 @@
             </div>
             <div class="bg-white p-6 rounded-2xl border border-teal-100 shadow-sm hover:shadow-md transition-all">
                 <div class="w-14 h-14 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center text-3xl mb-4">👨‍⚕️</div>
-                <h3 class="text-lg font-bold text-slate-900">Professional & Compassionate</h3>
-                <p class="text-sm text-slate-600 mt-2">Our caregivers are not just trained professionals but also compassionate individuals who treat your loved ones with dignity, respect, and emotional support.</p>
+                <h3 class="text-lg font-bold text-slate-900">Trained & Compassionate Support</h3>
+                <p class="text-sm text-slate-600 mt-2">Jivhala Healthcare provides trained caregivers and healthcare professionals with a focus on compassionate, patient-centric support.</p>
             </div>
             <div class="bg-white p-6 rounded-2xl border border-teal-100 shadow-sm hover:shadow-md transition-all">
                 <div class="w-14 h-14 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center text-3xl mb-4">📋</div>
-                <h3 class="text-lg font-bold text-slate-900">Personalized Care Plans</h3>
-                <p class="text-sm text-slate-600 mt-2">Every patient has unique needs. We create customized care plans that address specific medical conditions, daily routines, and personal preferences.</p>
+                <h3 class="text-lg font-bold text-slate-900">Patient-Centric Care</h3>
+                <p class="text-sm text-slate-600 mt-2">Care services are coordinated according to the requirements of patients and families.</p>
             </div>
             <div class="bg-white p-6 rounded-2xl border border-teal-100 shadow-sm hover:shadow-md transition-all">
                 <div class="w-14 h-14 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center text-3xl mb-4">🦠</div>
-                <h3 class="text-lg font-bold text-slate-900">Reduced Infection Risk</h3>
-                <p class="text-sm text-slate-600 mt-2">By receiving care at home, patients minimize exposure to hospital-acquired infections, ensuring a safer and faster recovery process.</p>
+                <h3 class="text-lg font-bold text-slate-900">Home-Based Support</h3>
+                <p class="text-sm text-slate-600 mt-2">Professional care support is provided in the familiar environment of the patient's home.</p>
             </div>
             <div class="bg-white p-6 rounded-2xl border border-teal-100 shadow-sm hover:shadow-md transition-all">
                 <div class="w-14 h-14 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center text-3xl mb-4">💰</div>
-                <h3 class="text-lg font-bold text-slate-900">Cost-Effective</h3>
-                <p class="text-sm text-slate-600 mt-2">Home patient care is significantly more affordable than extended hospital stays, reducing overall healthcare expenses without compromising quality.</p>
+                <h3 class="text-lg font-bold text-slate-900">Integrated Healthcare Support</h3>
+                <p class="text-sm text-slate-600 mt-2">Patient care can be supported through nursing, doctor visits, physiotherapy and other healthcare services.</p>
             </div>
             <div class="bg-white p-6 rounded-2xl border border-teal-100 shadow-sm hover:shadow-md transition-all">
                 <div class="w-14 h-14 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center text-3xl mb-4">👨‍👩‍👧‍👦</div>
-                <h3 class="text-lg font-bold text-slate-900">Family Involvement</h3>
-                <p class="text-sm text-slate-600 mt-2">Home care allows family members to stay actively involved in the patient's recovery journey, providing emotional support and staying informed about their loved one's health.</p>
+                <h3 class="text-lg font-bold text-slate-900">Support for Patients & Families</h3>
+                <p class="text-sm text-slate-600 mt-2">Our services are designed to support patients, senior citizens and families with reliable home healthcare assistance.</p>
             </div>
         </div>
     </div>
@@ -253,46 +249,46 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
 
-            <!-- Other Services -->
+            <!-- Related Healthcare Services -->
             <div class="bg-teal-50/70 p-6 sm:p-8 rounded-2xl border border-teal-200 shadow-sm">
                 <h2 class="text-2xl font-extrabold text-slate-900 mb-4 flex items-center gap-2">
                     <span class="w-1.5 h-7 bg-teal-600 rounded-full inline-block"></span>
-                    Other Services
+                    Related Healthcare Services
                 </h2>
                 <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm text-slate-700">
-                    <li class="flex items-start gap-2"><span class="text-teal-600 font-bold">✓</span> Nursing Care (Injection/IV, Dressing)</li>
-                    <li class="flex items-start gap-2"><span class="text-teal-600 font-bold">✓</span> Wound Care (Dressing & Care)</li>
-                    <li class="flex items-start gap-2"><span class="text-teal-600 font-bold">✓</span> Physiotherapy At Home</li>
-                    <li class="flex items-start gap-2"><span class="text-teal-600 font-bold">✓</span> Doctor Visit Home Visit</li>
-                    <li class="flex items-start gap-2"><span class="text-teal-600 font-bold">✓</span> Baby Care Babysitter/Japa Support</li>
-                    <li class="flex items-start gap-2"><span class="text-teal-600 font-bold">✓</span> Housekeeping Support</li>
+                    <li class="flex items-start gap-2"><span class="text-teal-600 font-bold">✓</span> Nursing Services – Trained Nurses & GNM/ANM</li>
+                    <li class="flex items-start gap-2"><span class="text-teal-600 font-bold">✓</span> Elder Care Services</li>
+                    <li class="flex items-start gap-2"><span class="text-teal-600 font-bold">✓</span> Physiotherapy Services</li>
+                    <li class="flex items-start gap-2"><span class="text-teal-600 font-bold">✓</span> Doctor Visit & Medical Support</li>
+                    <li class="flex items-start gap-2"><span class="text-teal-600 font-bold">✓</span> Baby Care & Japa Maid Services</li>
+                    <li class="flex items-start gap-2"><span class="text-teal-600 font-bold">✓</span> Healthcare Manpower Services</li>
                 </ul>
                 <div class="mt-4 p-3 bg-white rounded-xl border border-teal-200">
-                    <p class="text-xs text-slate-600 text-center"><i class="fa-regular fa-circle-check text-teal-600 mr-1"></i> All services delivered by trained & verified professionals</p>
+                    <p class="text-xs text-slate-600 text-center"><i class="fa-regular fa-circle-check text-teal-600 mr-1"></i> Jivhala Healthcare provides trained and dependable healthcare support services.</p>
                 </div>
             </div>
 
-            <!-- Medical Equipment Rental -->
+            <!-- Medical Equipment Support -->
             <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200/80 shadow-sm">
                 <h2 class="text-2xl font-extrabold text-slate-900 mb-4 flex items-center gap-2">
                     <span class="w-1.5 h-7 bg-teal-600 rounded-full inline-block"></span>
-                    Medical Equipment Rental
+                    Medical Equipment Support
                 </h2>
                 <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 text-sm text-slate-700">
-                    <span class="p-2 bg-teal-50 rounded-lg text-center font-medium">Hospital Bed</span>
-                    <span class="p-2 bg-teal-50 rounded-lg text-center font-medium">Air Mattress</span>
-                    <span class="p-2 bg-teal-50 rounded-lg text-center font-medium">Oxygen Concentrator</span>
-                    <span class="p-2 bg-teal-50 rounded-lg text-center font-medium">Wheelchair</span>
-                    <span class="p-2 bg-teal-50 rounded-lg text-center font-medium">Walker</span>
-                    <span class="p-2 bg-teal-50 rounded-lg text-center font-medium">Suction Machine</span>
-                    <span class="p-2 bg-teal-50 rounded-lg text-center font-medium">Nebulizer</span>
-                    <span class="p-2 bg-teal-50 rounded-lg text-center font-medium">Patient Monitor</span>
-                    <span class="p-2 bg-teal-50 rounded-lg text-center font-medium">IV Stand</span>
-                    <span class="p-2 bg-teal-50 rounded-lg text-center font-medium col-span-2 sm:col-span-1">Other Equipment</span>
+                    <span class="p-2 bg-teal-50 rounded-lg text-center font-medium">Home ICU Support Equipment</span>
+                    <span class="p-2 bg-teal-50 rounded-lg text-center font-medium">Medical Equipment Rental & Sales</span>
+                    <span class="p-2 bg-teal-50 rounded-lg text-center font-medium">Home Healthcare Equipment</span>
+                    <span class="p-2 bg-teal-50 rounded-lg text-center font-medium">Patient Care Equipment</span>
+                    <span class="p-2 bg-teal-50 rounded-lg text-center font-medium">Patient Care Equipment</span>
+                    <span class="p-2 bg-teal-50 rounded-lg text-center font-medium">Home ICU Support Equipment</span>
+                    <span class="p-2 bg-teal-50 rounded-lg text-center font-medium">Medical Equipment Support</span>
+                    <span class="p-2 bg-teal-50 rounded-lg text-center font-medium">Home ICU Support Equipment</span>
+                    <span class="p-2 bg-teal-50 rounded-lg text-center font-medium">Patient Care Equipment</span>
+                    <span class="p-2 bg-teal-50 rounded-lg text-center font-medium col-span-2 sm:col-span-1">Other Medical Equipment</span>
                 </div>
                 <div class="mt-4 p-3 bg-teal-100 rounded-xl text-center">
-                    <p class="text-sm font-bold text-teal-700"><i class="fa-regular fa-calendar mr-2"></i> Rent / Weekly / Monthly Basis Available</p>
-                    <p class="text-xs text-teal-600 mt-1">Flexible rental plans to suit your needs</p>
+                    <p class="text-sm font-bold text-teal-700"><i class="fa-regular fa-calendar mr-2"></i> Rental & Sales Support Available</p>
+                    <p class="text-xs text-teal-600 mt-1">Medical equipment rental and sales support for home and institutional requirements.</p>
                 </div>
             </div>
 
@@ -308,7 +304,7 @@
         <div class="text-center mb-10">
             <span class="bg-teal-600 text-white text-xs px-4 py-1 rounded-full uppercase font-bold tracking-wider">How It Works</span>
             <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-3 font-serif">Our Service Process</h2>
-            <p class="text-slate-600 mt-2">Get professional patient care at home in 4 simple steps</p>
+            <p class="text-slate-600 mt-2">Connect with Jivhala Healthcare for patient care and home healthcare support.</p>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-4 gap-4 mb-12">
@@ -324,8 +320,8 @@
             </div>
             <div class="text-center">
                 <div class="w-16 h-16 bg-teal-50 text-teal-600 rounded-full flex items-center justify-center text-2xl font-bold mx-auto border-2 border-teal-200 shadow-sm">3</div>
-                <h4 class="font-bold text-sm mt-3 text-slate-900">Caregiver Selection</h4>
-                <p class="text-xs text-slate-500">Assign the right professional</p>
+                <h4 class="font-bold text-sm mt-3 text-slate-900">Service Coordination</h4>
+                <p class="text-xs text-slate-500">Coordinate suitable healthcare support</p>
             </div>
             <div class="text-center">
                 <div class="w-16 h-16 bg-teal-50 text-teal-600 rounded-full flex items-center justify-center text-2xl font-bold mx-auto border-2 border-teal-200 shadow-sm">4</div>
@@ -338,13 +334,13 @@
         <div id="book" class="bg-teal-700 text-white rounded-3xl p-8 sm:p-10">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                 <div>
-                    <h3 class="text-2xl sm:text-3xl font-extrabold font-serif">Contact Us Today</h3>
-                    <p class="text-teal-100 mt-2">Book your patient care appointment now.</p>
+                    <h3 class="text-2xl sm:text-3xl font-extrabold font-serif">Contact Jivhala Healthcare</h3>
+                    <p class="text-teal-100 mt-2">Get in touch for patient care and home healthcare support.</p>
                     <div class="mt-4 space-y-2 text-sm">
-                        <p class="flex items-center gap-3"><span class="text-teal-200 text-lg">📞</span> <strong>+91 98603 90012</strong> / 844 6886 944</p>
+                        <p class="flex items-center gap-3"><span class="text-teal-200 text-lg">📞</span> <strong>+91 98603 90012</strong></p>
                         <p class="flex items-center gap-3"><span class="text-teal-200 text-lg">✉️</span> jivhalahealthcare@gmail.com</p>
-                        <p class="flex items-center gap-3"><span class="text-teal-200 text-lg">🌐</span> www.jivhalahealthcare.com</p>
-                        <p class="flex items-center gap-3"><span class="text-teal-200 text-lg">📍</span> Datala, Chandrapur, MH-442406</p>
+                        <p class="flex items-center gap-3"><span class="text-teal-200 text-lg">🌐</span> jivhalahealthcare.com</p>
+                        <p class="flex items-center gap-3"><span class="text-teal-200 text-lg">📍</span> Flat No. S-3, Shobha Tower, near Podar International School, Datala, Chandrapur – 442406</p>
                     </div>
                 </div>
                 <div class="flex flex-col sm:flex-row gap-3 justify-center md:justify-end">
@@ -362,12 +358,12 @@
         <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
             <div class="p-4 bg-teal-50/80 rounded-xl border border-teal-200 text-center">
                 <p class="text-sm text-slate-700">
-                    <strong class="text-teal-700">📍 Available Locations:</strong> Pune | Chandrapur | Nagpur
+                    <strong class="text-teal-700">📍 Healthcare Services:</strong> Home Healthcare & Patient Care
                 </p>
             </div>
             <div class="p-4 bg-teal-50/80 rounded-xl border border-teal-200 text-center">
                 <p class="text-sm text-slate-700">
-                    <i class="fa-regular fa-clock mr-1 text-teal-600"></i> <strong class="text-teal-700">24/7 Emergency Support</strong> • Same-day service in most areas
+                    <i class="fa-regular fa-circle-check mr-1 text-teal-600"></i> <strong class="text-teal-700">Compassionate & Reliable Home Healthcare</strong> • Patient and family support
                 </p>
             </div>
         </div>

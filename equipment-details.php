@@ -140,959 +140,379 @@ if ($product['rental_price'] !== null) {
 
 include 'header.php';
 
-?>
-
-<div class="bg-[#f8f6ef] min-h-screen py-8 sm:py-12">
-
+?><div class="bg-[#f8f6ef] min-h-screen py-8 sm:py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-
-        <!-- ========================================= -->
         <!-- BREADCRUMB -->
-        <!-- ========================================= -->
-
         <div class="flex flex-wrap items-center gap-2 text-xs text-slate-500 mb-6">
-
-            <a
-                href="medical-equipment.php"
-                class="hover:text-teal-600">
-                Home
-            </a>
-
+            <a href="medical-equipment.php" class="hover:text-teal-600 transition-colors">Home</a>
             <span>›</span>
-
-            <a
-                href="medical-equipment.php"
-                class="hover:text-teal-600">
-                Medical Equipment
-            </a>
-
+            <a href="medical-equipment.php" class="hover:text-teal-600 transition-colors">Medical Equipment</a>
             <span>›</span>
-
-            <a
-                href="equipment-list.php?category=<?= urlencode($product['category_slug']) ?>"
-                class="hover:text-teal-600">
+            <a href="equipment-list.php?category=<?= urlencode($product['category_slug']) ?>"
+               class="hover:text-teal-600 transition-colors">
                 <?= htmlspecialchars($product['category_name']) ?>
             </a>
-
             <span>›</span>
-
-            <span class="text-slate-700">
-                <?= htmlspecialchars($product['name']) ?>
-            </span>
-
+            <span class="text-slate-700"><?= htmlspecialchars($product['name']) ?></span>
         </div>
 
+        <!-- PRODUCT HEADER -->
+        <section class="mb-7">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-teal-50 border border-teal-100 text-[10px] font-bold uppercase tracking-wider text-teal-700">
+                Medical Equipment Support
+            </div>
+            <h1 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mt-3">
+                <?= htmlspecialchars($product['name']) ?>
+            </h1>
+            <p class="text-sm text-slate-500 mt-2 max-w-3xl">
+                Medical equipment solutions to support home-based and institutional healthcare requirements, with rental and purchase options subject to availability.
+            </p>
+        </section>
 
-
-        <!-- ========================================= -->
         <!-- PRODUCT + BOOKING -->
-        <!-- ========================================= -->
-
         <section class="grid grid-cols-1 lg:grid-cols-12 gap-7 items-start">
 
-
-            <!-- ========================================= -->
-            <!-- PRODUCT -->
-            <!-- ========================================= -->
-
             <div class="lg:col-span-8">
-
-                <h1 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 mb-6">
-
-                    <?= htmlspecialchars($product['name']) ?>
-
-                </h1>
-
-
                 <div class="bg-white rounded-2xl border border-slate-200/80 shadow-sm overflow-hidden">
 
-
                     <!-- PRODUCT IMAGE -->
-
-                    <div class="h-[320px] sm:h-[430px] bg-white flex items-center justify-center p-6 sm:p-10">
-
-
+                    <div class="h-[320px] sm:h-[430px] bg-slate-50 flex items-center justify-center p-6 sm:p-10">
                         <?php if (!empty($product['image'])): ?>
-
-                            <img
-                                src="<?= htmlspecialchars($product['image']) ?>"
-                                alt="<?= htmlspecialchars($product['name']) ?>"
-                                class="max-h-full max-w-full object-contain"
-                                onerror="this.style.display='none'; document.getElementById('imageFallback').classList.remove('hidden');">
-
+                        <img
+                            src="<?= htmlspecialchars($product['image']) ?>"
+                            alt="<?= htmlspecialchars($product['name']) ?>"
+                            class="max-h-full max-w-full object-contain"
+                            onerror="this.style.display='none'; document.getElementById('imageFallback').classList.remove('hidden');">
                         <?php endif; ?>
-
-
-                        <!-- IMAGE FALLBACK -->
-
-                        <div
-                            id="imageFallback"
-                            class="<?= !empty($product['image']) ? 'hidden' : '' ?> text-center text-slate-400">
-
-                            <div class="text-7xl mb-3">
-                                🩺
-                            </div>
-
-                            <p class="text-sm">
-                                Equipment Image
-                            </p>
-
+                        <div id="imageFallback"
+                             class="<?= !empty($product['image']) ? 'hidden' : '' ?> text-center text-slate-400">
+                            <div class="text-7xl mb-3">🩺</div>
+                            <p class="text-sm">Equipment Image</p>
                         </div>
-
                     </div>
 
-
-
-                    <!-- ================================= -->
-                    <!-- PRICE BOXES -->
-                    <!-- ================================= -->
-
+                    <!-- PRICING -->
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 p-4 bg-slate-50 border-t border-slate-100">
-
-
-                        <!-- PURCHASE -->
-
                         <div class="bg-white rounded-xl border border-slate-200 p-4">
-
-                            <p class="text-[10px] font-bold uppercase tracking-wider text-slate-500">
-                                Purchase Price
-                            </p>
-
+                            <p class="text-[10px] font-bold uppercase tracking-wider text-slate-500">Purchase Price</p>
                             <p class="text-xl sm:text-2xl font-extrabold text-teal-700 mt-1">
-
                                 <?php if ($purchasePrice !== null): ?>
-
-                                    ₹<?= htmlspecialchars($purchasePrice) ?>
-
+                                ₹<?= htmlspecialchars($purchasePrice) ?>
                                 <?php else: ?>
-
-                                    Contact Us
-
+                                Contact Us
                                 <?php endif; ?>
-
                             </p>
-
-                            <p class="text-[10px] text-slate-400 mt-1">
-                                Final price may vary by selected model
-                            </p>
-
+                            <p class="text-[10px] text-slate-400 mt-1">Final purchase terms will be confirmed by our service team.</p>
                         </div>
-
-
-
-                        <!-- RENT -->
 
                         <div class="bg-white rounded-xl border border-slate-200 p-4">
-
-                            <p class="text-[10px] font-bold uppercase tracking-wider text-slate-500">
-                                Rental Price
-                            </p>
-
+                            <p class="text-[10px] font-bold uppercase tracking-wider text-slate-500">Rental Price</p>
                             <p class="text-xl sm:text-2xl font-extrabold text-teal-700 mt-1">
-
                                 <?php if ($rentalPrice !== null): ?>
-
-                                    ₹<?= htmlspecialchars($rentalPrice) ?>
-
-                                    <?php if (!empty($product['rental_period'])): ?>
-
-                                        <span class="text-xs font-semibold text-slate-500">
-                                            / <?= htmlspecialchars($product['rental_period']) ?>
-                                        </span>
-
-                                    <?php endif; ?>
-
-                                <?php else: ?>
-
-                                    Contact Us
-
+                                ₹<?= htmlspecialchars($rentalPrice) ?>
+                                <?php if (!empty($product['rental_period'])): ?>
+                                <span class="text-xs font-semibold text-slate-500">/ <?= htmlspecialchars($product['rental_period']) ?></span>
                                 <?php endif; ?>
-
+                                <?php else: ?>
+                                Contact Us
+                                <?php endif; ?>
                             </p>
-
-                            <p class="text-[10px] text-slate-400 mt-1">
-                                Rental terms subject to availability
-                            </p>
-
+                            <p class="text-[10px] text-slate-400 mt-1">Rental terms and availability will be confirmed by our service team.</p>
                         </div>
-
-
                     </div>
-
                 </div>
 
+                <!-- TRUST / SERVICE STRIP -->
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-4">
+                    <div class="bg-white rounded-xl border border-slate-200 p-4">
+                        <p class="text-xs font-bold text-slate-900">Equipment Rental</p>
+                        <p class="text-[11px] text-slate-500 mt-1">Support for home healthcare needs</p>
+                    </div>
+                    <div class="bg-white rounded-xl border border-slate-200 p-4">
+                        <p class="text-xs font-bold text-slate-900">Equipment Sales</p>
+                        <p class="text-[11px] text-slate-500 mt-1">Purchase options where available</p>
+                    </div>
+                    <div class="bg-white rounded-xl border border-slate-200 p-4">
+                        <p class="text-xs font-bold text-slate-900">Home ICU Support</p>
+                        <p class="text-[11px] text-slate-500 mt-1">Equipment for home & institutional needs</p>
+                    </div>
+                    <div class="bg-white rounded-xl border border-slate-200 p-4">
+                        <p class="text-xs font-bold text-slate-900">Service Support</p>
+                        <p class="text-[11px] text-slate-500 mt-1">Assistance with your requirement</p>
+                    </div>
+                </div>
             </div>
 
-
-
-            <!-- ========================================= -->
             <!-- BOOKING CARD -->
-            <!-- ========================================= -->
-
             <aside class="lg:col-span-4 lg:sticky lg:top-6">
-
-
                 <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
-
-
-                    <!-- HEADER -->
-
                     <div class="bg-teal-600 text-white px-5 py-4">
-
-                        <h2 class="font-bold text-lg">
-                            Book Equipment
-                        </h2>
-
-                        <p class="text-xs text-teal-50 mt-1">
-                            Submit your details and select rent or purchase.
-                        </p>
-
+                        <p class="text-[10px] font-bold uppercase tracking-wider text-teal-100">Medical Equipment Support</p>
+                        <h2 class="font-bold text-lg mt-1">Request Equipment</h2>
+                        <p class="text-xs text-teal-50 mt-1">Choose rental or purchase and submit your details.</p>
                     </div>
 
-
-
-                    <!-- FORM -->
-
-                    <form
-                        id="bookingForm"
-                        class="p-5 space-y-4">
-
-                        <input
-                            type="hidden"
-                            name="equipment_id"
-                            value="<?= (int) $product['id'] ?>">
-
-
-                        <!-- NAME -->
+                    <form id="bookingForm" class="p-5 space-y-4">
+                        <input type="hidden" name="equipment_id" value="<?= (int) $product['id'] ?>">
 
                         <div>
-
-                            <label
-                                for="name"
-                                class="block text-xs font-semibold text-slate-700 mb-1.5">
-                                Name
-                            </label>
-
-                            <input
-                                id="name"
-                                name="name"
-                                type="text"
-                                required
-                                placeholder="Enter your name"
-                                class="w-full rounded-lg border border-slate-200 px-3 py-2.5 text-sm outline-none focus:border-teal-500 focus:ring-2 focus:ring-teal-100">
-
+                            <label for="name" class="block text-xs font-semibold text-slate-700 mb-1.5">Name</label>
+                            <input id="name" name="name" type="text" required placeholder="Enter your name"
+                                   class="w-full rounded-lg border border-slate-200 px-3 py-2.5 text-sm outline-none focus:border-teal-500 focus:ring-2 focus:ring-teal-100">
                         </div>
 
-
-
-                        <!-- MOBILE -->
-
                         <div>
-
-                            <label
-                                for="mobile"
-                                class="block text-xs font-semibold text-slate-700 mb-1.5">
-                                Mobile Number
-                            </label>
-
-                            <input
-                                id="mobile"
-                                name="mobile"
-                                type="tel"
-                                inputmode="numeric"
-                                maxlength="10"
-                                required
-                                placeholder="Enter 10-digit mobile number"
-                                class="w-full rounded-lg border border-slate-200 px-3 py-2.5 text-sm outline-none focus:border-teal-500 focus:ring-2 focus:ring-teal-100">
-
+                            <label for="mobile" class="block text-xs font-semibold text-slate-700 mb-1.5">Mobile Number</label>
+                            <input id="mobile" name="mobile" type="tel" inputmode="numeric" maxlength="10" required
+                                   placeholder="Enter 10-digit mobile number"
+                                   class="w-full rounded-lg border border-slate-200 px-3 py-2.5 text-sm outline-none focus:border-teal-500 focus:ring-2 focus:ring-teal-100">
                         </div>
 
-
-
-                        <!-- CITY -->
-
                         <div>
-
-                            <label
-                                for="city"
-                                class="block text-xs font-semibold text-slate-700 mb-1.5">
-                                City
-                            </label>
-
-                            <select
-                                id="city"
-                                name="city"
-                                required
-                                class="w-full rounded-lg border border-slate-200 px-3 py-2.5 text-sm bg-white outline-none focus:border-teal-500 focus:ring-2 focus:ring-teal-100">
-
-                                <option value="">
-                                    Select City
-                                </option>
-
-                                <option value="Pune">
-                                    Pune
-                                </option>
-
-                                <option value="Chandrapur">
-                                    Chandrapur
-                                </option>
-
+                            <label for="city" class="block text-xs font-semibold text-slate-700 mb-1.5">City</label>
+                            <select id="city" name="city" required
+                                    class="w-full rounded-lg border border-slate-200 px-3 py-2.5 text-sm bg-white outline-none focus:border-teal-500 focus:ring-2 focus:ring-teal-100">
+                                <option value="">Select City</option>
+                                <option value="Pune">Pune</option>
+                                <option value="Chandrapur">Chandrapur</option>
                             </select>
-
                         </div>
-
-
-
-                        <!-- ================================= -->
-                        <!-- BOOKING TYPE -->
-                        <!-- ================================= -->
 
                         <fieldset>
-
-                            <legend class="block text-xs font-semibold text-slate-700 mb-2">
-                                Booking Type
-                            </legend>
-
-
+                            <legend class="block text-xs font-semibold text-slate-700 mb-2">Booking Type</legend>
                             <div class="grid grid-cols-2 gap-3">
-
-
-                                <!-- RENT -->
-
                                 <label class="cursor-pointer">
-
-                                    <input
-                                        type="radio"
-                                        name="booking_type"
-                                        value="rental"
-                                        class="peer sr-only"
-                                        checked>
-
-                                    <span class="flex items-center justify-center gap-2 min-h-11 rounded-lg border border-slate-200 text-sm font-semibold text-slate-600 peer-checked:border-teal-600 peer-checked:bg-teal-50 peer-checked:text-teal-700 transition">
-
-                                        Rent
-
-                                    </span>
-
+                                    <input type="radio" name="booking_type" value="rental" class="peer sr-only" checked>
+                                    <span class="flex items-center justify-center min-h-11 rounded-lg border border-slate-200 text-sm font-semibold text-slate-600 peer-checked:border-teal-600 peer-checked:bg-teal-50 peer-checked:text-teal-700 transition">Rent</span>
                                 </label>
-
-
-
-                                <!-- PURCHASE -->
-
                                 <label class="cursor-pointer">
-
-                                    <input
-                                        type="radio"
-                                        name="booking_type"
-                                        value="purchase"
-                                        class="peer sr-only">
-
-                                    <span class="flex items-center justify-center gap-2 min-h-11 rounded-lg border border-slate-200 text-sm font-semibold text-slate-600 peer-checked:border-teal-600 peer-checked:bg-teal-50 peer-checked:text-teal-700 transition">
-
-                                        Purchase
-
-                                    </span>
-
+                                    <input type="radio" name="booking_type" value="purchase" class="peer sr-only">
+                                    <span class="flex items-center justify-center min-h-11 rounded-lg border border-slate-200 text-sm font-semibold text-slate-600 peer-checked:border-teal-600 peer-checked:bg-teal-50 peer-checked:text-teal-700 transition">Purchase</span>
                                 </label>
-
-
                             </div>
-
                         </fieldset>
 
-
-
-                        <!-- ================================= -->
-                        <!-- SELECTED EQUIPMENT -->
-                        <!-- ================================= -->
-
                         <div class="rounded-xl bg-slate-50 border border-slate-200 p-4">
-
-
                             <div class="flex justify-between gap-4 text-xs">
-
-                                <span class="text-slate-500">
-                                    Selected equipment
-                                </span>
-
-                                <span class="font-semibold text-slate-800 text-right">
-
-                                    <?= htmlspecialchars($product['name']) ?>
-
-                                </span>
-
+                                <span class="text-slate-500">Selected equipment</span>
+                                <span class="font-semibold text-slate-800 text-right"><?= htmlspecialchars($product['name']) ?></span>
                             </div>
-
-
-
                             <div class="flex justify-between gap-4 mt-2 text-sm">
-
-                                <span class="font-semibold text-slate-700">
-                                    Amount
-                                </span>
-
-                                <span
-                                    id="selectedAmount"
-                                    class="font-extrabold text-teal-700">
-
+                                <span class="font-semibold text-slate-700">Amount</span>
+                                <span id="selectedAmount" class="font-extrabold text-teal-700">
                                     <?php if ($rentalPrice !== null): ?>
-
-                                        ₹<?= htmlspecialchars($rentalPrice) ?>
-
+                                    ₹<?= htmlspecialchars($rentalPrice) ?>
                                     <?php else: ?>
-
-                                        Contact Us
-
+                                    Contact Us
                                     <?php endif; ?>
-
                                 </span>
-
                             </div>
-
-
                         </div>
 
-
-
-                        <!-- ================================= -->
-                        <!-- CONSENT -->
-                        <!-- ================================= -->
-
                         <label class="flex items-start gap-2 cursor-pointer">
-
-                            <input
-                                type="checkbox"
-                                id="consent"
-                                required
-                                class="mt-0.5 h-4 w-4 rounded border-slate-300 text-teal-600 focus:ring-teal-500">
-
+                            <input type="checkbox" id="consent" required
+                                   class="mt-0.5 h-4 w-4 rounded border-slate-300 text-teal-600 focus:ring-teal-500">
                             <span class="text-[11px] leading-relaxed text-slate-500">
-
                                 I agree to be contacted regarding this equipment booking and understand that final rental/purchase terms will be confirmed by the service team.
-
                             </span>
-
                         </label>
 
-
-
-                        <!-- ================================= -->
-                        <!-- BOOK BUTTON -->
-                        <!-- ================================= -->
-
-                        <button
-                            type="submit"
-                            class="w-full inline-flex items-center justify-center gap-2 min-h-11 px-5 py-3 bg-[#A6292F] hover:bg-[#8f2227] text-white rounded-xl text-sm font-bold transition-colors">
-
-                            Book Now
-
-                            <span>→</span>
-
+                        <button type="submit"
+                                class="w-full inline-flex items-center justify-center gap-2 min-h-11 px-5 py-3 bg-[#A6292F] hover:bg-[#8f2227] text-white rounded-xl text-sm font-bold transition-colors">
+                            Book Now <span>→</span>
                         </button>
 
-
-
-                        <!-- MESSAGE -->
-
-                        <p
-                            id="bookingMessage"
-                            class="hidden text-xs rounded-lg p-3">
-                        </p>
-
-
+                        <p id="bookingMessage" class="hidden text-xs rounded-lg p-3"></p>
                     </form>
-
                 </div>
-
             </aside>
-
         </section>
 
-
-
-        <!-- ========================================= -->
-        <!-- DESCRIPTION -->
-        <!-- ========================================= -->
-
+        <!-- DESCRIPTION / SPECIFICATIONS -->
         <section class="grid grid-cols-1 lg:grid-cols-12 gap-7 mt-7">
-
-
             <div class="lg:col-span-8 bg-white rounded-2xl border border-slate-200 shadow-sm p-6 sm:p-8">
-
-
-                <!-- DESCRIPTION -->
-
                 <div class="border-l-4 border-teal-600 pl-4 mb-7">
-
-                    <h2 class="text-xl sm:text-2xl font-extrabold text-slate-900">
-                        Description
-                    </h2>
-
+                    <p class="text-[10px] font-bold uppercase tracking-wider text-teal-700">Equipment Information</p>
+                    <h2 class="text-xl sm:text-2xl font-extrabold text-slate-900 mt-1">About This Equipment</h2>
                 </div>
-
 
                 <?php if (!empty($product['description'])): ?>
-
-                    <p class="text-sm leading-7 text-slate-600">
-
-                        <?= nl2br(htmlspecialchars($product['description'])) ?>
-
-                    </p>
-
+                <p class="text-sm leading-7 text-slate-600"><?= nl2br(htmlspecialchars($product['description'])) ?></p>
                 <?php elseif (!empty($product['short_description'])): ?>
-
-                    <p class="text-sm leading-7 text-slate-600">
-
-                        <?= nl2br(htmlspecialchars($product['short_description'])) ?>
-
-                    </p>
-
+                <p class="text-sm leading-7 text-slate-600"><?= nl2br(htmlspecialchars($product['short_description'])) ?></p>
                 <?php else: ?>
-
-                    <p class="text-sm leading-7 text-slate-500">
-                        Equipment details will be provided by our service team.
-                    </p>
-
+                <p class="text-sm leading-7 text-slate-500">Equipment details will be provided by our service team.</p>
                 <?php endif; ?>
-
-
-
-                <!-- ================================= -->
-                <!-- TECHNICAL SPECIFICATIONS -->
-                <!-- ================================= -->
 
                 <?php if (!empty($specifications)): ?>
-
-                    <div class="mt-8">
-
-                        <h3 class="text-lg font-bold text-slate-900 border-l-4 border-teal-600 pl-3">
-
-                            Technical Specifications
-
-                        </h3>
-
-
-                        <ul class="mt-4 space-y-2 text-sm text-slate-600 list-disc pl-5">
-
-                            <?php foreach ($specifications as $specification): ?>
-
-                                <li>
-                                    <?= htmlspecialchars($specification) ?>
-                                </li>
-
-                            <?php endforeach; ?>
-
-                        </ul>
-
-                    </div>
-
+                <div class="mt-8">
+                    <h3 class="text-lg font-bold text-slate-900 border-l-4 border-teal-600 pl-3">Technical Specifications</h3>
+                    <ul class="mt-4 space-y-2 text-sm text-slate-600 list-disc pl-5">
+                        <?php foreach ($specifications as $specification): ?>
+                        <li><?= htmlspecialchars($specification) ?></li>
+                        <?php endforeach; ?>
+                    </ul>
+                </div>
                 <?php endif; ?>
-
-
-
-                <!-- ================================= -->
-                <!-- BRANDS -->
-                <!-- ================================= -->
 
                 <?php if ($brands !== ''): ?>
-
-                    <div class="mt-8">
-
-                        <h3 class="text-lg font-bold text-slate-900 border-l-4 border-teal-600 pl-3">
-
-                            Brands & Models Available
-
-                        </h3>
-
-
-                        <p class="mt-4 text-sm text-slate-600 leading-7">
-
-                            <?= nl2br(htmlspecialchars($brands)) ?>
-
-                        </p>
-
-                    </div>
-
+                <div class="mt-8">
+                    <h3 class="text-lg font-bold text-slate-900 border-l-4 border-teal-600 pl-3">Brands & Models Available</h3>
+                    <p class="mt-4 text-sm text-slate-600 leading-7"><?= nl2br(htmlspecialchars($brands)) ?></p>
+                </div>
                 <?php endif; ?>
 
+                <!-- SERVICE CONTEXT -->
+                <div class="mt-10 rounded-2xl bg-teal-50/70 border border-teal-100 p-5">
+                    <h3 class="text-lg font-bold text-slate-900">Medical Equipment & Institutional Care Support</h3>
+                    <p class="text-sm leading-7 text-slate-600 mt-2">
+                        Jivhala Healthcare aims to provide medical equipment solutions that support patient convenience and home-based or institutional healthcare requirements.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-4">
+                        <div class="bg-white rounded-xl border border-teal-100 p-3">
+                            <p class="text-xs font-bold text-slate-800">Medical Equipment Rental</p>
+                        </div>
+                        <div class="bg-white rounded-xl border border-teal-100 p-3">
+                            <p class="text-xs font-bold text-slate-800">Medical Equipment Sales</p>
+                        </div>
+                        <div class="bg-white rounded-xl border border-teal-100 p-3">
+                            <p class="text-xs font-bold text-slate-800">Hospital / Home ICU Support</p>
+                        </div>
+                    </div>
+                </div>
 
-
-                <!-- ================================= -->
                 <!-- FAQ -->
-                <!-- ================================= -->
-
                 <div class="mt-10">
-
-                    <h3 class="text-xl font-bold text-slate-900 border-l-4 border-teal-600 pl-3">
-
-                        FAQs
-
-                    </h3>
-
-
+                    <h3 class="text-xl font-bold text-slate-900 border-l-4 border-teal-600 pl-3">Frequently Asked Questions</h3>
                     <div class="mt-5 space-y-3">
 
-
-                        <!-- FAQ 1 -->
-
                         <details class="group rounded-xl border border-slate-200 overflow-hidden">
-
                             <summary class="cursor-pointer flex justify-between items-center gap-4 p-4 font-bold text-sm text-slate-800">
-
                                 What is this medical equipment used for?
-
-                                <span class="text-teal-600 text-xl group-open:rotate-45 transition-transform">
-                                    +
-                                </span>
-
+                                <span class="text-teal-600 text-xl group-open:rotate-45 transition-transform">+</span>
                             </summary>
-
-
                             <div class="px-4 pb-4 text-sm leading-6 text-slate-600 border-t border-slate-100 pt-3">
-
-                                Please refer to the equipment description and technical specifications above. Our service team can also help you understand whether this equipment is suitable for your requirement.
-
+                                Please refer to the equipment description and technical specifications above. Our service team can also help you understand the equipment information relevant to your requirement.
                             </div>
-
                         </details>
 
-
-
-                        <!-- FAQ 2 -->
-
                         <details class="group rounded-xl border border-slate-200 overflow-hidden">
-
                             <summary class="cursor-pointer flex justify-between items-center gap-4 p-4 font-bold text-sm text-slate-800">
-
                                 What specifications does this equipment have?
-
-                                <span class="text-teal-600 text-xl group-open:rotate-45 transition-transform">
-                                    +
-                                </span>
-
+                                <span class="text-teal-600 text-xl group-open:rotate-45 transition-transform">+</span>
                             </summary>
-
-
                             <div class="px-4 pb-4 text-sm leading-6 text-slate-600 border-t border-slate-100 pt-3">
-
-                                The technical specifications for the selected equipment are listed in the Technical Specifications section above.
-
+                                The technical specifications for the selected equipment are listed above when available.
                             </div>
-
                         </details>
 
-
-
-                        <!-- FAQ 3 -->
-
                         <details class="group rounded-xl border border-slate-200 overflow-hidden">
-
                             <summary class="cursor-pointer flex justify-between items-center gap-4 p-4 font-bold text-sm text-slate-800">
-
                                 Is the equipment available for rent and purchase?
-
-                                <span class="text-teal-600 text-xl group-open:rotate-45 transition-transform">
-                                    +
-                                </span>
-
+                                <span class="text-teal-600 text-xl group-open:rotate-45 transition-transform">+</span>
                             </summary>
-
-
                             <div class="px-4 pb-4 text-sm leading-6 text-slate-600 border-t border-slate-100 pt-3">
-
                                 <?php if ($product['rental_price'] !== null && $product['purchase_price'] !== null): ?>
-
-                                    This equipment is currently listed for both rental and purchase. Final availability and terms will be confirmed by our service team.
-
+                                This equipment is currently listed for both rental and purchase. Final availability and terms will be confirmed by our service team.
                                 <?php elseif ($product['rental_price'] !== null): ?>
-
-                                    This equipment is currently listed for rental. Final availability and rental terms will be confirmed by our service team.
-
+                                This equipment is currently listed for rental. Final availability and rental terms will be confirmed by our service team.
                                 <?php elseif ($product['purchase_price'] !== null): ?>
-
-                                    This equipment is currently listed for purchase. Final availability and purchase terms will be confirmed by our service team.
-
+                                This equipment is currently listed for purchase. Final availability and purchase terms will be confirmed by our service team.
                                 <?php else: ?>
-
-                                    Please contact our service team for current rental or purchase availability.
-
+                                Please contact our service team for current rental or purchase availability.
                                 <?php endif; ?>
-
                             </div>
-
                         </details>
-
-
-
-                        <!-- FAQ 4 -->
 
                         <details class="group rounded-xl border border-slate-200 overflow-hidden">
-
                             <summary class="cursor-pointer flex justify-between items-center gap-4 p-4 font-bold text-sm text-slate-800">
-
                                 Is home delivery available?
-
-                                <span class="text-teal-600 text-xl group-open:rotate-45 transition-transform">
-                                    +
-                                </span>
-
+                                <span class="text-teal-600 text-xl group-open:rotate-45 transition-transform">+</span>
                             </summary>
-
-
                             <div class="px-4 pb-4 text-sm leading-6 text-slate-600 border-t border-slate-100 pt-3">
-
                                 Delivery availability depends on location and equipment. The service team will confirm delivery details after receiving the booking request.
-
                             </div>
-
                         </details>
-
-
                     </div>
-
                 </div>
-
-
             </div>
 
-
-
-            <!-- ========================================= -->
-            <!-- RELATED -->
-            <!-- ========================================= -->
-
-            <aside class="lg:col-span-4">
-
-                <!-- ========================================= -->
-                <!-- PORTEA SERVICES -->
-                <!-- ========================================= -->
+            <!-- SIDEBAR -->
+            <aside class="lg:col-span-4 space-y-5">
+                <div class="bg-white rounded-2xl border border-slate-200 shadow-sm p-5">
+                    <h3 class="font-bold text-slate-900 text-base border-b-2 border-teal-600 pb-3">
+                        Jivhala Healthcare Services
+                    </h3>
+                    <nav class="divide-y divide-slate-100 text-sm font-medium">
+                        <a href="#" class="block py-2.5 px-2 text-slate-700 hover:text-teal-600 hover:bg-teal-50/60 rounded-lg transition-colors">Home Nursing</a>
+                        <a href="#" class="block py-2.5 px-2 text-slate-700 hover:text-teal-600 hover:bg-teal-50/60 rounded-lg transition-colors">Patient Care</a>
+                        <a href="#" class="block py-2.5 px-2 text-slate-700 hover:text-teal-600 hover:bg-teal-50/60 rounded-lg transition-colors">Elder Care</a>
+                        <a href="#" class="block py-2.5 px-2 text-slate-700 hover:text-teal-600 hover:bg-teal-50/60 rounded-lg transition-colors">Mother & Baby Care</a>
+                        <a href="medical-equipment.php" class="block py-2.5 px-2 text-teal-700 font-bold bg-teal-50/80 rounded-lg">Medical Equipment</a>
+                        <a href="#" class="block py-2.5 px-2 text-slate-700 hover:text-teal-600 hover:bg-teal-50/60 rounded-lg transition-colors">Doctor Visit</a>
+                        <a href="#" class="block py-2.5 px-2 text-slate-700 hover:text-teal-600 hover:bg-teal-50/60 rounded-lg transition-colors">Physiotherapy</a>
+                        <a href="#" class="block py-2.5 px-2 text-slate-700 hover:text-teal-600 hover:bg-teal-50/60 rounded-lg transition-colors">Wound Care</a>
+                        <a href="#" class="block py-2.5 px-2 text-slate-700 hover:text-teal-600 hover:bg-teal-50/60 rounded-lg transition-colors">Nursing & Medical Support</a>
+                    </nav>
+                </div>
 
                 <div class="bg-white rounded-2xl border border-slate-200 shadow-sm p-5">
-
-                    <h3
-                        class="font-bold
-            text-slate-900
-            text-base
-            border-b-2
-            border-teal-600
-            pb-3">
-                        Portea Services
-                    </h3>
-
-
-                    <div class="divide-y divide-slate-100 text-sm font-medium">
-
-                        <a
-                            href="#"
-                            class="block py-2.5 text-slate-600 hover:text-teal-600">
-                            Elder Care
-                        </a>
-
-                        <a
-                            href="#"
-                            class="block py-2.5 text-slate-600 hover:text-teal-600">
-                            Trained Attendant
-                        </a>
-
-                        <a
-                            href="#"
-                            class="block py-2.5 text-slate-600 hover:text-teal-600">
-                            Physiotherapy
-                        </a>
-
-                        <a
-                            href="#"
-                            class="block py-2.5 text-slate-600 hover:text-teal-600">
-                            Critical Care
-                        </a>
-
-                        <a
-                            href="medical-equipment.php"
-                            class="block py-2.5 text-teal-700 font-bold">
-                            Medical Equipment
-                        </a>
-
-                        <a
-                            href="#"
-                            class="block py-2.5 text-slate-600 hover:text-teal-600">
-                            Nursing
-                        </a>
-
-                        <a
-                            href="#"
-                            class="block py-2.5 text-slate-600 hover:text-teal-600">
-                            Doctor Consultation
-                        </a>
-
-                        <a
-                            href="#"
-                            class="block py-2.5 text-slate-600 hover:text-teal-600">
-                            Mother & Baby Care
-                        </a>
-
-                    </div>
-
+                    <h3 class="font-bold text-slate-900 text-base border-b-2 border-teal-600 pb-3">Need Help?</h3>
+                    <p class="text-sm leading-6 text-slate-600 mt-4">
+                        Contact Jivhala Healthcare to discuss your medical equipment requirement, rental or purchase enquiry.
+                    </p>
+                    <a href="tel:+919860390012" class="mt-4 flex items-center justify-center w-full rounded-xl bg-teal-50 text-teal-700 font-bold text-sm py-3 hover:bg-teal-100 transition-colors">
+                        +91 9860390012
+                    </a>
+                    <p class="text-xs text-slate-500 text-center mt-3">Healthcare support for home & institutional requirements</p>
                 </div>
 
-
-                <!-- ========================================= -->
-                <!-- ALSO READ -->
-                <!-- ========================================= -->
-
-                <div class="bg-white rounded-2xl border border-slate-200 shadow-sm p-5 mt-5">
-
-                    <h3
-                        class="font-bold
-            text-slate-900
-            text-base
-            border-b-2
-            border-teal-600
-            pb-3">
-                        Also Read About
-                    </h3>
-
-
-                    <a
-                        href="equipment-list.php?category=<?= urlencode($product['category_slug']) ?>"
-                        class="block py-3 text-xs text-teal-700 hover:underline border-b border-slate-100">
+                <div class="bg-white rounded-2xl border border-slate-200 shadow-sm p-5">
+                    <h3 class="font-bold text-slate-900 text-base border-b-2 border-teal-600 pb-3">Explore This Category</h3>
+                    <a href="equipment-list.php?category=<?= urlencode($product['category_slug']) ?>"
+                       class="block py-3 text-sm font-semibold text-teal-700 hover:underline border-b border-slate-100">
                         More <?= htmlspecialchars($product['category_name']) ?>
                     </a>
-
-
-                    <a
-                        href="medical-equipment.php"
-                        class="block py-3 text-xs text-teal-700 hover:underline border-b border-slate-100">
+                    <a href="medical-equipment.php"
+                       class="block py-3 text-sm font-semibold text-teal-700 hover:underline">
                         All Medical Equipment
                     </a>
-
-
-                    <a
-                        href="#"
-                        class="block py-3 text-xs text-teal-700 hover:underline">
-                        Equipment Rental Agreement
-                    </a>
-
                 </div>
 
-
-
+                <div class="bg-teal-900 rounded-2xl p-5 text-white">
+                    <p class="text-[10px] font-bold uppercase tracking-wider text-teal-200">Jivhala Healthcare</p>
+                    <h3 class="text-lg font-bold mt-1">Integrated Healthcare Support</h3>
+                    <p class="text-xs leading-5 text-teal-50 mt-2">
+                        Compassionate home healthcare, trained workforce and coordinated support for patients, families and institutions.
+                    </p>
+                </div>
             </aside>
-
-
         </section>
 
-
-
-        <!-- ========================================= -->
-        <!-- TESTIMONIALS -->
-        <!-- ========================================= -->
-
-        <section class="mt-14 bg-white rounded-2xl border border-slate-200 shadow-sm p-6 sm:p-10">
-
-
-            <div class="text-center mb-8">
-
-                <h2 class="text-2xl sm:text-3xl font-serif font-bold text-slate-900">
-
-                    Patient Testimonials
-
-                </h2>
-
-                <p class="text-sm text-slate-500 mt-1">
-
-                    Real experiences from families we care for
-
-                </p>
-
-            </div>
-
-
+        <!-- CONTACT / SUPPORT -->
+        <section class="mt-10 bg-white rounded-2xl border border-slate-200 shadow-sm p-6 sm:p-8">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
-
-
-                <article class="border border-slate-200 border-l-4 border-l-teal-600 rounded-xl p-5">
-
-                    <div class="text-teal-600 text-2xl">
-                        “
-                    </div>
-
-                    <p class="text-sm text-slate-600 leading-6">
-
-                        The service was very helpful and the equipment was delivered on time. The team explained the usage clearly.
-
-                    </p>
-
-                    <div class="mt-5 pt-4 border-t border-slate-100">
-
-                        <p class="text-xs font-bold text-slate-800">
-                            M. Poornima
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-
-                <article class="border border-slate-200 border-l-4 border-l-teal-600 rounded-xl p-5">
-
-                    <div class="text-teal-600 text-2xl">
-                        “
-                    </div>
-
-                    <p class="text-sm text-slate-600 leading-6">
-
-                        The booking process was simple and the support team followed up quickly when we needed assistance.
-
-                    </p>
-
-                    <div class="mt-5 pt-4 border-t border-slate-100">
-
-                        <p class="text-xs font-bold text-slate-800">
-                            Bhaskar Pramanik
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-
-                <article class="border border-slate-200 border-l-4 border-l-teal-600 rounded-xl p-5">
-
-                    <div class="text-teal-600 text-2xl">
-                        “
-                    </div>
-
-                    <p class="text-sm text-slate-600 leading-6">
-
-                        Very helpful team and good communication throughout the booking and delivery process.
-
-                    </p>
-
-                    <div class="mt-5 pt-4 border-t border-slate-100">
-
-                        <p class="text-xs font-bold text-slate-800">
-                            Narayana Murthy K
-                        </p>
-
-                    </div>
-
-                </article>
-
-
+                <div>
+                    <p class="text-[10px] font-bold uppercase tracking-wider text-teal-700">Medical Equipment</p>
+                    <h3 class="text-lg font-bold text-slate-900 mt-1">Rental & Sales Support</h3>
+                    <p class="text-sm leading-6 text-slate-600 mt-2">Solutions for home-based and institutional healthcare requirements.</p>
+                </div>
+                <div>
+                    <p class="text-[10px] font-bold uppercase tracking-wider text-teal-700">Contact</p>
+                    <p class="text-sm font-bold text-slate-900 mt-1">+91 9860390012</p>
+                    <p class="text-xs text-slate-500 mt-1">jivhalahealthcare@gmail.com</p>
+                </div>
+                <div>
+                    <p class="text-[10px] font-bold uppercase tracking-wider text-teal-700">Location</p>
+                    <p class="text-sm font-bold text-slate-900 mt-1">Chandrapur, Maharashtra</p>
+                    <p class="text-xs text-slate-500 mt-1">Flat No. S-3, Shobha Tower, Datala, Chandrapur – 442406</p>
+                </div>
             </div>
-
         </section>
-
 
     </div>
-
 </div>
-
-
 
 <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 

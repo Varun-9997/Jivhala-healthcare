@@ -28,9 +28,11 @@
                 <h1 class="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight font-serif leading-tight">
                     Home Nursing Services in India
                 </h1>
+                <div class="inline-flex items-center justify-center gap-2 px-4 py-3 bg-white hover:bg-white text-white font-bold text-xs sm:text-sm uppercase tracking-wider rounded-2xl shadow-md hover:shadow-lg transition-all transform active:scale-95">
                 <p class="text-slate-600 text-xs font-semibold sm:text-base leading-relaxed max-w-xl">
                     Looking for professional medical care, elderly nursing, recovery support, or short-term procedures like IV infusions, wound dressing, or catheterization? Get high-quality, certified nursing care right in the comfort of your home by highly qualified and experienced nurses, bringing expertise and care directly to your doorstep.
                 </p>
+                </div>
 
                 <div class="pt-2">
                     <a href="#book" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#A6292F] hover:bg-[#d04a17] text-white font-bold text-xs sm:text-sm uppercase tracking-wider rounded-full shadow-md hover:shadow-lg transition-all transform active:scale-95">
@@ -132,10 +134,10 @@
         <!-- Section Title -->
         <div class="text-center space-y-1">
             <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 font-serif">
-                Patient Testimonials
+                What Our Families Say
             </h2>
             <p class="text-xs sm:text-sm text-slate-500">
-                Real experiences from the members we care for
+                Caring support that families can rely on
             </p>
         </div>
 
@@ -144,64 +146,96 @@
 
             <!-- Testimonial Card 1 -->
             <div class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 border-l-4 border-l-teal-600">
+
                 <div class="space-y-2">
                     <span class="text-3xl font-serif text-teal-500 leading-none">“</span>
+
                     <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        My Nurse (Nurse Jean) is so compassionate, dedicated and with a friendly and adjustable disposition. We would highly recommend her.
+                        We were looking for a reliable caregiver for our family member.
+                        The support was very helpful and the staff was polite, caring
+                        and respectful throughout the service.
                     </p>
                 </div>
+
                 <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
+
                     <div class="w-8 h-8 rounded-full bg-teal-50 text-teal-700 font-bold flex items-center justify-center text-xs shrink-0 border border-teal-200">
-                        D
+                        R
                     </div>
+
                     <div>
-                        <h4 class="text-xs font-bold text-slate-900">Debasish Mukherjee</h4>
-                        <span class="text-[10px] text-slate-400">Verified Patient</span>
+                        <h4 class="text-xs font-bold text-slate-900">
+                            Rahul Sharma
+                        </h4>
+                        <span class="text-[10px] text-slate-400">
+                            Family Member
+                        </span>
                     </div>
+
                 </div>
             </div>
+
 
             <!-- Testimonial Card 2 -->
             <div class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 border-l-4 border-l-teal-600">
+
                 <div class="space-y-2">
                     <span class="text-3xl font-serif text-teal-500 leading-none">“</span>
+
                     <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        Good morning all. We would like to share our very positive feedback regarding ADAMS with you. He was polite and attentive, consider making him a permanent staff.
+                        The caregiver was punctual, attentive and very cooperative.
+                        It gave our family peace of mind knowing that our elderly
+                        family member was receiving proper care and support at home.
                     </p>
                 </div>
-                <div class="flex items-center justify-between pt-4 border-t border-slate-100">
-                    <div class="flex items-center gap-3">
-                        <div class="w-8 h-8 rounded-full bg-teal-50 text-teal-700 font-bold flex items-center justify-center text-xs shrink-0 border border-teal-200">
-                            J
-                        </div>
-                        <div>
-                            <h4 class="text-xs font-bold text-slate-900">Mr. J. S. Venkateswaran</h4>
-                            <span class="text-[10px] text-slate-400">Verified Patient</span>
-                        </div>
+
+                <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
+
+                    <div class="w-8 h-8 rounded-full bg-teal-50 text-teal-700 font-bold flex items-center justify-center text-xs shrink-0 border border-teal-200">
+                        P
                     </div>
-                    <a href="#" class="text-[10px] font-bold text-teal-700 hover:underline">READ MORE</a>
+
+                    <div>
+                        <h4 class="text-xs font-bold text-slate-900">
+                            Priya Deshmukh
+                        </h4>
+                        <span class="text-[10px] text-slate-400">
+                            Family Member
+                        </span>
+                    </div>
+
                 </div>
             </div>
 
+
             <!-- Testimonial Card 3 -->
             <div class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 border-l-4 border-l-teal-600">
+
                 <div class="space-y-2">
                     <span class="text-3xl font-serif text-teal-500 leading-none">“</span>
+
                     <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        First of all I would like to thank you all with my heart for the nursing care you provided me during this difficult time. Thank you for putting so much effort.
+                        We received good support during our family's healthcare
+                        needs. The team was responsive and easy to communicate with.
+                        Overall, the service was convenient and reassuring for us.
                     </p>
                 </div>
-                <div class="flex items-center justify-between pt-4 border-t border-slate-100">
-                    <div class="flex items-center gap-3">
-                        <div class="w-8 h-8 rounded-full bg-teal-50 text-teal-700 font-bold flex items-center justify-center text-xs shrink-0 border border-teal-200">
-                            A
-                        </div>
-                        <div>
-                            <h4 class="text-xs font-bold text-slate-900">Apeksha Pandey</h4>
-                            <span class="text-[10px] text-slate-400">Verified Patient</span>
-                        </div>
+
+                <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
+
+                    <div class="w-8 h-8 rounded-full bg-teal-50 text-teal-700 font-bold flex items-center justify-center text-xs shrink-0 border border-teal-200">
+                        A
                     </div>
-                    <a href="#" class="text-[10px] font-bold text-teal-700 hover:underline">READ MORE</a>
+
+                    <div>
+                        <h4 class="text-xs font-bold text-slate-900">
+                            Amit Patil
+                        </h4>
+                        <span class="text-[10px] text-slate-400">
+                            Family Member
+                        </span>
+                    </div>
+
                 </div>
             </div>
 
