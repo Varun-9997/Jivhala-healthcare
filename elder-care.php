@@ -32,11 +32,9 @@
                 <h1 class="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight font-serif leading-tight">
                     Trusted Elderly Care Services at Home
                 </h1>
-                <div class="inline-flex items-center justify-center gap-2 px-1 py-2 bg-white hover:bg-white text-white font-bold text-xs sm:text-sm uppercase tracking-wider rounded-2xl shadow-md hover:shadow-lg transition-all transform active:scale-95">>
                 <p class="text-slate-600 text-xs sm:text-base font-semibold leading-relaxed max-w-xl">
                     Worried about the medical needs of your parents back home? Avail the Care Plan package from Portea to ease the worries. To book a Care Plan, begin here.
                 </p>
-                </div>
 
                 <div class="pt-2">
                     <a href="#book" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#A6292F] hover:bg-[#d04a17] text-white font-bold text-xs sm:text-sm uppercase tracking-wider rounded-full shadow-md hover:shadow-lg transition-all transform active:scale-95">

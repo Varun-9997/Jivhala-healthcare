@@ -30,11 +30,9 @@
                 <h1 class="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight font-serif leading-tight">
                     Nursing & Medical Support at Home
                 </h1>
-                <div class="inline-flex items-center justify-center gap-2 px-3 py-3 bg-white hover:bg-white text-white font-bold text-xs sm:text-sm uppercase tracking-wider rounded-2xl shadow-md hover:shadow-lg transition-all transform active:scale-95">
                 <p class="text-slate-600 text-xs sm:text-base font-semibold leading-relaxed max-w-xl">
                     Jivhala Healthcare provides professional nursing and medical support at home through trained nurses and healthcare professionals, helping patients and families receive dependable care in a familiar environment.
                 </p>
-                </div>
 
                 <div class="pt-2">
                     <a href="#book" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#A6292F] hover:bg-[#d04a17] text-white font-bold text-xs sm:text-sm uppercase tracking-wider rounded-full shadow-md hover:shadow-lg transition-all transform active:scale-95">

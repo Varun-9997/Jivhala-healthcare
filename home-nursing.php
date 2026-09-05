@@ -28,11 +28,9 @@
                 <h1 class="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight font-serif leading-tight">
                     Home Nursing Services in India
                 </h1>
-                <div class="inline-flex items-center justify-center gap-2 px-4 py-3 bg-white hover:bg-white text-white font-bold text-xs sm:text-sm uppercase tracking-wider rounded-2xl shadow-md hover:shadow-lg transition-all transform active:scale-95">
                 <p class="text-slate-600 text-xs font-semibold sm:text-base leading-relaxed max-w-xl">
                     Looking for professional medical care, elderly nursing, recovery support, or short-term procedures like IV infusions, wound dressing, or catheterization? Get high-quality, certified nursing care right in the comfort of your home by highly qualified and experienced nurses, bringing expertise and care directly to your doorstep.
                 </p>
-                </div>
 
                 <div class="pt-2">
                     <a href="#book" class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#A6292F] hover:bg-[#d04a17] text-white font-bold text-xs sm:text-sm uppercase tracking-wider rounded-full shadow-md hover:shadow-lg transition-all transform active:scale-95">
