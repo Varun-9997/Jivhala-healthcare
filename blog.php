@@ -1,305 +1,260 @@
+<?php 
+  $pageTitle = "Healthcare Blogs - Jivhala Healthcare Services";
+  include 'header.php'; 
+?>
 
+<!-- ================= SECTION 1: HERO BANNER ================= -->
+<section class="bg-[#00797b] text-white py-12 sm:py-16 px-4 text-center border-b border-teal-800">
+  <div class="max-w-4xl mx-auto space-y-4">
+    <h1 class="text-3xl sm:text-5xl font-extrabold font-serif tracking-tight">
+      Healthcare Insights &amp; Care Guidance
+    </h1>
+    <p class="text-teal-100 text-xs sm:text-sm md:text-base font-medium leading-relaxed max-w-2xl mx-auto">
+      Practical information on home nursing, elder care, rehabilitation, patient attendants, medical equipment, and hospital staffing.
+    </p>
 
-
-    <title>Blog </title>
-
-    <?php include 'header.php' ?>
-
-
-
-  <!-- ================= SECTION 1: HEALTHCARE BLOGS HERO HEADER ================= -->
-  <section class="bg-[#00797b] text-white py-12 sm:py-16 px-4 text-center border-b border-teal-800">
-    <div class="max-w-4xl mx-auto space-y-4">
-      <h1 class="text-3xl sm:text-5xl font-extrabold font-serif tracking-tight">
-        Healthcare Blogs
-      </h1>
-      <p class="text-teal-100 text-xs sm:text-sm md:text-base font-medium leading-relaxed max-w-2xl mx-auto">
-        Expert insights, health tips, and medical advice from our healthcare professionals
-      </p>
-      <div class="pt-2">
-        <span class="inline-block bg-teal-800/60 border border-teal-400/40 text-teal-100 text-[11px] sm:text-xs font-semibold px-4 py-1.5 rounded-full shadow-xs">
-          74 articles across 11 categories
-        </span>
-      </div>
+    <div class="pt-2">
+      <span class="inline-block bg-teal-800/60 border border-teal-400/40 text-teal-100 text-[11px] sm:text-xs font-semibold px-4 py-1.5 rounded-full shadow-xs">
+        Practical guidance from home care and healthcare support services
+      </span>
     </div>
-  </section>
+  </div>
+</section>
 
+<!-- ================= SECTION 2: CATEGORIES & BLOG GRID ================= -->
+<section class="py-10 sm:py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-  <!-- ================= SECTION 2: CATEGORY FILTERS, BLOG GRID & PAGINATION ================= -->
-  <section class="py-8 sm:py-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    
-    <!-- Filter Category Pills -->
-    <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-2.5 mb-6 text-xs font-medium">
-      <button class="bg-[#00797b] text-white px-3.5 py-1.5 rounded-full shadow-xs flex items-center gap-1.5 font-bold transition-transform active:scale-95">
-        All <span class="bg-teal-900/40 px-1.5 py-0.5 rounded-full text-[10px]">74</span>
-      </button>
-      <button class="bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 px-3 py-1.5 rounded-full shadow-2xs flex items-center gap-1.5 transition-colors">
-        Physiotherapy <span class="text-slate-400 text-[10px]">30</span>
-      </button>
-      <button class="bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 px-3 py-1.5 rounded-full shadow-2xs flex items-center gap-1.5 transition-colors">
-        Nursing <span class="text-slate-400 text-[10px]">20</span>
-      </button>
-      <button class="bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 px-3 py-1.5 rounded-full shadow-2xs flex items-center gap-1.5 transition-colors">
-        Elder Care <span class="text-slate-400 text-[10px]">8</span>
-      </button>
-      <button class="bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 px-3 py-1.5 rounded-full shadow-2xs flex items-center gap-1.5 transition-colors">
-        New Born Baby Mother Care <span class="text-slate-400 text-[10px]">4</span>
-      </button>
-      <button class="bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 px-3 py-1.5 rounded-full shadow-2xs flex items-center gap-1.5 transition-colors">
-        Vaccination <span class="text-slate-400 text-[10px]">3</span>
-      </button>
-      <button class="bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 px-3 py-1.5 rounded-full shadow-2xs flex items-center gap-1.5 transition-colors">
-        Respiratory Care <span class="text-slate-400 text-[10px]">1</span>
-      </button>
-      <button class="bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 px-3 py-1.5 rounded-full shadow-2xs flex items-center gap-1.5 transition-colors">
-        Trained Attendants <span class="text-slate-400 text-[10px]">2</span>
-      </button>
-      <button class="bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 px-3 py-1.5 rounded-full shadow-2xs flex items-center gap-1.5 transition-colors">
-        Cardiac Care <span class="text-slate-400 text-[10px]">1</span>
-      </button>
-      <button class="bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 px-3 py-1.5 rounded-full shadow-2xs flex items-center gap-1.5 transition-colors">
-        Doctor Consultations <span class="text-slate-400 text-[10px]">1</span>
-      </button>
-      <button class="bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 px-3 py-1.5 rounded-full shadow-2xs flex items-center gap-1.5 transition-colors">
-        Nutrition Diet Consultation <span class="text-slate-400 text-[10px]">1</span>
-      </button>
-      <button class="bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 px-3 py-1.5 rounded-full shadow-2xs flex items-center gap-1.5 transition-colors">
-        Diabetes Care <span class="text-slate-400 text-[10px]">1</span>
-      </button>
-    </div>
+  <!-- Category Filter Pills -->
+  <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-2.5 mb-10 text-xs font-medium" id="blogFilterBar">
+    <button type="button" data-filter="all" class="filter-btn active bg-[#00797b] text-white px-4 py-1.5 rounded-full shadow-xs font-bold transition active:scale-95">
+      All Articles
+    </button>
+    <button type="button" data-filter="elder-care" class="filter-btn bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 px-3.5 py-1.5 rounded-full shadow-2xs transition-colors">
+      Elder Care
+    </button>
+    <button type="button" data-filter="nursing" class="filter-btn bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 px-3.5 py-1.5 rounded-full shadow-2xs transition-colors">
+      Home Nursing
+    </button>
+    <button type="button" data-filter="bedridden" class="filter-btn bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 px-3.5 py-1.5 rounded-full shadow-2xs transition-colors">
+      Patient Attendants &amp; Bedridden Care
+    </button>
+    <button type="button" data-filter="mobility" class="filter-btn bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 px-3.5 py-1.5 rounded-full shadow-2xs transition-colors">
+      Mobility &amp; Rehabilitation
+    </button>
+    <button type="button" data-filter="staffing" class="filter-btn bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 px-3.5 py-1.5 rounded-full shadow-2xs transition-colors">
+      Hospital Staffing
+    </button>
+    <button type="button" data-filter="equipment" class="filter-btn bg-white border border-slate-200 text-slate-700 hover:bg-slate-50 px-3.5 py-1.5 rounded-full shadow-2xs transition-colors">
+      Medical Equipment &amp; ICU
+    </button>
+  </div>
 
-    <!-- Article Counter Info -->
-    <div class="mb-4 text-xs font-semibold text-slate-500">
-      Page 1 of 7 - 74 articles
-    </div>
+  <!-- Blog Grid -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7" id="blogGrid">
 
-    <!-- Blog Grid -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-
-      <!-- Blog Card 1 -->
-      <div class="bg-white rounded-2xl border border-slate-200/90 shadow-xs overflow-hidden flex flex-col justify-between hover:shadow-md transition-shadow">
-        <div>
-          <div class="relative aspect-16/10 overflow-hidden bg-slate-100">
-            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=600&auto=format&fit=crop" 
-                 alt="Wax Therapy" class="w-full h-full object-cover" />
-            <span class="absolute top-3 left-3 bg-white/95 text-slate-900 font-extrabold text-[9px] uppercase tracking-wider px-2.5 py-1 rounded-md shadow-xs">
-              Physiotherapy
-            </span>
-          </div>
-          <div class="p-5 space-y-2">
-            <h3 class="text-base font-bold text-slate-900 leading-snug font-serif">
-              Wax Therapy
-            </h3>
-            <p class="text-[11px] font-semibold text-slate-400">November 15, 2025</p>
-            <p class="text-xs text-slate-600 leading-relaxed">
-              Get wax therapy at home to relieve joint pain, stiffness, and improve mobility. Safe, hygienic sessions by certified physiotherapists.
-            </p>
-          </div>
+    <!-- Card 1 -->
+    <article data-category="elder-care" class="blog-card bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col justify-between hover:shadow-lg transition duration-300">
+      <div>
+        <div class="relative aspect-[4/5] overflow-hidden bg-slate-100 border-b border-slate-100">
+          <img src="img/image21.jpg" alt="Caregiver assisting senior with meal" class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500">
         </div>
-        <div class="px-5 pb-5">
-          <details class="group border-t border-slate-100 pt-3">
-            <summary class="flex items-center justify-between cursor-pointer text-xs font-bold text-teal-700 hover:text-teal-900 transition-colors select-none">
-              <span>Read Full Details</span>
-              <span class="text-sm font-extrabold transition-transform duration-300 group-open:rotate-45">+</span>
-            </summary>
-            <p class="pt-2 text-[11px] text-slate-500 leading-relaxed">
-              Paraffin wax treatment uses warm thermal therapy to deeply penetrate muscles, soothe arthritis symptoms, and restore hand and foot joint range of motion.
-            </p>
-          </details>
+        <div class="p-5 space-y-2">
+          <span class="inline-block bg-teal-50 text-teal-700 font-extrabold text-[10px] uppercase tracking-wider px-2.5 py-1 rounded-md mb-1">
+            Elder Care
+          </span>
+          <h3 class="text-base font-bold text-slate-900 leading-snug font-serif">
+            Nutritional Care &amp; Dignified Feeding for Seniors
+          </h3>
+          <p class="text-[11px] font-semibold text-slate-400">
+            February 15, 2026
+          </p>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Gentle bedside support can help seniors receive appropriate hydration, nutrition, and prescribed medicines safely and with dignity.
+          </p>
         </div>
       </div>
+      <div class="px-5 pb-5">
+        <a href="#" class="inline-flex items-center gap-1 text-xs font-bold text-teal-700 hover:text-teal-900 transition">
+          Read Article <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </article>
 
-      <!-- Blog Card 2 -->
-      <div class="bg-white rounded-2xl border border-slate-200/90 shadow-xs overflow-hidden flex flex-col justify-between hover:shadow-md transition-shadow">
-        <div>
-          <div class="relative aspect-16/10 overflow-hidden bg-slate-100">
-            <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=600&auto=format&fit=crop" 
-                 alt="Post-Fracture Stiffness Rehabilitation" class="w-full h-full object-cover" />
-            <span class="absolute top-3 left-3 bg-white/95 text-slate-900 font-extrabold text-[9px] uppercase tracking-wider px-2.5 py-1 rounded-md shadow-xs">
-              Physiotherapy
-            </span>
-          </div>
-          <div class="p-5 space-y-2">
-            <h3 class="text-base font-bold text-slate-900 leading-snug font-serif">
-              Post-Fracture Stiffness Rehabilitation
-            </h3>
-            <p class="text-[11px] font-semibold text-slate-400">February 24, 2026</p>
-            <p class="text-xs text-slate-600 leading-relaxed">
-              Overcome post-fracture stiffness with proven rehab strategies. Improve mobility, reduce pain, and regain strength through targeted recovery exercises.
-            </p>
-          </div>
+    <!-- Card 2 -->
+    <article data-category="nursing" class="blog-card bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col justify-between hover:shadow-lg transition duration-300">
+      <div>
+        <div class="relative aspect-[4/5] overflow-hidden bg-slate-100 border-b border-slate-100">
+          <img src="img/image13.jpg" alt="Nurse checking blood pressure of elderly patient" class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500">
         </div>
-        <div class="px-5 pb-5">
-          <details class="group border-t border-slate-100 pt-3">
-            <summary class="flex items-center justify-between cursor-pointer text-xs font-bold text-teal-700 hover:text-teal-900 transition-colors select-none">
-              <span>Read Full Details</span>
-              <span class="text-sm font-extrabold transition-transform duration-300 group-open:rotate-45">+</span>
-            </summary>
-            <p class="pt-2 text-[11px] text-slate-500 leading-relaxed">
-              Targeted joint mobilization, progressive resistance routines, and localized heat application ensure full range of motion recovery post-cast removal.
-            </p>
-          </details>
+        <div class="p-5 space-y-2">
+          <span class="inline-block bg-teal-50 text-teal-700 font-extrabold text-[10px] uppercase tracking-wider px-2.5 py-1 rounded-md mb-1">
+            Home Nursing
+          </span>
+          <h3 class="text-base font-bold text-slate-900 leading-snug font-serif">
+            The Importance of Routine Vitals Monitoring at Home
+          </h3>
+          <p class="text-[11px] font-semibold text-slate-400">
+            January 28, 2026
+          </p>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Regular monitoring of blood pressure, pulse, temperature, and oxygen saturation can help caregivers and clinicians identify changes that may require attention.
+          </p>
         </div>
       </div>
+      <div class="px-5 pb-5">
+        <a href="#" class="inline-flex items-center gap-1 text-xs font-bold text-teal-700 hover:text-teal-900 transition">
+          Read Article <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </article>
 
-      <!-- Blog Card 3 -->
-      <div class="bg-white rounded-2xl border border-slate-200/90 shadow-xs overflow-hidden flex flex-col justify-between hover:shadow-md transition-shadow">
-        <div>
-          <div class="relative aspect-16/10 overflow-hidden bg-slate-100">
-            <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=600&auto=format&fit=crop" 
-                 alt="Pre and Postnatal Exercises" class="w-full h-full object-cover" />
-            <span class="absolute top-3 left-3 bg-white/95 text-slate-900 font-extrabold text-[9px] uppercase tracking-wider px-2.5 py-1 rounded-md shadow-xs">
-              Physiotherapy
-            </span>
-          </div>
-          <div class="p-5 space-y-2">
-            <h3 class="text-base font-bold text-slate-900 leading-snug font-serif">
-              Pre and Postnatal Exercises
-            </h3>
-            <p class="text-[11px] font-semibold text-slate-400">February 24, 2026</p>
-            <p class="text-xs text-slate-600 leading-relaxed">
-              Safe and effective pre and postnatal exercises support strength, flexibility, and recovery, helping moms stay active and healthy during pregnancy and beyond.
-            </p>
-          </div>
+    <!-- Card 3 -->
+    <article data-category="mobility" class="blog-card bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col justify-between hover:shadow-lg transition duration-300">
+      <div>
+        <div class="relative aspect-[4/5] overflow-hidden bg-slate-100 border-b border-slate-100">
+          <img src="img/image9.jpg" alt="Attendant supporting patient with walker" class="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-500">
         </div>
-        <div class="px-5 pb-5">
-          <details class="group border-t border-slate-100 pt-3">
-            <summary class="flex items-center justify-between cursor-pointer text-xs font-bold text-teal-700 hover:text-teal-900 transition-colors select-none">
-              <span>Read Full Details</span>
-              <span class="text-sm font-extrabold transition-transform duration-300 group-open:rotate-45">+</span>
-            </summary>
-            <p class="pt-2 text-[11px] text-slate-500 leading-relaxed">
-              Customized pelvic floor strengthening, core stabilization, and low-impact posture adjustments guided by maternal health physiotherapists.
-            </p>
-          </details>
+        <div class="p-5 space-y-2">
+          <span class="inline-block bg-teal-50 text-teal-700 font-extrabold text-[10px] uppercase tracking-wider px-2.5 py-1 rounded-md mb-1">
+            Mobility &amp; Rehabilitation
+          </span>
+          <h3 class="text-base font-bold text-slate-900 leading-snug font-serif">
+            Rebuilding Post-Surgery Walking Confidence
+          </h3>
+          <p class="text-[11px] font-semibold text-slate-400">
+            January 14, 2026
+          </p>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Recovery after hip or knee procedures often requires safe mobility support and adherence to the rehabilitation plan provided by the treating clinical team.
+          </p>
         </div>
       </div>
+      <div class="px-5 pb-5">
+        <a href="#" class="inline-flex items-center gap-1 text-xs font-bold text-teal-700 hover:text-teal-900 transition">
+          Read Article <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </article>
 
-      <!-- Blog Card 4 -->
-      <div class="bg-white rounded-2xl border border-slate-200/90 shadow-xs overflow-hidden flex flex-col justify-between hover:shadow-md transition-shadow">
-        <div>
-          <div class="relative aspect-16/10 overflow-hidden bg-slate-100">
-            <img src="https://images.unsplash.com/photo-1584735935682-2f2b69dff9d2?q=80&w=600&auto=format&fit=crop" 
-                 alt="Understanding Leg Pain" class="w-full h-full object-cover" />
-            <span class="absolute top-3 left-3 bg-white/95 text-slate-900 font-extrabold text-[9px] uppercase tracking-wider px-2.5 py-1 rounded-md shadow-xs">
-              Physiotherapy
-            </span>
-          </div>
-          <div class="p-5 space-y-2">
-            <h3 class="text-base font-bold text-slate-900 leading-snug font-serif">
-              Understanding Leg Pain – Causes, Risks, and Recovery
-            </h3>
-            <p class="text-[11px] font-semibold text-slate-400">January 22, 2026</p>
-            <p class="text-xs text-slate-600 leading-relaxed">
-              Learn about the causes of leg pain and how to treat it effectively. Portea offers personalized home-based care and expert guidance for lasting relief.
-            </p>
-          </div>
+    <!-- Card 4 -->
+    <article data-category="bedridden" class="blog-card bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col justify-between hover:shadow-lg transition duration-300">
+      <div>
+        <div class="relative aspect-[4/5] overflow-hidden bg-slate-100 border-b border-slate-100">
+          <img src="img/pinkgilr.jpg" alt="Caretaker supporting bedridden elderly man" class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500">
         </div>
-        <div class="px-5 pb-5">
-          <details class="group border-t border-slate-100 pt-3">
-            <summary class="flex items-center justify-between cursor-pointer text-xs font-bold text-teal-700 hover:text-teal-900 transition-colors select-none">
-              <span>Read Full Details</span>
-              <span class="text-sm font-extrabold transition-transform duration-300 group-open:rotate-45">+</span>
-            </summary>
-            <p class="pt-2 text-[11px] text-slate-500 leading-relaxed">
-              From sciatica to muscle strain, accurate home diagnosis paired with physical therapy helps prevent chronic recurring discomfort.
-            </p>
-          </details>
+        <div class="p-5 space-y-2">
+          <span class="inline-block bg-teal-50 text-teal-700 font-extrabold text-[10px] uppercase tracking-wider px-2.5 py-1 rounded-md mb-1">
+            Bedridden Care
+          </span>
+          <h3 class="text-base font-bold text-slate-900 leading-snug font-serif">
+            Preventing Bedsores &amp; Complications in Long-Term Care
+          </h3>
+          <p class="text-[11px] font-semibold text-slate-400">
+            December 22, 2025
+          </p>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Immobile patients may need individualized positioning, skin care, hygiene, nutrition, and regular monitoring to help reduce the risk of pressure injuries and other complications.
+          </p>
         </div>
       </div>
+      <div class="px-5 pb-5">
+        <a href="#" class="inline-flex items-center gap-1 text-xs font-bold text-teal-700 hover:text-teal-900 transition">
+          Read Article <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </article>
 
-      <!-- Blog Card 5 (Featured Card Highlight) -->
-      <div class="bg-white rounded-2xl border-2 border-teal-500 shadow-xs overflow-hidden flex flex-col justify-between hover:shadow-md transition-shadow">
-        <div>
-          <div class="relative aspect-16/10 overflow-hidden bg-slate-100">
-            <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?q=80&w=600&auto=format&fit=crop" 
-                 alt="Life After AVN Surgery" class="w-full h-full object-cover" />
-            <span class="absolute top-3 left-3 bg-teal-700 text-white font-extrabold text-[9px] uppercase tracking-wider px-2.5 py-1 rounded-md shadow-xs">
-              Physiotherapy
-            </span>
-          </div>
-          <div class="p-5 space-y-2">
-            <h3 class="text-base font-bold text-teal-800 leading-snug font-serif">
-              Life After AVN Surgery: Recovery and Rehabilitation
-            </h3>
-            <p class="text-[11px] font-semibold text-slate-400">November 27, 2024</p>
-            <p class="text-xs text-slate-600 leading-relaxed">
-              Look in-home physiotherapy for avascular necrosis post-surgery recovery. Tailored plans by trained professionals help reduce pain &amp; improve balance.
-            </p>
-          </div>
+    <!-- Card 5 -->
+    <article data-category="equipment" class="blog-card bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col justify-between hover:shadow-lg transition duration-300">
+      <div>
+        <div class="relative aspect-[4/5] overflow-hidden bg-slate-100 border-b border-slate-100">
+          <img src="img/IMG-20260905-WA0009.jpg" alt="Wheelchair and home medical equipment" class="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-500">
         </div>
-        <div class="px-5 pb-5">
-          <details class="group border-t border-slate-100 pt-3">
-            <summary class="flex items-center justify-between cursor-pointer text-xs font-bold text-teal-700 hover:text-teal-900 transition-colors select-none">
-              <span>Read Full Details</span>
-              <span class="text-sm font-extrabold transition-transform duration-300 group-open:rotate-45">+</span>
-            </summary>
-            <p class="pt-2 text-[11px] text-slate-500 leading-relaxed">
-              Assisted gait training, joint burden reduction exercises, and step-by-step home mobility support for Avascular Necrosis post-op care.
-            </p>
-          </details>
+        <div class="p-5 space-y-2">
+          <span class="inline-block bg-teal-50 text-teal-700 font-extrabold text-[10px] uppercase tracking-wider px-2.5 py-1 rounded-md mb-1">
+            Medical Equipment &amp; ICU
+          </span>
+          <h3 class="text-base font-bold text-slate-900 leading-snug font-serif">
+            Selecting the Right Wheelchairs &amp; Home ICU Beds
+          </h3>
+          <p class="text-[11px] font-semibold text-slate-400">
+            November 18, 2025
+          </p>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Understanding the purpose and suitability of hospital beds, wheelchairs, oxygen equipment, and suction devices can help families plan home-based care more effectively.
+          </p>
         </div>
       </div>
+      <div class="px-5 pb-5">
+        <a href="#" class="inline-flex items-center gap-1 text-xs font-bold text-teal-700 hover:text-teal-900 transition">
+          Read Article <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </article>
 
-      <!-- Blog Card 6 -->
-      <div class="bg-white rounded-2xl border border-slate-200/90 shadow-xs overflow-hidden flex flex-col justify-between hover:shadow-md transition-shadow">
-        <div>
-          <div class="relative aspect-16/10 overflow-hidden bg-slate-100">
-            <img src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?q=80&w=600&auto=format&fit=crop" 
-                 alt="Effect Of Music on Mental Health" class="w-full h-full object-cover" />
-            <span class="absolute top-3 left-3 bg-white/95 text-slate-900 font-extrabold text-[9px] uppercase tracking-wider px-2.5 py-1 rounded-md shadow-xs">
-              Nursing
-            </span>
-          </div>
-          <div class="p-5 space-y-2">
-            <h3 class="text-base font-bold text-slate-900 leading-snug font-serif">
-              Effect Of Music on Mental Health
-            </h3>
-            <p class="text-[11px] font-semibold text-slate-400">May 28, 2023</p>
-            <p class="text-xs text-slate-600 leading-relaxed">
-              Our relationship with music is deeply. Everyone knows the effect of music on mental health is unbelievable.
-            </p>
-          </div>
+    <!-- Card 6 -->
+    <article data-category="staffing" class="blog-card bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col justify-between hover:shadow-lg transition duration-300">
+      <div>
+        <div class="relative aspect-[4/5] overflow-hidden bg-slate-100 border-b border-slate-100">
+          <img src="img/wardboy.jpg" alt="Hospital ward attendant" class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-500">
         </div>
-        <div class="px-5 pb-5">
-          <details class="group border-t border-slate-100 pt-3">
-            <summary class="flex items-center justify-between cursor-pointer text-xs font-bold text-teal-700 hover:text-teal-900 transition-colors select-none">
-              <span>Read Full Details</span>
-              <span class="text-sm font-extrabold transition-transform duration-300 group-open:rotate-45">+</span>
-            </summary>
-            <p class="pt-2 text-[11px] text-slate-500 leading-relaxed">
-              Explores how sound frequencies stimulate dopamine production, lower cortisol levels, and support emotional recovery during illness.
-            </p>
-          </details>
+        <div class="p-5 space-y-2">
+          <span class="inline-block bg-teal-50 text-teal-700 font-extrabold text-[10px] uppercase tracking-wider px-2.5 py-1 rounded-md mb-1">
+            Hospital Staffing
+          </span>
+          <h3 class="text-base font-bold text-slate-900 leading-snug font-serif">
+            Supporting Hospital Staffing &amp; Patient Services
+          </h3>
+          <p class="text-[11px] font-semibold text-slate-400">
+            October 30, 2025
+          </p>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Reliable ward attendants, OT support staff, housekeeping personnel, and other healthcare support workers can contribute to smoother day-to-day hospital operations.
+          </p>
         </div>
       </div>
+      <div class="px-5 pb-5">
+        <a href="#" class="inline-flex items-center gap-1 text-xs font-bold text-teal-700 hover:text-teal-900 transition">
+          Read Article <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </article>
 
-    </div>
+  </div>
+</section>
 
-    <!-- Pagination Controls -->
-    <div class="flex items-center justify-center gap-2 mt-10 pt-4 text-xs font-bold text-slate-600">
-      <button class="px-3 py-1.5 rounded-full border border-slate-200 hover:bg-slate-100 text-slate-400 cursor-not-allowed transition-colors">
-        &lt; Previous
-      </button>
-      <button class="w-8 h-8 rounded-full bg-teal-700 text-white flex items-center justify-center shadow-xs">
-        1
-      </button>
-      <button class="w-8 h-8 rounded-full border border-slate-200 bg-white hover:bg-slate-100 text-slate-700 flex items-center justify-center transition-colors">
-        2
-      </button>
-      <span class="px-1 text-slate-400">...</span>
-      <button class="w-8 h-8 rounded-full border border-slate-200 bg-white hover:bg-slate-100 text-slate-700 flex items-center justify-center transition-colors">
-        7
-      </button>
-      <button class="px-3 py-1.5 rounded-full border border-teal-600 text-teal-700 hover:bg-teal-50 flex items-center gap-1 transition-colors">
-        Next &gt;
-      </button>
-    </div>
+<!-- ================= JAVASCRIPT CATEGORY FILTERING ================= -->
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const filterBtns = document.querySelectorAll("#blogFilterBar .filter-btn");
+    const blogCards = document.querySelectorAll("#blogGrid .blog-card");
 
-  </section>
+    filterBtns.forEach(function(btn) {
+      btn.addEventListener("click", function() {
+        const selected = this.getAttribute("data-filter");
 
+        // Update button styles
+        filterBtns.forEach(function(button) {
+          button.classList.remove("bg-[#00797b]", "text-white", "font-bold");
+          button.classList.add("bg-white", "border", "border-slate-200", "text-slate-700");
+        });
 
-<?php include 'footer.php' ?>
+        this.classList.remove("bg-white", "border", "border-slate-200", "text-slate-700");
+        this.classList.add("bg-[#00797b]", "text-white", "font-bold");
 
+        // Toggle visibility of blog cards
+        blogCards.forEach(function(card) {
+          const category = card.getAttribute("data-category");
 
-<?php include 'footer.php' ?>
+          if (selected === "all" || category === selected) {
+            card.style.display = "flex";
+          } else {
+            card.style.display = "none";
+          }
+        });
+      });
+    });
+  });
+</script>
+
+<?php include 'footer.php'; ?>
