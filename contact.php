@@ -49,16 +49,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Floating Badge -->
-                <div class="absolute top-5 right-5 bg-white/95 backdrop-blur-sm rounded-2xl px-4 py-2 shadow-xl border border-teal-100 flex items-center gap-3">
-                    <div class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></div>
-                    <p class="text-xs font-bold text-slate-700"><i class="fa-brands fa-whatsapp text-emerald-500 mr-1.5"></i> Quick Response</p>
-                </div>
-                <!-- Rating Badge -->
-                <div class="absolute bottom-24 left-8 bg-white/95 backdrop-blur-sm rounded-2xl px-4 py-2 shadow-xl border border-amber-100 flex items-center gap-2">
-                    <span class="text-amber-400 text-sm">★★★★★</span>
-                    <span class="text-xs font-bold text-slate-700">4.8 <span class="text-slate-400 font-normal">(500+ reviews)</span></span>
-                </div>
+                
             </div>
 
             <!-- Right Column: Contact Form -->
@@ -172,45 +163,98 @@
     </div>
 </section>
 
-<!-- ================= ADDITIONAL CONTACT INFO SECTION (ATTRACTIVE) ================= -->
+<!-- ================= ADDITIONAL CONTACT INFO SECTION ================= -->
 <section class="py-12 bg-gradient-to-br from-teal-900 via-teal-800 to-slate-900 text-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
+            <!-- Call Us -->
             <div class="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/10 hover:bg-white/20 transition-all group text-center">
-                <div class="w-14 h-14 rounded-full bg-teal-500/20 backdrop-blur-sm text-teal-200 flex items-center justify-center text-2xl mx-auto mb-3 group-hover:scale-110 transition-transform">
+
+                <div class="w-16 h-16 rounded-full bg-teal-500/25 backdrop-blur-sm text-teal-200 flex items-center justify-center text-3xl mx-auto mb-3 group-hover:scale-110 transition-transform">
                     <i class="fa-solid fa-phone"></i>
                 </div>
+
                 <h4 class="font-bold text-white text-sm">Call Us</h4>
-                <p class="text-sm text-teal-200 font-medium">+91 98603 90012</p>
-                <p class="text-xs text-teal-300/70">24/7 Support</p>
+
+                <p class="text-sm text-teal-200 font-medium">
+                    +91 98603 90012
+                </p>
+
+                <p class="text-xs text-teal-300/70">
+                    24/7 Support
+                </p>
             </div>
 
-            <div class="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/10 hover:bg-white/20 transition-all group text-center">
-                <div class="w-14 h-14 rounded-full bg-emerald-500/20 backdrop-blur-sm text-emerald-200 flex items-center justify-center text-2xl mx-auto mb-3 group-hover:scale-110 transition-transform">
+
+            <!-- WhatsApp -->
+            <a href="https://wa.me/919860390012"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/10 hover:bg-white/20 transition-all group text-center block">
+
+                <div class="w-16 h-16 rounded-full bg-emerald-500/25 backdrop-blur-sm text-emerald-300 flex items-center justify-center text-3xl mx-auto mb-3 group-hover:scale-110 transition-transform">
+
                     <i class="fa-brands fa-whatsapp"></i>
-                </div>
-                <h4 class="font-bold text-white text-sm">WhatsApp</h4>
-                <p class="text-sm text-emerald-200 font-medium">+91 98603 90012</p>
-                <p class="text-xs text-emerald-300/70">Quick Response</p>
-            </div>
 
-            <div class="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/10 hover:bg-white/20 transition-all group text-center">
-                <div class="w-14 h-14 rounded-full bg-blue-500/20 backdrop-blur-sm text-blue-200 flex items-center justify-center text-2xl mx-auto mb-3 group-hover:scale-110 transition-transform">
+                </div>
+
+                <h4 class="font-bold text-white text-sm">
+                    WhatsApp
+                </h4>
+
+                <p class="text-sm text-emerald-200 font-medium">
+                    +91 98603 90012
+                </p>
+
+                <p class="text-xs text-emerald-300/70">
+                    Quick Response
+                </p>
+            </a>
+
+
+            <!-- Email Us -->
+            <a href="mailto:jivhalahealthcare@gmail.com"
+               class="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/10 hover:bg-white/20 transition-all group text-center block">
+
+                <div class="w-16 h-16 rounded-full bg-blue-500/25 backdrop-blur-sm text-blue-300 flex items-center justify-center text-3xl mx-auto mb-3 group-hover:scale-110 transition-transform">
                     <i class="fa-solid fa-envelope"></i>
                 </div>
-                <h4 class="font-bold text-white text-sm">Email Us</h4>
-                <p class="text-sm text-blue-200 font-medium">jivhalahealthcare@gmail.com</p>
-                <p class="text-xs text-blue-300/70">We respond within 24 hrs</p>
-            </div>
 
+                <h4 class="font-bold text-white text-sm">
+                    Email Us
+                </h4>
+
+                <p class="text-sm text-blue-200 font-medium">
+                    jivhalahealthcare@gmail.com
+                </p>
+
+                <p class="text-xs text-blue-300/70">
+                    We respond within 24 hrs
+                </p>
+            </a>
+
+
+            <!-- Visit Us -->
             <div class="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/10 hover:bg-white/20 transition-all group text-center">
-                <div class="w-14 h-14 rounded-full bg-amber-500/20 backdrop-blur-sm text-amber-200 flex items-center justify-center text-2xl mx-auto mb-3 group-hover:scale-110 transition-transform">
+
+                <div class="w-16 h-16 rounded-full bg-amber-500/25 backdrop-blur-sm text-amber-300 flex items-center justify-center text-3xl mx-auto mb-3 group-hover:scale-110 transition-transform">
+
                     <i class="fa-solid fa-location-dot"></i>
+
                 </div>
-                <h4 class="font-bold text-white text-sm">Visit Us</h4>
-                <p class="text-sm text-amber-200 font-medium">Datala, Chandrapur</p>
-                <p class="text-xs text-amber-300/70">MH-442406</p>
+
+                <h4 class="font-bold text-white text-sm">
+                    Visit Us
+                </h4>
+
+                <p class="text-sm text-amber-200 font-medium">
+                    Datala, Chandrapur
+                </p>
+
+                <p class="text-xs text-amber-300/70">
+                    MH-442406
+                </p>
             </div>
 
         </div>

@@ -128,6 +128,7 @@
 <section class="py-12 sm:py-16 bg-white/60 border-b border-amber-100/40">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
 
+        <!-- Section Title -->
         <div class="text-center space-y-1">
             <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 font-serif">
                 Patient Testimonials
@@ -137,62 +138,103 @@
             </p>
         </div>
 
+        <!-- Testimonials Grid -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
+            <!-- Testimonial Card 1 -->
             <div class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 border-l-4 border-l-teal-600">
+
                 <div class="space-y-2">
                     <span class="text-3xl font-serif text-teal-500 leading-none">“</span>
+
                     <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        It was through Health Manager Saba over 2 years back, that I first came to know about Portea. Saba has been extremely courteous & helpful to me & my wife. Through her we both have availed Portea services like physiotherapy, doctor visits...
+                        We were very happy with the care and support provided to
+                        our family member. The caregiver was polite, attentive
+                        and made us feel comfortable throughout the service.
                     </p>
-                    <a href="#" class="text-[11px] font-bold text-teal-700 hover:underline inline-block">Read more</a>
                 </div>
+
                 <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
+
                     <div class="w-8 h-8 rounded-full bg-teal-50 text-teal-700 font-bold flex items-center justify-center text-xs shrink-0 border border-teal-200">
-                        M
+                        S
                     </div>
+
                     <div>
-                        <h4 class="text-xs font-bold text-slate-900">M. J. Aga</h4>
-                        <span class="text-[10px] text-slate-400">Mumbai</span>
+                        <h4 class="text-xs font-bold text-slate-900">
+                            Sneha Kulkarni
+                        </h4>
+                        <span class="text-[10px] text-slate-400">
+                            Family Member
+                        </span>
                     </div>
+
                 </div>
             </div>
 
-            <div class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 border-l-4 border-l-teal-600">
-                <div class="space-y-2">
-                    <span class="text-3xl font-serif text-teal-500 leading-none">“</span>
-                    <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        I would like to convey my appreciation for the commitment and dedication that Health Manager Hema has towards my family. I am glad to say that I feel quite relaxed when it comes to my father's health as she serves as a single point of contact...
-                    </p>
-                    <a href="#" class="text-[11px] font-bold text-teal-700 hover:underline inline-block">Read more</a>
-                </div>
-                <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
-                    <div class="w-8 h-8 rounded-full bg-teal-50 text-teal-700 font-bold flex items-center justify-center text-xs shrink-0 border border-teal-200">
-                        J
-                    </div>
-                    <div>
-                        <h4 class="text-xs font-bold text-slate-900">Jassi Bhatia</h4>
-                        <span class="text-[10px] text-slate-400">Bangalore</span>
-                    </div>
-                </div>
-            </div>
 
+            <!-- Testimonial Card 2 -->
             <div class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 border-l-4 border-l-teal-600">
+
                 <div class="space-y-2">
                     <span class="text-3xl font-serif text-teal-500 leading-none">“</span>
+
                     <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        I avail Portea Care Plan service for my mother and Health Manager Kalka has come to be the reliable, single constant over the last 30 months or so that my mother has been in the hands of Portea, "always there", no matter the time, no matter...
+                        The nursing care was very helpful for our family.
+                        The staff was professional, caring and responsive
+                        whenever we needed assistance. We truly appreciated
+                        the support during a difficult time.
                     </p>
-                    <a href="#" class="text-[11px] font-bold text-teal-700 hover:underline inline-block">Read more</a>
                 </div>
+
                 <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
+
                     <div class="w-8 h-8 rounded-full bg-teal-50 text-teal-700 font-bold flex items-center justify-center text-xs shrink-0 border border-teal-200">
                         R
                     </div>
+
                     <div>
-                        <h4 class="text-xs font-bold text-slate-900">Rohit Nayyar</h4>
-                        <span class="text-[10px] text-slate-400">Bangalore</span>
+                        <h4 class="text-xs font-bold text-slate-900">
+                            Rajesh Patil
+                        </h4>
+                        <span class="text-[10px] text-slate-400">
+                            Family Member
+                        </span>
                     </div>
+
+                </div>
+            </div>
+
+
+            <!-- Testimonial Card 3 -->
+            <div class="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-xs flex flex-col justify-between space-y-4 border-l-4 border-l-teal-600">
+
+                <div class="space-y-2">
+                    <span class="text-3xl font-serif text-teal-500 leading-none">“</span>
+
+                    <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                        Getting healthcare support at home made things much
+                        easier for our family. The team was easy to communicate
+                        with and provided caring and dependable service when
+                        we needed it most.
+                    </p>
+                </div>
+
+                <div class="flex items-center gap-3 pt-4 border-t border-slate-100">
+
+                    <div class="w-8 h-8 rounded-full bg-teal-50 text-teal-700 font-bold flex items-center justify-center text-xs shrink-0 border border-teal-200">
+                        N
+                    </div>
+
+                    <div>
+                        <h4 class="text-xs font-bold text-slate-900">
+                            Neha Sharma
+                        </h4>
+                        <span class="text-[10px] text-slate-400">
+                            Family Member
+                        </span>
+                    </div>
+
                 </div>
             </div>
 
@@ -200,117 +242,241 @@
     </div>
 </section>
 
-<!-- ================= SECTION 4: TABLE OF CONTENTS ACCORDION ================= -->
+<!-- ================= SECTION 4: ELDER CARE INFORMATION ACCORDION ================= -->
 <section class="py-12 sm:py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
 
+            <!-- ================= LEFT COLUMN ================= -->
             <div class="lg:col-span-8 space-y-6">
 
                 <div class="flex items-center gap-3 border-l-4 border-teal-600 pl-3">
                     <h2 class="text-base sm:text-lg font-extrabold uppercase tracking-wider text-slate-900">
-                        TABLE OF CONTENTS
+                        ELDER CARE INFORMATION
                     </h2>
                 </div>
 
+
                 <div class="divide-y divide-slate-200/80 border-y border-slate-200/80">
 
+                    <!-- Accordion 1 -->
                     <details class="group py-3.5">
+
                         <summary class="flex items-center justify-between cursor-pointer select-none py-1 text-slate-900 hover:text-teal-700 font-bold text-xs sm:text-sm tracking-tight transition-colors">
-                            <span>Our Elder Care Services At Home</span>
-                            <span class="w-6 h-6 rounded-full bg-slate-100 text-slate-600 flex items-center justify-center font-bold text-base transition-transform duration-300 group-open:rotate-45 group-open:bg-teal-600 group-open:text-white shrink-0 ml-4">+</span>
+
+                            <span>
+                                Our Elder Care Services At Home
+                            </span>
+
+                            <span class="w-6 h-6 rounded-full bg-slate-100 text-slate-600 flex items-center justify-center font-bold text-base transition-transform duration-300 group-open:rotate-45 group-open:bg-teal-600 group-open:text-white shrink-0 ml-4">
+                                +
+                            </span>
+
                         </summary>
+
                         <div class="pt-3 pb-2 px-1 text-slate-600 text-xs sm:text-sm leading-relaxed">
-                            Portea provides comprehensive elder care packages designed to offer complete medical, personal, and emotional support to elderly family members in the comfort of their homes.
+                            Jivhala Healthcare provides dependable elder care support at home,
+                            helping elderly family members receive the assistance and attention
+                            they need in the comfort of their own home.
                         </div>
+
                     </details>
 
+
+                    <!-- Accordion 2 -->
                     <details class="group py-3.5">
+
                         <summary class="flex items-center justify-between cursor-pointer select-none py-1 text-slate-900 hover:text-teal-700 font-bold text-xs sm:text-sm tracking-tight transition-colors">
-                            <span>Benefits Of Booking Elder Care At Home With Portea</span>
-                            <span class="w-6 h-6 rounded-full bg-slate-100 text-slate-600 flex items-center justify-center font-bold text-base transition-transform duration-300 group-open:rotate-45 group-open:bg-teal-600 group-open:text-white shrink-0 ml-4">+</span>
+
+                            <span>
+                                Benefits Of Elder Care At Home
+                            </span>
+
+                            <span class="w-6 h-6 rounded-full bg-slate-100 text-slate-600 flex items-center justify-center font-bold text-base transition-transform duration-300 group-open:rotate-45 group-open:bg-teal-600 group-open:text-white shrink-0 ml-4">
+                                +
+                            </span>
+
                         </summary>
+
                         <div class="pt-3 pb-2 px-1 text-slate-600 text-xs sm:text-sm leading-relaxed">
-                            Enjoy continuous doctor oversight, dedicated health managers, routine health check-ups, emergency coordination, and peace of mind knowing your parents are well cared for.
+                            Home-based elder care can provide comfort, personal attention
+                            and convenient support while allowing elderly family members
+                            to remain in a familiar environment close to their loved ones.
                         </div>
+
                     </details>
 
+
+                    <!-- Accordion 3 -->
                     <details class="group py-3.5">
+
                         <summary class="flex items-center justify-between cursor-pointer select-none py-1 text-slate-900 hover:text-teal-700 font-bold text-xs sm:text-sm tracking-tight transition-colors">
-                            <span>Who Can Book Elder Care Services With Portea?</span>
-                            <span class="w-6 h-6 rounded-full bg-slate-100 text-slate-600 flex items-center justify-center font-bold text-base transition-transform duration-300 group-open:rotate-45 group-open:bg-teal-600 group-open:text-white shrink-0 ml-4">+</span>
+
+                            <span>
+                                Who Can Book Elder Care Services?
+                            </span>
+
+                            <span class="w-6 h-6 rounded-full bg-slate-100 text-slate-600 flex items-center justify-center font-bold text-base transition-transform duration-300 group-open:rotate-45 group-open:bg-teal-600 group-open:text-white shrink-0 ml-4">
+                                +
+                            </span>
+
                         </summary>
+
                         <div class="pt-3 pb-2 px-1 text-slate-600 text-xs sm:text-sm leading-relaxed">
-                            Children living in different cities or abroad, working professionals, and family caregivers seeking dedicated professional support for elderly parents can easily book our plans.
+                            Elder care services can be arranged by family members, working
+                            professionals, children living in another city, or anyone
+                            looking for dependable care and support for an elderly loved one.
                         </div>
+
                     </details>
 
+
+                    <!-- Accordion 4 -->
                     <details class="group py-3.5">
+
                         <summary class="flex items-center justify-between cursor-pointer select-none py-1 text-slate-900 hover:text-teal-700 font-bold text-xs sm:text-sm tracking-tight transition-colors">
-                            <span>Book Elder Care Services Near You With Portea</span>
-                            <span class="w-6 h-6 rounded-full bg-slate-100 text-slate-600 flex items-center justify-center font-bold text-base transition-transform duration-300 group-open:rotate-45 group-open:bg-teal-600 group-open:text-white shrink-0 ml-4">+</span>
+
+                            <span>
+                                How To Book Elder Care Services
+                            </span>
+
+                            <span class="w-6 h-6 rounded-full bg-slate-100 text-slate-600 flex items-center justify-center font-bold text-base transition-transform duration-300 group-open:rotate-45 group-open:bg-teal-600 group-open:text-white shrink-0 ml-4">
+                                +
+                            </span>
+
                         </summary>
+
                         <div class="pt-3 pb-2 px-1 text-slate-600 text-xs sm:text-sm leading-relaxed">
-                            Our care plans connect you directly with nearby doctors, nurses, physiotherapists, and trained attendants for quick visits and seamless doorstep delivery of services.
+                            Contact Jivhala Healthcare to discuss your requirements,
+                            understand the available care options and arrange suitable
+                            support for your family member.
                         </div>
+
                     </details>
 
+
+                    <!-- Accordion 5 -->
                     <details class="group py-3.5">
+
                         <summary class="flex items-center justify-between cursor-pointer select-none py-1 text-slate-900 hover:text-teal-700 font-bold text-xs sm:text-sm tracking-tight transition-colors">
-                            <span>Portea Elder Care Services In Your City</span>
-                            <span class="w-6 h-6 rounded-full bg-slate-100 text-slate-600 flex items-center justify-center font-bold text-base transition-transform duration-300 group-open:rotate-45 group-open:bg-teal-600 group-open:text-white shrink-0 ml-4">+</span>
+
+                            <span>
+                                Elder Care Services In Pune & Chandrapur
+                            </span>
+
+                            <span class="w-6 h-6 rounded-full bg-slate-100 text-slate-600 flex items-center justify-center font-bold text-base transition-transform duration-300 group-open:rotate-45 group-open:bg-teal-600 group-open:text-white shrink-0 ml-4">
+                                +
+                            </span>
+
                         </summary>
+
                         <div class="pt-3 pb-2 px-1 text-slate-600 text-xs sm:text-sm leading-relaxed">
-                            We operate across major metros including Pune, Kolkata, Chennai, Mumbai, Delhi-NCR, Bangalore, and Hyderabad with dedicated local care managers.
+                            Jivhala Healthcare currently provides healthcare and home care
+                            services in Pune and Chandrapur. Contact our team to check
+                            service availability in your area.
                         </div>
+
                     </details>
 
+
+                    <!-- Accordion 6 -->
                     <details class="group py-3.5">
+
                         <summary class="flex items-center justify-between cursor-pointer select-none py-1 text-slate-900 hover:text-teal-700 font-bold text-xs sm:text-sm tracking-tight transition-colors">
-                            <span>Why Choose Portea For Elder Care Services?</span>
-                            <span class="w-6 h-6 rounded-full bg-slate-100 text-slate-600 flex items-center justify-center font-bold text-base transition-transform duration-300 group-open:rotate-45 group-open:bg-teal-600 group-open:text-white shrink-0 ml-4">+</span>
+
+                            <span>
+                                Why Choose Jivhala Healthcare For Elder Care?
+                            </span>
+
+                            <span class="w-6 h-6 rounded-full bg-slate-100 text-slate-600 flex items-center justify-center font-bold text-base transition-transform duration-300 group-open:rotate-45 group-open:bg-teal-600 group-open:text-white shrink-0 ml-4">
+                                +
+                            </span>
+
                         </summary>
+
                         <div class="pt-3 pb-2 px-1 text-slate-600 text-xs sm:text-sm leading-relaxed">
-                            With over 10+ years of healthcare experience, background-verified staff, regular digital health updates for families, and holistic medical plans, Portea is India's leading home care provider.
+                            Jivhala Healthcare focuses on providing caring, respectful and
+                            convenient healthcare support at home. Our services are designed
+                            to help families manage their loved one's care with greater
+                            comfort and peace of mind.
                         </div>
+
                     </details>
 
+
+                    <!-- Accordion 7 -->
                     <details class="group py-3.5">
+
                         <summary class="flex items-center justify-between cursor-pointer select-none py-1 text-slate-900 hover:text-teal-700 font-bold text-xs sm:text-sm tracking-tight transition-colors">
-                            <span>FAQs About Elder Care Services At Home</span>
-                            <span class="w-6 h-6 rounded-full bg-slate-100 text-slate-600 flex items-center justify-center font-bold text-base transition-transform duration-300 group-open:rotate-45 group-open:bg-teal-600 group-open:text-white shrink-0 ml-4">+</span>
+
+                            <span>
+                                FAQs About Elder Care Services
+                            </span>
+
+                            <span class="w-6 h-6 rounded-full bg-slate-100 text-slate-600 flex items-center justify-center font-bold text-base transition-transform duration-300 group-open:rotate-45 group-open:bg-teal-600 group-open:text-white shrink-0 ml-4">
+                                +
+                            </span>
+
                         </summary>
+
                         <div class="pt-3 pb-2 px-1 text-slate-600 text-xs sm:text-sm leading-relaxed">
-                            Find answers regarding subscription plans, emergency protocols, doctor consultation frequencies, and lab test inclusions in our Care Plan packages.
+                            Have questions about elder care, home nursing, caregiver support
+                            or available services? Contact Jivhala Healthcare and our team
+                            will help you understand the suitable options for your needs.
                         </div>
+
                     </details>
 
                 </div>
             </div>
 
+
+            <!-- ================= RIGHT COLUMN ================= -->
             <div class="lg:col-span-4 space-y-6">
 
+                <!-- Hindi -->
                 <div class="bg-white rounded-2xl p-5 border border-slate-200/80 shadow-xs space-y-3">
+
                     <h3 class="font-bold text-slate-900 text-xs sm:text-sm border-b border-slate-100 pb-2">
                         Also Read in Hindi
                     </h3>
+
                     <div>
-                        <a href="#" class="text-xs sm:text-sm font-semibold text-teal-700 hover:underline hover:text-teal-900 transition-colors block">
-                            एल्डर केयर
+                        <a href="#"
+                           class="text-xs sm:text-sm font-semibold text-teal-700 hover:underline hover:text-teal-900 transition-colors block">
+                            एल्डर केयर सेवाएं
                         </a>
                     </div>
+
                 </div>
 
+
+                <!-- Elder Care Locations -->
                 <div class="bg-white rounded-2xl p-5 border border-slate-200/80 shadow-xs space-y-3">
+
                     <h3 class="font-bold text-slate-900 text-xs sm:text-sm border-b border-slate-100 pb-2">
-                        Elder Care in Other Cities
+                        Elder Care Services
                     </h3>
+
                     <ul class="space-y-2 text-xs sm:text-sm">
-                        <li><a href="#" class="font-semibold text-teal-700 hover:underline hover:text-teal-900 transition-colors block">Elder care in Pune</a></li>
-                        <li><a href="#" class="font-semibold text-teal-700 hover:underline hover:text-teal-900 transition-colors block">Elder care in Kolkata</a></li>
-                        <li><a href="#" class="font-semibold text-teal-700 hover:underline hover:text-teal-900 transition-colors block">Elder care in Chennai</a></li>
-                        <li><a href="#" class="font-semibold text-teal-700 hover:underline hover:text-teal-900 transition-colors block">Elder care in Mumbai</a></li>
+
+                        <li>
+                            <a href="#"
+                               class="font-semibold text-teal-700 hover:underline hover:text-teal-900 transition-colors block">
+                                Elder Care in Pune
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#"
+                               class="font-semibold text-teal-700 hover:underline hover:text-teal-900 transition-colors block">
+                                Elder Care in Chandrapur
+                            </a>
+                        </li>
+
                     </ul>
+
                 </div>
 
             </div>
@@ -382,33 +548,103 @@
     </div>
 </section> -->
 
-<!-- ================= SECTION 6: WHY CHOOSE US / STATS ================= -->
+<!-- ================= SECTION 6: WHY CHOOSE US ================= -->
 <section class="py-16 bg-teal-700 text-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
         <div class="text-center mb-12">
-            <span class="bg-white/20 text-white text-xs px-4 py-1 rounded-full uppercase font-bold tracking-wider">Why Jivhala Healthcare</span>
-            <h2 class="text-3xl sm:text-4xl font-extrabold mt-3 font-serif">Trusted by Thousands Across India</h2>
-            <p class="text-teal-100 mt-2 max-w-2xl mx-auto">We bring hospital-quality care to your home with compassion, expertise, and round-the-clock support.</p>
+
+            <span class="bg-white/20 text-white text-xs px-4 py-1 rounded-full uppercase font-bold tracking-wider">
+                Why Jivhala Healthcare
+            </span>
+
+            <h2 class="text-3xl sm:text-4xl font-extrabold mt-3 font-serif">
+                Caring For You, Every Step Of The Way
+            </h2>
+
+            <p class="text-teal-100 mt-2 max-w-2xl mx-auto">
+                Compassionate healthcare support designed to bring comfort,
+                care and peace of mind to patients and their families.
+            </p>
+
         </div>
 
+
         <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+
+            <!-- Home Healthcare -->
             <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
-                <p class="text-4xl font-extrabold">10,000+</p>
-                <p class="text-xs text-teal-200 mt-1">Happy Families Served</p>
+
+                <div class="w-14 h-14 mx-auto mb-4 rounded-full bg-white/15 flex items-center justify-center">
+                    <i class="fa-solid fa-house-medical text-2xl"></i>
+                </div>
+
+                <h3 class="text-sm sm:text-base font-bold">
+                    Home Healthcare
+                </h3>
+
+                <p class="text-xs text-teal-200 mt-2">
+                    Professional healthcare support in the comfort of your home.
+                </p>
+
             </div>
+
+
+            <!-- Nursing Care -->
             <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
-                <p class="text-4xl font-extrabold">98%</p>
-                <p class="text-xs text-teal-200 mt-1">Satisfaction Rate</p>
+
+                <div class="w-14 h-14 mx-auto mb-4 rounded-full bg-white/15 flex items-center justify-center">
+                    <i class="fa-solid fa-user-nurse text-2xl"></i>
+                </div>
+
+                <h3 class="text-sm sm:text-base font-bold">
+                    Nursing Care
+                </h3>
+
+                <p class="text-xs text-teal-200 mt-2">
+                    Caring nursing assistance tailored to individual needs.
+                </p>
+
             </div>
+
+
+            <!-- Elder Care -->
             <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
-                <p class="text-4xl font-extrabold">500+</p>
-                <p class="text-xs text-teal-200 mt-1">Certified Nurses</p>
+
+                <div class="w-14 h-14 mx-auto mb-4 rounded-full bg-white/15 flex items-center justify-center">
+                    <i class="fa-solid fa-hands-holding-child text-2xl"></i>
+                </div>
+
+                <h3 class="text-sm sm:text-base font-bold">
+                    Elder Care
+                </h3>
+
+                <p class="text-xs text-teal-200 mt-2">
+                    Dependable support for elderly family members at home.
+                </p>
+
             </div>
+
+
+            <!-- Family Support -->
             <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
-                <p class="text-4xl font-extrabold">24/7</p>
-                <p class="text-xs text-teal-200 mt-1">Emergency Support</p>
+
+                <div class="w-14 h-14 mx-auto mb-4 rounded-full bg-white/15 flex items-center justify-center">
+                    <i class="fa-solid fa-heart text-2xl"></i>
+                </div>
+
+                <h3 class="text-sm sm:text-base font-bold">
+                    Family Support
+                </h3>
+
+                <p class="text-xs text-teal-200 mt-2">
+                    Helping families manage healthcare with greater confidence.
+                </p>
+
             </div>
+
         </div>
+
     </div>
 </section>
 

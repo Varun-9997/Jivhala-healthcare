@@ -45,7 +45,7 @@ include 'header.php';
 ?>
 
 
-<title>Medical Equipment</title>
+<title>Medical Equipment | Jivhala Healthcare</title>
 
 
 <div class="max-w-7xl mx-auto space-y-12">
@@ -65,7 +65,7 @@ include 'header.php';
         font-extrabold
         text-slate-900
         tracking-tight
-        flex items-center gap-3"
+        flex items-center gap-3 mt-4"
     >
 
         <span
@@ -75,7 +75,7 @@ include 'header.php';
             inline-block"
         ></span>
 
-        Medical Equipment
+        Medical Equipment & Support
 
     </h2>
 
@@ -337,149 +337,135 @@ include 'header.php';
                     text-slate-900
                     text-lg"
                 >
-                    Portea Services
+                    Jivhala Healthcare Services
                 </h3>
 
             </div>
 
 
-            <nav
-                class="divide-y
-                divide-slate-100
-                text-sm
-                font-medium"
-            >
+<nav
+    class="divide-y
+    divide-slate-100
+    text-sm
+    font-medium"
+>
 
-                <a
-                    href="#"
-                    class="block py-2.5 px-2
-                    text-slate-700
-                    hover:text-teal-600
-                    hover:bg-teal-50/60
-                    rounded-lg
-                    transition-colors"
-                >
-                    Elder Care
-                </a>
-
-
-                <a
-                    href="#"
-                    class="block py-2.5 px-2
-                    text-slate-700
-                    hover:text-teal-600
-                    hover:bg-teal-50/60
-                    rounded-lg
-                    transition-colors"
-                >
-                    Trained Attendant
-                </a>
+    <a
+        href="#"
+        class="block py-2.5 px-2
+        text-slate-700
+        hover:text-teal-600
+        hover:bg-teal-50/60
+        rounded-lg
+        transition-colors"
+    >
+        Home Nursing
+    </a>
 
 
-                <a
-                    href="#"
-                    class="block py-2.5 px-2
-                    text-slate-700
-                    hover:text-teal-600
-                    hover:bg-teal-50/60
-                    rounded-lg
-                    transition-colors"
-                >
-                    Physiotherapy
-                </a>
+    <a
+        href="#"
+        class="block py-2.5 px-2
+        text-slate-700
+        hover:text-teal-600
+        hover:bg-teal-50/60
+        rounded-lg
+        transition-colors"
+    >
+        Patient Care
+    </a>
 
 
-                <a
-                    href="#"
-                    class="block py-2.5 px-2
-                    text-slate-700
-                    hover:text-teal-600
-                    hover:bg-teal-50/60
-                    rounded-lg
-                    transition-colors"
-                >
-                    Critical Care
-                </a>
+    <a
+        href="#"
+        class="block py-2.5 px-2
+        text-slate-700
+        hover:text-teal-600
+        hover:bg-teal-50/60
+        rounded-lg
+        transition-colors"
+    >
+        Elder Care
+    </a>
 
 
-                <a
-                    href="medical-equipment.php"
-                    class="block py-2.5 px-2
-                    text-teal-700
-                    font-bold
-                    bg-teal-50/80
-                    rounded-lg"
-                >
-                    Medical Equipment
-                </a>
+    <a
+        href="#"
+        class="block py-2.5 px-2
+        text-slate-700
+        hover:text-teal-600
+        hover:bg-teal-50/60
+        rounded-lg
+        transition-colors"
+    >
+        Mother & Baby Care
+    </a>
 
 
-                <a
-                    href="#"
-                    class="block py-2.5 px-2
-                    text-slate-700
-                    hover:text-teal-600
-                    hover:bg-teal-50/60
-                    rounded-lg
-                    transition-colors"
-                >
-                    Nursing
-                </a>
+    <a
+        href="medical-equipment.php"
+        class="block py-2.5 px-2
+        text-teal-700
+        font-bold
+        bg-teal-50/80
+        rounded-lg"
+    >
+        Medical Equipment
+    </a>
 
 
-                <a
-                    href="#"
-                    class="block py-2.5 px-2
-                    text-slate-700
-                    hover:text-teal-600
-                    hover:bg-teal-50/60
-                    rounded-lg
-                    transition-colors"
-                >
-                    Doctor Consultation
-                </a>
+    <a
+        href="#"
+        class="block py-2.5 px-2
+        text-slate-700
+        hover:text-teal-600
+        hover:bg-teal-50/60
+        rounded-lg
+        transition-colors"
+    >
+        Doctor Visit
+    </a>
 
 
-                <a
-                    href="#"
-                    class="block py-2.5 px-2
-                    text-slate-700
-                    hover:text-teal-600
-                    hover:bg-teal-50/60
-                    rounded-lg
-                    transition-colors"
-                >
-                    Mother & Baby Care
-                </a>
+    <a
+        href="#"
+        class="block py-2.5 px-2
+        text-slate-700
+        hover:text-teal-600
+        hover:bg-teal-50/60
+        rounded-lg
+        transition-colors"
+    >
+        Physiotherapy
+    </a>
 
 
-                <a
-                    href="#"
-                    class="block py-2.5 px-2
-                    text-slate-700
-                    hover:text-teal-600
-                    hover:bg-teal-50/60
-                    rounded-lg
-                    transition-colors"
-                >
-                    Lab Tests
-                </a>
+    <a
+        href="#"
+        class="block py-2.5 px-2
+        text-slate-700
+        hover:text-teal-600
+        hover:bg-teal-50/60
+        rounded-lg
+        transition-colors"
+    >
+        Wound Care
+    </a>
 
 
-                <a
-                    href="#"
-                    class="block py-2.5 px-2
-                    text-slate-700
-                    hover:text-teal-600
-                    hover:bg-teal-50/60
-                    rounded-lg
-                    transition-colors"
-                >
-                    Speciality Pharma
-                </a>
+    <a
+        href="#"
+        class="block py-2.5 px-2
+        text-slate-700
+        hover:text-teal-600
+        hover:bg-teal-50/60
+        rounded-lg
+        transition-colors"
+    >
+        Injection & IV Care
+    </a>
 
-
-            </nav>
+</nav>
 
 
         </aside>
@@ -521,7 +507,7 @@ include 'header.php';
             font-bold
             text-slate-900"
         >
-            Medical Equipment Information & FAQs
+            Medical Equipment & Support Information
         </h2>
 
 
@@ -534,7 +520,7 @@ include 'header.php';
             rounded-full
             border border-teal-200"
         >
-            Click any section (+) to expand content
+            Click any section (+) to learn more
         </span>
 
     </div>
@@ -544,6 +530,180 @@ include 'header.php';
 
 
         <!-- Accordion 1 -->
+
+        <details
+            class="group
+            bg-slate-50/80
+            rounded-2xl
+            border border-slate-200/80
+            overflow-hidden
+            transition-all
+            duration-300
+            open:border-teal-500
+            open:bg-white
+            open:ring-1
+            open:ring-teal-500"
+        >
+
+            <summary
+                class="flex
+                items-center
+                justify-between
+                p-5
+                cursor-pointer
+                select-none
+                font-bold
+                text-slate-900
+                text-base
+                sm:text-lg"
+            >
+
+                <span
+                    class="flex
+                    items-center
+                    gap-3"
+                >
+
+                    <span
+                        class="w-1.5 h-5
+                        bg-[#A6292F]
+                        rounded-full"
+                    ></span>
+
+                    Medical Equipment For Home & Institutional Care
+
+                </span>
+
+
+                <span
+                    class="w-8 h-8
+                    rounded-full
+                    bg-white
+                    text-slate-600
+                    border border-slate-200
+                    flex items-center
+                    justify-center
+                    font-bold
+                    text-xl
+                    transition-all
+                    duration-300
+                    group-open:rotate-45
+                    group-open:bg-[#A6292F]
+                    group-open:text-white
+                    group-open:border-teal-600
+                    shrink-0
+                    ml-3
+                    shadow-sm"
+                >
+                    +
+                </span>
+
+            </summary>
+
+
+            <div
+                class="p-5 pt-2
+                text-slate-600
+                text-sm
+                leading-relaxed
+                border-t
+                border-slate-100"
+            >
+                Jivhala Healthcare provides medical equipment solutions to support patient convenience and home-based and institutional healthcare requirements. Our offerings include medical equipment rental, medical equipment sales, and support for home ICU and patient care equipment.
+            </div>
+
+        </details>
+
+
+
+        <!-- Accordion 2 -->
+
+        <details
+            class="group
+            bg-slate-50/80
+            rounded-2xl
+            border border-slate-200/80
+            overflow-hidden
+            transition-all
+            duration-300
+            open:border-teal-500
+            open:bg-white
+            open:ring-1
+            open:ring-teal-500"
+        >
+
+            <summary
+                class="flex
+                items-center
+                justify-between
+                p-5
+                cursor-pointer
+                select-none
+                font-bold
+                text-slate-900
+                text-base
+                sm:text-lg"
+            >
+
+                <span
+                    class="flex
+                    items-center
+                    gap-3"
+                >
+
+                    <span
+                        class="w-1.5 h-5
+                        bg-[#A6292F]
+                        rounded-full"
+                    ></span>
+
+                    Medical Equipment Support
+
+                </span>
+
+
+                <span
+                    class="w-8 h-8
+                    rounded-full
+                    bg-white
+                    text-slate-600
+                    border border-slate-200
+                    flex items-center
+                    justify-center
+                    font-bold
+                    text-xl
+                    transition-all
+                    duration-300
+                    group-open:rotate-45
+                    group-open:bg-[#A6292F]
+                    group-open:text-white
+                    group-open:border-teal-600
+                    shrink-0
+                    ml-3
+                    shadow-sm"
+                >
+                    +
+                </span>
+
+            </summary>
+
+
+            <div
+                class="p-5 pt-2
+                text-slate-600
+                text-sm
+                leading-relaxed
+                border-t
+                border-slate-100"
+            >
+                If you require medical equipment for home or institutional care, browse the available categories and select the equipment you need. Jivhala Healthcare provides rental and sales support, along with assistance for home ICU and patient care equipment.
+            </div>
+
+        </details>
+
+
+
+        <!-- Accordion 3 -->
 
         <details
             class="group
@@ -623,181 +783,7 @@ include 'header.php';
                 border-t
                 border-slate-100"
             >
-                Getting medical equipment on rent or purchase at your doorstep has never been this convenient. During difficult phases of life, you or your loved one might need to rely on various medical equipment to get back to normal life. Jivhala Healthcare offers a wide range of medical equipment for rent or purchase making healthcare more accessible and affordable for you.
-            </div>
-
-        </details>
-
-
-
-        <!-- Accordion 2 -->
-
-        <details
-            class="group
-            bg-slate-50/80
-            rounded-2xl
-            border border-slate-200/80
-            overflow-hidden
-            transition-all
-            duration-300
-            open:border-teal-500
-            open:bg-white
-            open:ring-1
-            open:ring-teal-500"
-        >
-
-            <summary
-                class="flex
-                items-center
-                justify-between
-                p-5
-                cursor-pointer
-                select-none
-                font-bold
-                text-slate-900
-                text-base
-                sm:text-lg"
-            >
-
-                <span
-                    class="flex
-                    items-center
-                    gap-3"
-                >
-
-                    <span
-                        class="w-1.5 h-5
-                        bg-[#A6292F]
-                        rounded-full"
-                    ></span>
-
-                    How Can We Help
-
-                </span>
-
-
-                <span
-                    class="w-8 h-8
-                    rounded-full
-                    bg-white
-                    text-slate-600
-                    border border-slate-200
-                    flex items-center
-                    justify-center
-                    font-bold
-                    text-xl
-                    transition-all
-                    duration-300
-                    group-open:rotate-45
-                    group-open:bg-[#A6292F]
-                    group-open:text-white
-                    group-open:border-teal-600
-                    shrink-0
-                    ml-3
-                    shadow-sm"
-                >
-                    +
-                </span>
-
-            </summary>
-
-
-            <div
-                class="p-5 pt-2
-                text-slate-600
-                text-sm
-                leading-relaxed
-                border-t
-                border-slate-100"
-            >
-                If you need any medical equipment for rent, browse our medical equipment catalogue and select the equipment required. Our team can assist you with rental, purchase, delivery and other requirements.
-            </div>
-
-        </details>
-
-
-
-        <!-- Accordion 3 -->
-
-        <details
-            class="group
-            bg-slate-50/80
-            rounded-2xl
-            border border-slate-200/80
-            overflow-hidden
-            transition-all
-            duration-300
-            open:border-teal-500
-            open:bg-white
-            open:ring-1
-            open:ring-teal-500"
-        >
-
-            <summary
-                class="flex
-                items-center
-                justify-between
-                p-5
-                cursor-pointer
-                select-none
-                font-bold
-                text-slate-900
-                text-base
-                sm:text-lg"
-            >
-
-                <span
-                    class="flex
-                    items-center
-                    gap-3"
-                >
-
-                    <span
-                        class="w-1.5 h-5
-                        bg-[#A6292F]
-                        rounded-full"
-                    ></span>
-
-                    Medical Equipment Near Me
-
-                </span>
-
-
-                <span
-                    class="w-8 h-8
-                    rounded-full
-                    bg-white
-                    text-slate-600
-                    border border-slate-200
-                    flex items-center
-                    justify-center
-                    font-bold
-                    text-xl
-                    transition-all
-                    duration-300
-                    group-open:rotate-45
-                    group-open:bg-[#A6292F]
-                    group-open:text-white
-                    group-open:border-teal-600
-                    shrink-0
-                    ml-3
-                    shadow-sm"
-                >
-                    +
-                </span>
-
-            </summary>
-
-
-            <div
-                class="p-5 pt-2
-                text-slate-600
-                text-sm
-                leading-relaxed
-                border-t
-                border-slate-100"
-            >
-                With medical equipment available for home care, patients and families can manage many healthcare requirements more conveniently from home. Contact our team to check availability and delivery options in your area.
+                Medical equipment can support patients and families with home-based healthcare requirements. Contact Jivhala Healthcare to discuss your equipment requirement and check the available options for your needs.
             </div>
 
         </details>
@@ -845,7 +831,7 @@ include 'header.php';
                         rounded-full"
                     ></span>
 
-                    FAQs In Medical Equipment
+                    Frequently Asked Questions
 
                 </span>
 
@@ -926,7 +912,7 @@ include 'header.php';
                             A –
                         </strong>
 
-                        To rent medical equipment, browse the available equipment, select the required equipment and submit a booking request. Our team will assist you with the rental process.
+                        Browse the available equipment categories, select the equipment required and submit your booking request. Our team can assist you with the rental process and related requirements.
 
                     </p>
 
@@ -973,7 +959,7 @@ include 'header.php';
                             A –
                         </strong>
 
-                        The available equipment is displayed in the categories above. Select any category to view the equipment currently available.
+                        The available equipment is displayed in the categories above. Select a category to view the equipment currently listed under it.
 
                     </p>
 
@@ -1004,7 +990,7 @@ include 'header.php';
                             Q:
                         </span>
 
-                        Is there a minimum period for equipment rental?
+                        Can I purchase medical equipment instead of renting it?
 
                     </h4>
 
@@ -1020,7 +1006,7 @@ include 'header.php';
                             A –
                         </strong>
 
-                        Rental periods may vary depending on the equipment. Please check the individual equipment details or contact our team for more information.
+                        Yes. Jivhala Healthcare provides both medical equipment rental and medical equipment sales. Please contact our team to discuss the equipment you require.
 
                     </p>
 
@@ -1051,7 +1037,7 @@ include 'header.php';
                             Q:
                         </span>
 
-                        Do you provide delivery?
+                        What type of medical equipment support do you provide?
 
                     </h4>
 
@@ -1067,7 +1053,7 @@ include 'header.php';
                             A –
                         </strong>
 
-                        Contact our team to confirm delivery availability for your location and selected equipment.
+                        Our medical equipment offering includes rental and sales support, along with home ICU support equipment and patient care devices for home and institutional healthcare requirements.
 
                     </p>
 
@@ -1098,7 +1084,7 @@ include 'header.php';
                             Q:
                         </span>
 
-                        What is the rental process for medical equipment?
+                        Can medical equipment be used for home ICU support?
 
                     </h4>
 
@@ -1114,7 +1100,7 @@ include 'header.php';
                             A –
                         </strong>
 
-                        Choose your equipment, review the rental details, submit a booking request and our team will contact you to proceed with the rental.
+                        Jivhala Healthcare provides home ICU support equipment as part of its medical equipment solutions. Contact our team to discuss your specific requirement and available options.
 
                     </p>
 
@@ -1145,7 +1131,7 @@ include 'header.php';
                             Q:
                         </span>
 
-                        Are the equipment sanitized before delivery?
+                        Do you provide medical equipment for institutional requirements?
 
                     </h4>
 
@@ -1161,7 +1147,7 @@ include 'header.php';
                             A –
                         </strong>
 
-                        All equipment should be prepared and sanitized according to applicable healthcare and equipment-handling procedures before delivery.
+                        Yes. Jivhala Healthcare provides medical equipment solutions for both home-based and institutional healthcare requirements. Contact our team to discuss your institutional requirement.
 
                     </p>
 
@@ -1225,7 +1211,7 @@ include 'header.php';
                 mt-3
                 font-serif"
             >
-                Why Rent Medical Equipment from Jivhala Healthcare?
+                Medical Equipment Solutions For Your Healthcare Needs
             </h2>
 
 
@@ -1235,7 +1221,7 @@ include 'header.php';
                 max-w-2xl
                 mx-auto"
             >
-                Affordable, reliable, and hassle-free medical equipment rental for your home care needs.
+                Medical equipment rental and sales support for home-based and institutional healthcare requirements.
             </p>
 
 
@@ -1282,7 +1268,7 @@ include 'header.php';
                     font-bold
                     text-slate-900"
                 >
-                    Cost-Effective
+                    Rental & Sales Support
                 </h3>
 
 
@@ -1291,7 +1277,7 @@ include 'header.php';
                     text-slate-600
                     mt-2"
                 >
-                    Renting is significantly more affordable than purchasing expensive medical equipment, especially for short-term needs.
+                    Jivhala Healthcare provides medical equipment through rental and sales options to support different patient care and healthcare requirements.
                 </p>
 
             </div>
@@ -1329,7 +1315,7 @@ include 'header.php';
                     font-bold
                     text-slate-900"
                 >
-                    Doorstep Delivery
+                    Home ICU Support
                 </h3>
 
 
@@ -1338,7 +1324,7 @@ include 'header.php';
                     text-slate-600
                     mt-2"
                 >
-                    We help make medical equipment access convenient by assisting with delivery and setup requirements.
+                    Our medical equipment solutions include support for home ICU requirements and patient care equipment.
                 </p>
 
             </div>
@@ -1376,7 +1362,7 @@ include 'header.php';
                     font-bold
                     text-slate-900"
                 >
-                    Maintenance & Support
+                    Home & Institutional Support
                 </h3>
 
 
@@ -1385,7 +1371,7 @@ include 'header.php';
                     text-slate-600
                     mt-2"
                 >
-                    Our team can assist with equipment-related support, maintenance and replacement requirements during the rental period.
+                    Our medical equipment services are designed to support both home-based and institutional healthcare requirements.
                 </p>
 
             </div>
@@ -1448,7 +1434,7 @@ include 'header.php';
 
 
             <p class="text-slate-600 mt-2">
-                Browse our extensive range of medical equipment by category
+                Explore the available medical equipment categories and select the equipment required.
             </p>
 
 
