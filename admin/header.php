@@ -75,22 +75,19 @@ $adminRole = $_SESSION['admin_role'] ?? 'admin';
                 type="button"
                 onclick="sidebarToggle()"
                 class="p-2 md:p-2.5 rounded-xl bg-slate-200 hover:bg-slate-300 text-slate-600 hover:text-slate-900 transition focus:outline-none focus:ring-2 focus:ring-teal-600"
-                aria-label="Toggle Sidebar"
-            >
+                aria-label="Toggle Sidebar">
 
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="h-5 w-5"
                     fill="none"
                     viewBox="0 0 24 24"
-                    stroke="currentColor"
-                >
+                    stroke="currentColor">
                     <path
                         stroke-linecap="round"
                         stroke-linejoin="round"
                         stroke-width="2"
-                        d="M4 6h16M4 12h16M4 18h16"
-                    />
+                        d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
 
             </button>
@@ -107,15 +104,12 @@ $adminRole = $_SESSION['admin_role'] ?? 'admin';
             <!-- Logo Placeholder -->
             <!-- Jivhala Healthcare Logo -->
 
-<div class="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-xl overflow-hidden border border-slate-200 shrink-0 hidden sm:flex items-center justify-center bg-white">
-
-    <img
-        src="../img/JHCLOGO.jpeg"
-        alt="Jivhala Healthcare"
-        class="w-full h-full object-contain"
-    >
-
-</div>
+            <div class="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-full overflow-hidden border border-slate-200 shrink-0 hidden sm:flex items-center justify-center bg-white shadow-sm">
+                <img
+                    src="../img/JHCLOGO-modified.jpg"
+                    alt="Jivhala Healthcare"
+                    class="w-full h-full object-cover">
+            </div>
 
 
             <!-- Brand Name -->
@@ -153,8 +147,7 @@ $adminRole = $_SESSION['admin_role'] ?? 'admin';
                 <button
                     type="button"
                     onclick="profileToggle(event)"
-                    class="flex items-center gap-2 p-1 md:px-3 md:py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 border border-slate-200 text-slate-700 font-medium text-sm transition focus:outline-none focus:ring-2 focus:ring-teal-600"
-                >
+                    class="flex items-center gap-2 p-1 md:px-3 md:py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 border border-slate-200 text-slate-700 font-medium text-sm transition focus:outline-none focus:ring-2 focus:ring-teal-600">
 
                     <!-- Avatar -->
 
@@ -181,14 +174,12 @@ $adminRole = $_SESSION['admin_role'] ?? 'admin';
                         class="h-4 w-4 text-slate-400 hidden md:block"
                         fill="none"
                         viewBox="0 0 24 24"
-                        stroke="currentColor"
-                    >
+                        stroke="currentColor">
                         <path
                             stroke-linecap="round"
                             stroke-linejoin="round"
                             stroke-width="2"
-                            d="M19 9l-7 7-7-7"
-                        />
+                            d="M19 9l-7 7-7-7" />
                     </svg>
 
                 </button>
@@ -200,8 +191,7 @@ $adminRole = $_SESSION['admin_role'] ?? 'admin';
 
                 <div
                     id="ProfileDropDown"
-                    class="hidden absolute right-0 mt-3 w-64 bg-white rounded-xl shadow-xl border border-slate-200 overflow-hidden z-50"
-                >
+                    class="hidden absolute right-0 mt-3 w-64 bg-white rounded-xl shadow-xl border border-slate-200 overflow-hidden z-50">
 
                     <!-- Admin Information -->
 
@@ -247,8 +237,7 @@ $adminRole = $_SESSION['admin_role'] ?? 'admin';
 
                     <a
                         href="profile.php"
-                        class="flex items-center gap-3 px-4 py-3 text-sm text-slate-700 hover:bg-slate-50 font-semibold transition border-b border-slate-100"
-                    >
+                        class="flex items-center gap-3 px-4 py-3 text-sm text-slate-700 hover:bg-slate-50 font-semibold transition border-b border-slate-100">
 
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -256,13 +245,11 @@ $adminRole = $_SESSION['admin_role'] ?? 'admin';
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor"
-                            stroke-width="2"
-                        >
+                            stroke-width="2">
                             <path
                                 stroke-linecap="round"
                                 stroke-linejoin="round"
-                                d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.5 20.25a8.25 8.25 0 0115 0"
-                            />
+                                d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.5 20.25a8.25 8.25 0 0115 0" />
                         </svg>
 
                         <span>
@@ -276,8 +263,7 @@ $adminRole = $_SESSION['admin_role'] ?? 'admin';
 
                     <a
                         href="logout.php"
-                        class="flex items-center gap-3 px-4 py-3 text-sm text-red-600 hover:bg-red-50 font-semibold transition"
-                    >
+                        class="flex items-center gap-3 px-4 py-3 text-sm text-red-600 hover:bg-red-50 font-semibold transition">
 
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -285,14 +271,12 @@ $adminRole = $_SESSION['admin_role'] ?? 'admin';
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor"
-                            stroke-width="2"
-                        >
+                            stroke-width="2">
                             <path
                                 stroke-linecap="round"
                                 stroke-linejoin="round"
                                 stroke-width="2"
-                                d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a2 2 0 01-2 2H6a2 2 0 01-2-2V7a2 2 0 012-2h5a2 2 0 012 2v1"
-                            />
+                                d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a2 2 0 01-2 2H6a2 2 0 01-2-2V7a2 2 0 012-2h5a2 2 0 012 2v1" />
                         </svg>
 
                         <span>
@@ -313,49 +297,47 @@ $adminRole = $_SESSION['admin_role'] ?? 'admin';
 
 
 <script>
-
-/*
+    /*
 |--------------------------------------------------------------------------
 | Profile Dropdown
 |--------------------------------------------------------------------------
 */
 
-function profileToggle(event) {
+    function profileToggle(event) {
 
-    event.stopPropagation();
+        event.stopPropagation();
 
-    const profileDropdown =
-        document.getElementById("ProfileDropDown");
+        const profileDropdown =
+            document.getElementById("ProfileDropDown");
 
-    if (!profileDropdown) {
-        return;
+        if (!profileDropdown) {
+            return;
+        }
+
+        profileDropdown.classList.toggle("hidden");
     }
 
-    profileDropdown.classList.toggle("hidden");
-}
 
+    /*
+    |--------------------------------------------------------------------------
+    | Close Dropdown When Clicking Outside
+    |--------------------------------------------------------------------------
+    */
 
-/*
-|--------------------------------------------------------------------------
-| Close Dropdown When Clicking Outside
-|--------------------------------------------------------------------------
-*/
+    window.addEventListener("click", function(event) {
 
-window.addEventListener("click", function(event) {
+        const profileDropdown =
+            document.getElementById("ProfileDropDown");
 
-    const profileDropdown =
-        document.getElementById("ProfileDropDown");
+        if (
+            profileDropdown &&
+            !profileDropdown.classList.contains("hidden") &&
+            !event.target.closest(".profile-area")
+        ) {
 
-    if (
-        profileDropdown &&
-        !profileDropdown.classList.contains("hidden") &&
-        !event.target.closest(".profile-area")
-    ) {
+            profileDropdown.classList.add("hidden");
 
-        profileDropdown.classList.add("hidden");
+        }
 
-    }
-
-});
-
+    });
 </script>

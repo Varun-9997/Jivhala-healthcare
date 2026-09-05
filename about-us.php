@@ -5,7 +5,7 @@
 
 
 
-<?php include 'header.php' ?>
+<?php include 'header.php'; ?>
   <!-- ================= SECTION 1: HERO BANNER ================= -->
   <section class="relative overflow-hidden bg-cover bg-center py-12 sm:py-20 border-b border-amber-100/60" 
            style="background-image: linear-gradient(to right, rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.45)), url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=1600&auto=format&fit=crop');">
@@ -550,4 +550,4 @@
   </section>
 
 
-<?php include 'footer.php' ?>
+<?php include 'footer.php'; ?>
